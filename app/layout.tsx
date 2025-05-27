@@ -7,7 +7,7 @@ import { getURL } from '@/utils/helpers';
 import 'styles/main.css';
 
 const title = 'Next.js Subscription Starter';
-const description = 'Brought to you by Vercel, Stripe, and Supabas.';
+const description = 'Brought to you by Vercel, Stripe, and Supabase.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getURL()),
