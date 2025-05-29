@@ -1,0 +1,20 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    { 
+      "source": "/api/webhooks", 
+      "destination": "/api/webhooks" 
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/webhooks",
+      "headers": [
+        { 
+          "key": "Cache-Control", 
+          "value": "no-store, max-age=0" 
+        }
+      ]
+    }
+  ]
+}
