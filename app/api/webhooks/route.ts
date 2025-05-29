@@ -9,11 +9,8 @@ import {
 } from '@/utils/supabase/admin';
 
 // Add this configuration to prevent Next.js from parsing the body
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 const relevantEvents = new Set([
   'product.created',
