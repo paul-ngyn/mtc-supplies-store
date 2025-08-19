@@ -10,8 +10,8 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen bg-gray-50 py-8 px-4">
-      <h1 className="text-3xl sm:text-5xl font-bold text-center mb-8">
-        Welcome to MTC Supplies Store
+      <h1 className="text-3xl sm:text-5xl font-bold text-center mb-8 text-black">
+        Welcome to TKN Supplies Store
       </h1>
       <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
         {products && products.length > 0 ? (

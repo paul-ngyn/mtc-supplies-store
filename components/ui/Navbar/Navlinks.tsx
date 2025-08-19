@@ -16,35 +16,28 @@ export default function Navlinks({ user }: NavlinksProps) {
   const router = getRedirectMethod() === 'client' ? useRouter() : null;
 
   return (
-    <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
-      <div className="flex items-center flex-1">
-        <Link href="/" className={s.logo} aria-label="Logo">
-          <Logo />
-        </Link>
-        <nav className="ml-6 space-x-2 lg:block">
-          <Link href="/" className={s.link}>
-            Pricing
+    <div className="bg-blue-200 border-t border-blue-300">
+      <div className="max-w-6xl mx-auto px-6">
+        <nav className="flex justify-center gap-20 py-3">
+          <Link href="/products/electronics" className="text-blue-800 hover:text-blue-900 font-medium transition-colors">
+            Electronics
           </Link>
-          {user && (
-            <Link href="/account" className={s.link}>
-              Account
-            </Link>
-          )}
+          <Link href="/products/office-supplies" className="text-blue-800 hover:text-blue-900 font-medium transition-colors">
+            Office Supplies
+          </Link>
+          <Link href="/products/tools" className="text-blue-800 hover:text-blue-900 font-medium transition-colors">
+            Tools
+          </Link>
+          <Link href="/products/furniture" className="text-blue-800 hover:text-blue-900 font-medium transition-colors">
+            Furniture
+          </Link>
+          <Link href="/products/cleaning" className="text-blue-800 hover:text-blue-900 font-medium transition-colors">
+            Cleaning
+          </Link>
+          <Link href="/products/safety" className="text-blue-800 hover:text-blue-900 font-medium transition-colors">
+            Safety
+          </Link>
         </nav>
-      </div>
-      <div className="flex justify-end space-x-8">
-        {user ? (
-          <form onSubmit={(e) => handleRequest(e, SignOut, router)}>
-            <input type="hidden" name="pathName" value={usePathname()} />
-            <button type="submit" className={s.link}>
-              Sign out
-            </button>
-          </form>
-        ) : (
-          <Link href="/signin" className={s.link}>
-            Sign In
-          </Link>
-        )}
       </div>
     </div>
   );
