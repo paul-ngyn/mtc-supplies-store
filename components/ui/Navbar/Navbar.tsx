@@ -17,6 +17,8 @@ export default async function Navbar() {
       <a href="#skip" className="sr-only focus:not-sr-only">
         Skip to content
       </a>
+      
+      {/* Top Row - Logo, Search, Desktop Nav */}
       <div className="max-w-6xl px-6 mx-auto flex items-center justify-between py-3 gap-4">
         {/* Logo */}
         <a href="/" className="flex items-center">
@@ -45,8 +47,14 @@ export default async function Navbar() {
           <MobileMenu user={user} />
         </div>
       </div>
+
+      {/* Mobile Search Bar */}
+      <div className="sm:hidden px-6 pb-3">
+        <SearchBar />
+      </div>
       
-      <div className="w-full">
+      {/* Desktop Product Categories */}
+      <div className="w-full hidden sm:block">
         <Navlinks />
       </div>
     </nav>

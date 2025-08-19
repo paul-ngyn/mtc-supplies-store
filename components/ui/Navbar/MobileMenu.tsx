@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import SearchBar from './Searchbar';
 
 interface MobileMenuProps {
   user: any;
@@ -29,7 +28,7 @@ export default function MobileMenu({ user }: MobileMenuProps) {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-50" onClick={() => setIsOpen(false)}>
-          <div className="fixed top-0 right-0 h-full w-64 bg-black shadow-lg p-6">
+          <div className="fixed top-0 right-0 h-full w-64 bg-black shadow-lg p-6 overflow-y-auto">
             <div className="flex justify-between items-center mb-6">
               <span className="text-white font-bold text-lg">Menu</span>
               <button
@@ -40,16 +39,11 @@ export default function MobileMenu({ user }: MobileMenuProps) {
               </button>
             </div>
             
-            {/* Mobile Search */}
-            <div className="mb-6">
-              <SearchBar />
-            </div>
-            
-            {/* Mobile Navigation Links */}
-            <div className="flex flex-col gap-4">
+            {/* Main Navigation Links */}
+            <div className="flex flex-col gap-4 mb-6">
               <Link 
                 href="/subscription" 
-                className="text-white hover:text-gray-300 py-2"
+                className="text-white hover:text-gray-300 py-2 border-b border-gray-600"
                 onClick={() => setIsOpen(false)}
               >
                 Pricing
@@ -57,7 +51,7 @@ export default function MobileMenu({ user }: MobileMenuProps) {
               {user ? (
                 <Link 
                   href="/account" 
-                  className="text-white hover:text-gray-300 py-2"
+                  className="text-white hover:text-gray-300 py-2 border-b border-gray-600"
                   onClick={() => setIsOpen(false)}
                 >
                   Account
@@ -65,12 +59,61 @@ export default function MobileMenu({ user }: MobileMenuProps) {
               ) : (
                 <Link 
                   href="/signin" 
-                  className="text-white hover:text-gray-300 py-2"
+                  className="text-white hover:text-gray-300 py-2 border-b border-gray-600"
                   onClick={() => setIsOpen(false)}
                 >
                   Sign In
                 </Link>
               )}
+            </div>
+
+            {/* Product Categories */}
+            <div className="border-t border-gray-600 pt-4">
+              <h3 className="text-white font-semibold text-sm mb-3 text-gray-300">PRODUCT CATEGORIES</h3>
+              <div className="flex flex-col gap-3">
+                <Link 
+                  href="/products/electronics" 
+                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Electronics
+                </Link>
+                <Link 
+                  href="/products/office-supplies" 
+                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Office Supplies
+                </Link>
+                <Link 
+                  href="/products/tools" 
+                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Tools
+                </Link>
+                <Link 
+                  href="/products/furniture" 
+                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Furniture
+                </Link>
+                <Link 
+                  href="/products/cleaning" 
+                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Cleaning
+                </Link>
+                <Link 
+                  href="/products/safety" 
+                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Safety
+                </Link>
+              </div>
             </div>
           </div>
         </div>
