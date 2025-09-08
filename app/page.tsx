@@ -9,7 +9,7 @@ export default async function HomePage() {
   ]);
 
   return (
-    <main className="min-h-screen bg-gray-50 py-8 px-4">
+    <main className="min-h-screen bg-white py-8 px-4"> {/* Changed to bg-white */}
       <h1 className="text-3xl sm:text-5xl font-bold text-center mb-8 text-black">
         Welcome to TKN Supplies Store
       </h1>

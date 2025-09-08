@@ -4,6 +4,7 @@ import Navlinks from './Navlinks';
 import SearchBar from './Searchbar';
 import Link from 'next/link';
 import MobileMenu from './MobileMenu';
+import Navbarlogo from './Navbarlogo';
 
 export default async function Navbar() {
   const supabase = createClient();
@@ -20,23 +21,30 @@ export default async function Navbar() {
       
       {/* Top Row - Logo, Search, Desktop Nav */}
       <div className="max-w-6xl px-6 mx-auto flex items-center justify-between py-3 gap-4">
-        {/* Logo */}
-        <a href="/" className="flex items-center">
-          <span className="ml-2 font-bold text-xl text-white">TKN Supplies</span>
-        </a>
-        
+        {/* Logo - Now using client component */}
+        <Navbarlogo />
+
         {/* Desktop Navigation */}
         <div className="hidden sm:flex items-center gap-4">
           <SearchBar />
-          <Link href="/subscription" className="text-white hover:text-gray-300 whitespace-nowrap">
+          <Link 
+            href="/subscription" 
+            className="text-gray-700 hover:text-gray-900 whitespace-nowrap transition-colors"
+          >
             Pricing
           </Link>
           {user ? (
-            <Link href="/account" className="text-white hover:text-gray-300 whitespace-nowrap">
+            <Link 
+              href="/account" 
+              className="text-gray-700 hover:text-gray-900 whitespace-nowrap transition-colors"
+            >
               Account
             </Link>
           ) : (
-            <Link href="/signin" className="text-white hover:text-gray-300 whitespace-nowrap">
+            <Link 
+              href="/signin" 
+              className="text-gray-700 hover:text-gray-900 whitespace-nowrap transition-colors"
+            >
               Sign In
             </Link>
           )}

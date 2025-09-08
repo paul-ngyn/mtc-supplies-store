@@ -15,12 +15,12 @@ export default function MobileMenu({ user }: MobileMenuProps) {
       {/* Menu Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 text-white hover:text-gray-300 p-2"
+        className="flex items-center gap-2 text-gray-700 hover:text-gray-900 p-2"
       >
         <div className="flex flex-col gap-1">
-          <span className="w-5 h-0.5 bg-white"></span>
-          <span className="w-5 h-0.5 bg-white"></span>
-          <span className="w-5 h-0.5 bg-white"></span>
+          <span className="w-5 h-0.5 bg-gray-700"></span>
+          <span className="w-5 h-0.5 bg-gray-700"></span>
+          <span className="w-5 h-0.5 bg-gray-700"></span>
         </div>
         <span className="text-sm font-medium">Menu</span>
       </button>
@@ -28,12 +28,12 @@ export default function MobileMenu({ user }: MobileMenuProps) {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-50" onClick={() => setIsOpen(false)}>
-          <div className="fixed top-0 right-0 h-full w-64 bg-black shadow-lg p-6 overflow-y-auto">
+          <div className="fixed top-0 right-0 h-full w-64 bg-white shadow-lg p-6 overflow-y-auto">
             <div className="flex justify-between items-center mb-6">
-              <span className="text-white font-bold text-lg">Menu</span>
+              <span className="text-gray-900 font-bold text-lg">Menu</span>
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-white hover:text-gray-300 text-2xl"
+                className="text-gray-600 hover:text-gray-900 text-2xl"
               >
                 ×
               </button>
@@ -41,9 +41,17 @@ export default function MobileMenu({ user }: MobileMenuProps) {
             
             {/* Main Navigation Links */}
             <div className="flex flex-col gap-4 mb-6">
+              {/* Add Home Link */}
+              <Link 
+                href="/" 
+                className="text-gray-700 hover:text-gray-900 py-2 border-b border-gray-200 font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
               <Link 
                 href="/subscription" 
-                className="text-white hover:text-gray-300 py-2 border-b border-gray-600"
+                className="text-gray-700 hover:text-gray-900 py-2 border-b border-gray-200"
                 onClick={() => setIsOpen(false)}
               >
                 Pricing
@@ -51,7 +59,7 @@ export default function MobileMenu({ user }: MobileMenuProps) {
               {user ? (
                 <Link 
                   href="/account" 
-                  className="text-white hover:text-gray-300 py-2 border-b border-gray-600"
+                  className="text-gray-700 hover:text-gray-900 py-2 border-b border-gray-200"
                   onClick={() => setIsOpen(false)}
                 >
                   Account
@@ -59,7 +67,7 @@ export default function MobileMenu({ user }: MobileMenuProps) {
               ) : (
                 <Link 
                   href="/signin" 
-                  className="text-white hover:text-gray-300 py-2 border-b border-gray-600"
+                  className="text-gray-700 hover:text-gray-900 py-2 border-b border-gray-200"
                   onClick={() => setIsOpen(false)}
                 >
                   Sign In
@@ -68,47 +76,47 @@ export default function MobileMenu({ user }: MobileMenuProps) {
             </div>
 
             {/* Product Categories */}
-            <div className="border-t border-gray-600 pt-4">
-              <h3 className="text-white font-semibold text-sm mb-3 text-gray-300">PRODUCT CATEGORIES</h3>
+            <div className="border-t border-gray-200 pt-4">
+              <h3 className="text-gray-600 font-semibold text-sm mb-3">PRODUCT CATEGORIES</h3>
               <div className="flex flex-col gap-3">
                 <Link 
                   href="/products/electronics" 
-                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
                   Electronics
                 </Link>
                 <Link 
                   href="/products/office-supplies" 
-                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
                   Office Supplies
                 </Link>
                 <Link 
                   href="/products/tools" 
-                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
                   Tools
                 </Link>
                 <Link 
                   href="/products/furniture" 
-                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
                   Furniture
                 </Link>
                 <Link 
                   href="/products/cleaning" 
-                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
                   Cleaning
                 </Link>
                 <Link 
                   href="/products/safety" 
-                  className="text-white hover:text-gray-300 py-2 text-sm"
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
                   Safety

@@ -3,10 +3,11 @@ import Navbar from '@/components/ui/Navbar';
 import { Toaster } from '@/components/ui/Toasts/toaster';
 import { PropsWithChildren, Suspense } from 'react';
 import { getURL } from '@/utils/helpers';
+import { headers } from 'next/headers';
 import 'styles/main.css';
 
-const title = 'Next.js Subscription Starter';
-const description = 'Brought to you by Vercel, Stripe, and Supabase.';
+const title = 'TKN Supplies Store';
+const description = 'Your one-stop shop for all supplies.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getURL()),
@@ -19,13 +20,18 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: PropsWithChildren) {
+  const headersList = headers();
+  const pathname = headersList.get('x-pathname') || '';
+  const isAuthPage = pathname.startsWith('/signin') || pathname.startsWith('/signup');
+
   return (
     <html lang="en">
-      <body className="bg-black">
+      <body className={isAuthPage ? "bg-gray-50" : "bg-black"}>
+        {/* Always show navbar - don't disable it on auth pages */}
         <Navbar />
         <main
           id="skip"
-          className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
+          className={isAuthPage ? "min-h-screen" : "min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"}
         >
           {children}
         </main>
