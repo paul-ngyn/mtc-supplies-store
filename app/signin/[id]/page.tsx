@@ -1,4 +1,3 @@
-import Logo from '@/components/icons/Logo';
 import { createClient } from '@/utils/supabase/server';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
@@ -55,22 +54,23 @@ export default async function SignIn({
   }
 
   return (
-    <div className="flex justify-center height-screen-helper">
-      <div className="flex flex-col justify-between max-w-lg p-3 m-auto w-80 ">
-        <div className="flex justify-center pb-12 ">
-          <Logo width="64px" height="64px" />
-        </div>
-        <Card
-          title={
-            viewProp === 'forgot_password'
-              ? 'Reset Password'
-              : viewProp === 'update_password'
-                ? 'Update Password'
-                : viewProp === 'signup'
-                  ? 'Sign Up'
-                  : 'Sign In'
-          }
-        >
+    <div className="min-h-screen bg-gray-50 flex items-start justify-center px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20">
+      <div className="w-full max-w-md sm:max-w-lg space-y-8">
+        <div className="bg-white rounded-lg shadow-md border-0 p-8 sm:p-10">
+          {/* Custom title */}
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+              {viewProp === 'forgot_password'
+                ? 'Reset Password'
+                : viewProp === 'update_password'
+                  ? 'Update Password'
+                  : viewProp === 'signup'
+                    ? 'Sign Up'
+                    : 'Sign In'}
+            </h2>
+          </div>
+
+          {/* Auth forms */}
           {viewProp === 'password_signin' && (
             <PasswordSignIn
               allowEmail={allowEmail}
@@ -105,7 +105,7 @@ export default async function SignIn({
                 <OauthSignIn />
               </>
             )}
-        </Card>
+        </div>
       </div>
     </div>
   );
