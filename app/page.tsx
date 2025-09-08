@@ -9,7 +9,7 @@ export default async function HomePage() {
   ]);
 
   return (
-    <main className="min-h-screen bg-white py-8 px-4"> {/* Changed to bg-white */}
+    <div className="py-8 px-4"> {/* Removed min-h-screen and bg-white */}
       <h1 className="text-3xl sm:text-5xl font-bold text-center mb-8 text-black">
         Welcome to TKN Supplies Store
       </h1>
@@ -34,6 +34,6 @@ export default async function HomePage() {
           </p>
         )}
       </section>
-    </main>
+    </div>
   );
 }

@@ -1,13 +1,9 @@
 import { Metadata } from 'next';
-import Navbar from '@/components/ui/Navbar';
-import { Toaster } from '@/components/ui/Toasts/toaster';
-import { PropsWithChildren, Suspense } from 'react';
+import { PropsWithChildren } from 'react';
 import { getURL } from '@/utils/helpers';
-import { headers } from 'next/headers';
-import 'styles/main.css';
 
-const title = 'TKN Supplies Store'; // Updated from 'Next.js Subscription Starter'
-const description = 'Your one-stop shop for all supplies.'; // Updated from Vercel description
+const title = 'Sign In - TKN Supplies Store';
+const description = 'Sign in to your TKN Supplies Store account.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getURL()),
@@ -19,25 +15,12 @@ export const metadata: Metadata = {
   }
 };
 
-export default async function RootLayout({ children }: PropsWithChildren) {
-  const headersList = headers();
-  const pathname = headersList.get('x-pathname') || '';
-  const isAuthPage = pathname.startsWith('/signin') || pathname.startsWith('/signup');
-
+export default async function AuthLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en">
-      <body className="bg-white">
-        {!isAuthPage && <Navbar />}
-        <main
-          id="skip"
-          className={isAuthPage ? "min-h-screen" : "min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"}
-        >
-          {children}
-        </main>
-        <Suspense>
-          <Toaster />
-        </Suspense>
-      </body>
-    </html>
+    <div className="min-h-screen bg-gray-50">
+      <main className="flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+        {children}
+      </main>
+    </div>
   );
 }
