@@ -86,7 +86,7 @@ export default async function Navbar() {
               </Link>
             )}
             <Link 
-              href="/subscription" 
+              href="/orders" 
               className="text-gray-700 hover:text-gray-900 whitespace-nowrap transition-colors"
             >
               Orders & Returns

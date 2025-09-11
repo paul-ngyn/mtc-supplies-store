@@ -21,11 +21,15 @@ export default async function SignIn({
   searchParams
 }: {
   params: { id: string };
-  searchParams: { disable_button: boolean };
+  searchParams: { 
+    disable_button: boolean;
+    redirect_to?: string;
+  };
 }) {
   const { allowOauth, allowEmail, allowPassword } = getAuthTypes();
   const viewTypes = getViewTypes();
   const redirectMethod = getRedirectMethod();
+  const { redirect_to } = searchParams;
 
   // Declare 'viewProp' and initialize with the default value
   let viewProp: string;
@@ -37,10 +41,16 @@ export default async function SignIn({
     const preferredSignInView =
       cookies().get('preferredSignInView')?.value || null;
     viewProp = getDefaultSignInView(preferredSignInView);
-    return redirect(`/signin/${viewProp}`);
+    
+    // Preserve redirect_to parameter when redirecting to default view
+    const redirectUrl = redirect_to 
+      ? `/signin/${viewProp}?redirect_to=${encodeURIComponent(redirect_to)}`
+      : `/signin/${viewProp}`;
+    
+    return redirect(redirectUrl);
   }
 
-  // Check if the user is already logged in and redirect to the account page if so
+  // Check if the user is already logged in and redirect appropriately
   const supabase = createClient();
 
   const {
@@ -48,6 +58,11 @@ export default async function SignIn({
   } = await supabase.auth.getUser();
 
   if (user && viewProp !== 'update_password') {
+    // If user is logged in and there's a redirect_to, go there
+    if (redirect_to) {
+      return redirect(redirect_to);
+    }
+    // Otherwise go to home page
     return redirect('/');
   } else if (!user && viewProp === 'update_password') {
     return redirect('/signin');
@@ -68,6 +83,11 @@ export default async function SignIn({
                     ? 'Sign Up'
                     : 'Sign In'}
             </h2>
+            {redirect_to && (
+              <p className="text-sm text-gray-600 mt-2">
+                Please sign in to access your orders and returns.
+              </p>
+            )}
           </div>
 
           {/* Auth forms */}
