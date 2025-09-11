@@ -94,7 +94,7 @@ export default async function Navbar() {
             {/* Desktop Cart Button */}
             <Link 
               href="/cart" 
-              className="flex items-center justify-center p-2 text-gray-700 hover:text-gray-900 transition-colors"
+              className="flex items-center justify-center p-2 text-gray-700 hover:text-gray-900 transition-colors gap-2"
             >
               <svg 
                 className="w-6 h-6" 
@@ -109,6 +109,7 @@ export default async function Navbar() {
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5L19 18" 
                 />
               </svg>
+              Cart
             </Link>
           </div>
 
