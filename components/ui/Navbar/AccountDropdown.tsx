@@ -2,6 +2,9 @@
 
 import Link from 'next/link';
 import { useState, useRef } from 'react';
+import { useRouter } from 'next/navigation';
+import { SignOut } from '@/utils/auth-helpers/server';
+import { handleRequest } from '@/utils/auth-helpers/client';
 
 interface AccountDropdownProps {
   user: any;
@@ -10,6 +13,7 @@ interface AccountDropdownProps {
 export default function AccountDropdown({ user }: AccountDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const router = useRouter();
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) {
@@ -21,13 +25,19 @@ export default function AccountDropdown({ user }: AccountDropdownProps) {
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setIsOpen(false);
-    }, 150); // 150ms delay before closing
+    }, 150);
   };
 
   const handleDropdownClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     setIsOpen(!isOpen);
+  };
+
+  const handleSignOut = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    await handleRequest(e, SignOut, router);
+    setIsOpen(false);
   };
 
   return (
@@ -112,16 +122,18 @@ export default function AccountDropdown({ user }: AccountDropdownProps) {
             </Link>
 
             <div className="border-t border-gray-100 mt-1 pt-1">
-              <Link 
-                href="/signin/signout"
-                className="flex items-center px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                <svg className="w-4 h-4 mr-3 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                </svg>
-                Sign Out
-              </Link>
+              {/* Sign Out Form */}
+              <form onSubmit={handleSignOut}>
+                <button
+                  type="submit"
+                  className="flex items-center w-full px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors text-left"
+                >
+                  <svg className="w-4 h-4 mr-3 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                  </svg>
+                  Sign Out
+                </button>
+              </form>
             </div>
           </div>
         </div>
