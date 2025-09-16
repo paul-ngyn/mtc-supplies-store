@@ -4,6 +4,7 @@ import Navlinks from './Navlinks';
 import SearchBar from './Searchbar';
 import Link from 'next/link';
 import MobileMenu from './MobileMenu';
+import AccountDropdown from './AccountDropdown';
 
 export default async function Navbar() {
   const supabase = createClient();
@@ -71,12 +72,7 @@ export default async function Navbar() {
           {/* Desktop: Right Navigation */}
           <div className="hidden sm:flex items-center gap-4">
             {user ? (
-              <Link 
-                href="/account" 
-                className="text-gray-700 hover:text-gray-900 whitespace-nowrap transition-colors"
-              >
-                Account
-              </Link>
+              <AccountDropdown user={user} />
             ) : (
               <Link 
                 href="/signin" 
@@ -85,12 +81,7 @@ export default async function Navbar() {
                 Sign In/Register
               </Link>
             )}
-            <Link 
-              href="/orders" 
-              className="text-gray-700 hover:text-gray-900 whitespace-nowrap transition-colors"
-            >
-              Orders & Returns
-            </Link>
+            
             {/* Desktop Cart Button */}
             <Link 
               href="/cart" 

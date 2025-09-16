@@ -1,7 +1,6 @@
 'use client';
 
 import Button from '@/components/ui/Button';
-import Card from '@/components/ui/Card';
 import { updateEmail } from '@/utils/auth-helpers/server';
 import { handleRequest } from '@/utils/auth-helpers/client';
 import { useRouter } from 'next/navigation';
@@ -28,37 +27,44 @@ export default function EmailForm({
   };
 
   return (
-    <Card
-      title="Your Email"
-      description="Please enter the email address you want to use to login."
-      footer={
-        <div className="flex flex-col items-start justify-between sm:flex-row sm:items-center">
-          <p className="pb-4 sm:pb-0">
+    <div className="bg-gray-50 rounded-lg p-6">
+      <div className="mb-6">
+        <h2 className="text-xl font-semibold text-gray-900 mb-2">Your Email</h2>
+        <p className="text-gray-600 text-sm">
+          Please enter the email address you want to use to login.
+        </p>
+      </div>
+
+      <form id="emailForm" onSubmit={(e) => handleSubmit(e)} className="space-y-4">
+        <div>
+          <label htmlFor="newEmail" className="block text-sm font-medium text-gray-700 mb-2">
+            Email Address
+          </label>
+          <input
+            type="email"
+            name="newEmail"
+            id="newEmail"
+            className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+            defaultValue={userEmail ?? ''}
+            placeholder="Enter your email address"
+            maxLength={64}
+          />
+        </div>
+
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-4 border-t border-gray-200">
+          <p className="text-sm text-gray-500 mb-4 sm:mb-0">
             We will email you to verify the change.
           </p>
           <Button
             variant="slim"
             type="submit"
-            form="emailForm"
             loading={isSubmitting}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition-colors"
           >
             Update Email
           </Button>
         </div>
-      }
-    >
-      <div className="mt-8 mb-4 text-xl font-semibold">
-        <form id="emailForm" onSubmit={(e) => handleSubmit(e)}>
-          <input
-            type="text"
-            name="newEmail"
-            className="w-1/2 p-3 rounded-md bg-zinc-800"
-            defaultValue={userEmail ?? ''}
-            placeholder="Your email"
-            maxLength={64}
-          />
-        </form>
-      </div>
-    </Card>
+      </form>
+    </div>
   );
 }
