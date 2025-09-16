@@ -57,7 +57,7 @@ export default function EmptyCart({ user }: EmptyCartProps) {
       {user && (
         <div className="mt-8 pt-6 border-t border-gray-200">
           <p className="text-gray-600 text-sm">
-            Welcome back, {user.email}! Start browsing our products to add items to your cart.
+            Welcome back, {user.user_metadata.full_name}! Start browsing our products to add items to your cart.
           </p>
         </div>
       )}
