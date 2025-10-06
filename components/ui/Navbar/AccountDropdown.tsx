@@ -89,6 +89,17 @@ export default function AccountDropdown({ user }: AccountDropdownProps) {
           {/* Menu Items */}
           <div className="py-1">
             <Link 
+              href="/subscription"
+              className="flex items-center px-4 py-2 text-sm text-blue-600 hover:bg-blue-50 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              <svg className="w-4 h-4 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+              </svg>
+              TKN Premium
+            </Link>
+
+            <Link 
               href="/account"
               className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
               onClick={() => setIsOpen(false)}
