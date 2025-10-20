@@ -3,11 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-interface MobileMenuProps {
-  user: any;
-}
-
-export default function MobileMenu({ user }: MobileMenuProps) {
+export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -49,30 +45,9 @@ export default function MobileMenu({ user }: MobileMenuProps) {
               >
                 Home
               </Link>
-              <Link 
-                href="/subscription" 
-                className="text-gray-700 hover:text-gray-900 py-2 border-b border-gray-200"
-                onClick={() => setIsOpen(false)}
-              >
-                Pricing
-              </Link>
-              {user ? (
-                <Link 
-                  href="/account" 
-                  className="text-gray-700 hover:text-gray-900 py-2 border-b border-gray-200"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Account
-                </Link>
-              ) : (
-                <Link 
-                  href="/signin" 
-                  className="text-gray-700 hover:text-gray-900 py-2 border-b border-gray-200"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Sign In
-                </Link>
-              )}
+              <div className="text-gray-700 py-2 border-b border-gray-200">
+                <span className="font-medium">Contact:</span> (555) 123-4567
+              </div>
             </div>
 
             {/* Product Categories */}
@@ -80,46 +55,53 @@ export default function MobileMenu({ user }: MobileMenuProps) {
               <h3 className="text-gray-600 font-semibold text-sm mb-3">PRODUCT CATEGORIES</h3>
               <div className="flex flex-col gap-3">
                 <Link 
-                  href="/products/electronics" 
+                  href="/products/all" 
                   className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
-                  Electronics
+                  All Products
                 </Link>
                 <Link 
-                  href="/products/office-supplies" 
+                  href="/products/plastic-containers" 
                   className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
-                  Office Supplies
+                  PP Plastic Containers
                 </Link>
                 <Link 
-                  href="/products/tools" 
+                  href="/products/soup-cups" 
                   className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
-                  Tools
+                  Soup & Portion Cups
                 </Link>
                 <Link 
-                  href="/products/furniture" 
+                  href="/products/sushi-bento" 
                   className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
-                  Furniture
+                  Sushi & Bento Boxes
                 </Link>
                 <Link 
-                  href="/products/cleaning" 
+                  href="/products/meat-trays" 
                   className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
-                  Cleaning
+                  Meat Trays
                 </Link>
                 <Link 
-                  href="/products/safety" 
+                  href="/products/clamshells" 
                   className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
-                  Safety
+                  Hinged Clamshells
+                </Link>
+                <Link 
+                  href="/products/paper-bamboo" 
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Paper & Bamboo Products
                 </Link>
               </div>
             </div>

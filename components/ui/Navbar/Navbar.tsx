@@ -1,18 +1,10 @@
-import { createClient } from '@/utils/supabase/server';
 import s from './Navbar.module.css';
 import Navlinks from './Navlinks';
 import SearchBar from './Searchbar';
 import Link from 'next/link';
 import MobileMenu from './MobileMenu';
-import AccountDropdown from './AccountDropdown';
 
-export default async function Navbar() {
-  const supabase = createClient();
-
-  const {
-    data: { user }
-  } = await supabase.auth.getUser();
-
+export default function Navbar() {
   return (
     <nav className={s.root}>
       <a href="#skip" className="sr-only focus:not-sr-only">
@@ -23,12 +15,7 @@ export default async function Navbar() {
       <div className="hidden sm:block bg-[#1c51a3] text-white py-2">
         <div className="max-w-6xl px-6 mx-auto text-center">
           <p className="text-sm font-medium">
-            <Link 
-              href="/subscription" 
-              className="hover:underline transition-all duration-200"
-            >
-              Join TKN Premium for FREE Shipping and Exclusive Discounts On All orders!
-            </Link>
+            New Kraft Paper Products Ready For Order or Customization!
           </p>
         </div>
       </div>
@@ -40,7 +27,7 @@ export default async function Navbar() {
           <div className="flex items-center">
             {/* Mobile Menu */}
             <div className="sm:hidden">
-              <MobileMenu user={user} />
+              <MobileMenu />
             </div>
             
             {/* Desktop Logo */}
@@ -69,62 +56,15 @@ export default async function Navbar() {
             <SearchBar />
           </div>
 
-          {/* Desktop: Right Navigation */}
-          <div className="hidden sm:flex items-center gap-4">
-            {user ? (
-              <AccountDropdown user={user} />
-            ) : (
-              <Link 
-                href="/signin" 
-                className="text-gray-700 hover:text-gray-900 whitespace-nowrap transition-colors"
-              >
-                Sign In/Register
-              </Link>
-            )}
-            
-            {/* Desktop Cart Button */}
-            <Link 
-              href="/cart" 
-              className="flex items-center justify-center p-2 text-gray-700 hover:text-gray-900 transition-colors gap-2"
-            >
-              <svg 
-                className="w-6 h-6" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5L19 18" 
-                />
-              </svg>
-              Cart
-            </Link>
+          {/* Desktop: Contact Info */}
+          <div className="hidden sm:flex items-center">
+            <div className="text-gray-700 text-sm">
+              <span className="font-medium">Contact:</span> (555) 123-4567
+            </div>
           </div>
 
-          {/* Mobile: Cart Button (Right) */}
-          <div className="sm:hidden flex items-center">
-            <Link 
-              href="/cart" 
-              className="flex items-center justify-center p-2 text-gray-700 hover:text-gray-900 transition-colors"
-            >
-              <svg 
-                className="w-6 h-6" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5L19 18" 
-                />
-              </svg>
-            </Link>
-          </div>
+          {/* Mobile: Empty space for balance */}
+          <div className="sm:hidden w-6"></div>
         </div>
       </div>
 

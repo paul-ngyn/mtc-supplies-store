@@ -27,7 +27,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
 
   return (
     <html lang="en">
-      <body className={isAuthPage ? "bg-gray-50" : "bg-black"}>
+      <body className={isAuthPage ? "bg-gray-50" : "bg-white"}>
         {/* Always show navbar - don't disable it on auth pages */}
         <Navbar />
         <main
