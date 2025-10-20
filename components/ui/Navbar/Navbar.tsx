@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className="hidden sm:block bg-[#1c51a3] text-white py-2">
         <div className="max-w-6xl px-6 mx-auto text-center">
           <p className="text-sm font-medium">
-            New Kraft Paper Products Ready For Order or Customization!
+            New Kraft Paper Products Ready For Order or Customization
           </p>
         </div>
       </div>
