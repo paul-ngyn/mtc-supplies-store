@@ -143,7 +143,7 @@ export default async function HomePage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Why Choose TKN Supplies?
+            Why Choose Maple Trade Corp?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6">

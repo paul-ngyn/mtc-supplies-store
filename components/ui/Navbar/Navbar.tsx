@@ -2,6 +2,7 @@ import s from './Navbar.module.css';
 import Navlinks from './Navlinks';
 import SearchBar from './Searchbar';
 import Link from 'next/link';
+import Image from 'next/image';
 import MobileMenu from './MobileMenu';
 
 export default function Navbar() {
@@ -12,7 +13,7 @@ export default function Navbar() {
       </a>
       
       {/* Desktop Only: Miniature Header */}
-      <div className="hidden sm:block bg-[#1c51a3] text-white py-2">
+      <div className="hidden sm:block bg-blue-200 text-blue-800 py-2">
         <div className="max-w-6xl px-6 mx-auto text-center">
           <p className="text-sm font-medium">
             New Kraft Paper Products Ready For Order or Customization
@@ -21,8 +22,8 @@ export default function Navbar() {
       </div>
       
       {/* Top Row */}
-      <div className="max-w-7xl px-6 mx-auto">
-        <div className="flex items-center justify-between py-6 gap-3">
+      <div className="max-w-7xl px-20 mx-auto">
+        <div className="flex items-center justify-between py-4 gap-3">
           {/* Mobile: Menu Button (Left) / Desktop: Logo (Left) */}
           <div className="flex items-center">
             {/* Mobile Menu */}
@@ -34,9 +35,16 @@ export default function Navbar() {
             <div className="hidden sm:block">
               <Link 
                 href="/" 
-                className="flex items-center cursor-pointer text-gray-800 hover:text-gray-900 transition-colors"
+                className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
               >
-                <span className="font-bold text-xl">TKN Supplies</span>
+                <Image 
+                  src="/mtc_logo-removebg.png " 
+                  alt="MTC Logo" 
+                  width={280} 
+                  height={100}
+                  className="h-20 w-auto"
+                  priority
+                />
               </Link>
             </div>
             
@@ -44,9 +52,16 @@ export default function Navbar() {
             <div className="sm:hidden absolute left-1/2 transform -translate-x-1/2">
               <Link 
                 href="/" 
-                className="flex items-center cursor-pointer text-gray-800 hover:text-gray-900 transition-colors"
+                className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
               >
-                <span className="font-bold text-xl">TKN Supplies</span>
+                <Image 
+                  src="/mtc_logo.jpeg" 
+                  alt="MTC Logo" 
+                  width={200} 
+                  height={100}
+                  className="h-16 w-auto"
+                  priority
+                />
               </Link>
             </div>
           </div>

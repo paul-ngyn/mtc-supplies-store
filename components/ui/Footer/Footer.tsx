@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import GitHub from '@/components/icons/GitHub';
 import { useState } from 'react';
 
@@ -25,23 +26,30 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-blue-900">
+    <footer className="w-full bg-[#1c51a3]">
       <div className="mx-auto max-w-[1920px] px-6">
-        <div className="grid grid-cols-1 gap-8 py-12 text-white transition-colors duration-150 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-8 py-8 text-white transition-colors duration-150 lg:grid-cols-12">
           
-          {/* TKN Supplies Logo */}
+          {/* Empty space to shift right */}
+          <div className="hidden lg:block lg:col-span-1"></div>
+          
+          {/* MTC Logo */}
           <div className="col-span-1 lg:col-span-2">
             <Link
               href="/"
-              className="flex items-center flex-initial font-bold md:mr-24"
+              className="flex items-center flex-initial hover:opacity-80 transition-opacity"
             >
-              <span className="mr-2 border rounded-full border-zinc-700">
-              </span>
-              <span>TKN Supplies</span>
+              <Image 
+                src="/mtc_logo.jpeg" 
+                alt="MTC Logo" 
+                width={320} 
+                height={107}
+                className="h-20 w-auto"
+              />
             </Link>
           </div>
 
-          {/* Email Signup Section - Moved More Left */}
+          {/* Email Signup Section */}
           <div className="col-span-1 lg:col-span-2">
             <div className="space-y-4">
               <h3 className="font-bold text-white">Get Email Offers</h3>
@@ -70,6 +78,9 @@ export default function Footer() {
               </form>
             </div>
           </div>
+
+          {/* Extra gap before Get Help */}
+          <div className="hidden lg:block lg:col-span-1"></div>
 
           {/* Get Help Section */}
           <div className="col-span-1 lg:col-span-2">
@@ -149,33 +160,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Membership Section */}
-          <div className="col-span-1 lg:col-span-2">
-            <ul className="flex flex-col flex-initial md:flex-1">
-              <li className="py-3 md:py-0 md:pb-4">
-                <p className="font-bold text-white">
-                  MEMBERSHIP
-                </p>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link
-                  href="/subscription"
-                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
-                >
-                  TKN Premium
-                </Link>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link
-                  href="/account"
-                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
-                >
-                  Manage Account
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Legal Section - Expanded to Fill Space */}
           <div className="col-span-1 lg:col-span-2">
             <ul className="flex flex-col flex-initial md:flex-1">
@@ -206,10 +190,10 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="flex flex-col items-center justify-between py-12 space-y-4 md:flex-row">
+        <div className="flex flex-col items-center justify-center py-6 space-y-4">
           <div>
             <span className="text-zinc-300">
-              &copy; {new Date().getFullYear()} TKN Supplies, Inc. All rights reserved.
+              &copy; {new Date().getFullYear()} Maple Trade Corp, Inc. All rights reserved.
             </span>
           </div>
         </div>

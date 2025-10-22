@@ -7,7 +7,7 @@ import { getURL } from '@/utils/helpers';
 import { headers } from 'next/headers';
 import 'styles/main.css';
 
-const title = 'TKN Supplies Store';
+const title = 'Maple Trade Corp Store';
 const description = 'Your one-stop shop for all supplies.';
 
 export const metadata: Metadata = {

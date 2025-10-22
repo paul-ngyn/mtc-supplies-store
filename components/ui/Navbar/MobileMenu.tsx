@@ -50,58 +50,51 @@ export default function MobileMenu() {
               </div>
             </div>
 
-            {/* Product Categories */}
+            {/* Brands */}
             <div className="border-t border-gray-200 pt-4">
-              <h3 className="text-gray-600 font-semibold text-sm mb-3">PRODUCT CATEGORIES</h3>
+              <h3 className="text-gray-600 font-semibold text-sm mb-3">BRANDS</h3>
               <div className="flex flex-col gap-3">
                 <Link 
-                  href="/products/all" 
+                  href="/category/tkn" 
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  TKN
+                </Link>
+                <Link 
+                  href="/category/hd" 
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  HD
+                </Link>
+                <Link 
+                  href="/category/td" 
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  TD
+                </Link>
+                <Link 
+                  href="/category/imperial" 
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  IMPERIAL
+                </Link>
+                <Link 
+                  href="/category/mb" 
+                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
+                  onClick={() => setIsOpen(false)}
+                >
+                  MB
+                </Link>
+                <Link 
+                  href="/products" 
                   className="text-gray-600 hover:text-gray-900 py-2 text-sm"
                   onClick={() => setIsOpen(false)}
                 >
                   All Products
-                </Link>
-                <Link 
-                  href="/products/plastic-containers" 
-                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
-                  onClick={() => setIsOpen(false)}
-                >
-                  PP Plastic Containers
-                </Link>
-                <Link 
-                  href="/products/soup-cups" 
-                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Soup & Portion Cups
-                </Link>
-                <Link 
-                  href="/products/sushi-bento" 
-                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Sushi & Bento Boxes
-                </Link>
-                <Link 
-                  href="/products/meat-trays" 
-                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Meat Trays
-                </Link>
-                <Link 
-                  href="/products/clamshells" 
-                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Hinged Clamshells
-                </Link>
-                <Link 
-                  href="/products/paper-bamboo" 
-                  className="text-gray-600 hover:text-gray-900 py-2 text-sm"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Paper & Bamboo Products
                 </Link>
               </div>
             </div>

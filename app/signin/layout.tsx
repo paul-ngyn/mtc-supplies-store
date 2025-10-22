@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import { PropsWithChildren } from 'react';
 import { getURL } from '@/utils/helpers';
 
-const title = 'Sign In - TKN Supplies Store';
-const description = 'Sign in to your TKN Supplies Store account.';
+const title = 'Sign In - Maple Trade Corp Store';
+const description = 'Sign in to your Maple Trade Corp Store account.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getURL()),
