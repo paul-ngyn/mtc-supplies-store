@@ -1,19 +1,16 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
-// Sample brand logos - replace with real brand logos later
+// Brand logos with category links
 const brandLogos = [
-  { id: 1, name: 'McDonald\'s', logo: '/demo.png' },
-  { id: 2, name: 'KFC', logo: '/demo.png' },
-  { id: 3, name: 'Subway', logo: '/demo.png' },
-  { id: 4, name: 'Starbucks', logo: '/demo.png' },
-  { id: 5, name: 'Burger King', logo: '/demo.png' },
-  { id: 6, name: 'Pizza Hut', logo: '/demo.png' },
-  { id: 7, name: 'Domino\'s', logo: '/demo.png' },
-  { id: 8, name: 'Taco Bell', logo: '/demo.png' },
-  { id: 9, name: 'Chipotle', logo: '/demo.png' },
-  { id: 10, name: 'Wendy\'s', logo: '/demo.png' }
+  { id: 1, name: 'TKN', logo: '/TKN.png', slug: 'tkn', scale: 1.15 },
+  { id: 2, name: 'HD', logo: '/HD_logo-removebg.png', slug: 'hd', scale: 1 },
+  { id: 3, name: 'TD', logo: '/TD no background.png', slug: 'td', scale: 1 },
+  { id: 4, name: 'Imperial', logo: '/imperial-removebg-.png', slug: 'imperial', scale: 1 },
+  { id: 5, name: 'MB', logo: '/MB_W_background-remove.png', slug: 'mb', scale: 1.15 }
 ];
 
 export default function BrandCarousel() {
@@ -39,13 +36,18 @@ export default function BrandCarousel() {
                 className="flex-shrink-0 flex items-center justify-center px-8"
                 style={{ width: `${100 / brandLogos.length / 2}%` }}
               >
-                <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 w-32 h-20 flex items-center justify-center border border-gray-100">
-                  <img
-                    src={brand.logo}
-                    alt={`${brand.name} logo`}
-                    className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                </div>
+                <Link href={`/category/${brand.slug}`}>
+                  <div className="bg-white rounded-lg p-6 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-40 h-28 flex items-center justify-center border border-gray-100 cursor-pointer group overflow-hidden">
+                    <Image
+                      src={brand.logo}
+                      alt={`${brand.name} logo`}
+                      width={160}
+                      height={112}
+                      className="object-contain transition-all duration-300 max-h-full w-auto"
+                      style={{ transform: `scale(${brand.scale})` }}
+                    />
+                  </div>
+                </Link>
               </div>
             ))}
             
@@ -56,13 +58,18 @@ export default function BrandCarousel() {
                 className="flex-shrink-0 flex items-center justify-center px-8"
                 style={{ width: `${100 / brandLogos.length / 2}%` }}
               >
-                <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 w-32 h-20 flex items-center justify-center border border-gray-100">
-                  <img
-                    src={brand.logo}
-                    alt={`${brand.name} logo`}
-                    className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                </div>
+                <Link href={`/category/${brand.slug}`}>
+                  <div className="bg-white rounded-lg p-6 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-40 h-28 flex items-center justify-center border border-gray-100 cursor-pointer group overflow-hidden">
+                    <Image
+                      src={brand.logo}
+                      alt={`${brand.name} logo`}
+                      width={160}
+                      height={112}
+                      className="object-contain transition-all duration-300 max-h-full w-auto"
+                      style={{ transform: `scale(${brand.scale})` }}
+                    />
+                  </div>
+                </Link>
               </div>
             ))}
           </div>

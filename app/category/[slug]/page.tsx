@@ -11,31 +11,61 @@ const categoryData: Record<CategorySlug, {
   name: string;
   description: string;
   logo?: string;
+  logoSize?: {
+    width: number;
+    height: number;
+    className: string;
+  };
 }> = {
   tkn: {
     name: 'TKN',
     description: 'Premium TKN brand products',
-    logo: '/mtc_logo-removebg.png'
+    logo: '/TKN.png',
+    logoSize: {
+      width: 180,
+      height: 100,
+      className: 'h-28 w-auto'
+    }
   },
   hd: {
     name: 'HD',
     description: 'High-quality HD brand products',
-    logo: '/mtc_logo-removebg.png'
+    logo: '/HD_logo-removebg.png',
+    logoSize: {
+      width: 200,
+      height: 100,
+      className: 'h-20 w-auto'
+    }
   },
   td: {
     name: 'TD',
     description: 'Reliable TD brand products',
-    logo: '/mtc_logo-removebg.png'
+    logo: '/TD no background.png',
+    logoSize: {
+      width: 200,
+      height: 100,
+      className: 'h-20 w-auto'
+    }
   },
   imperial: {
     name: 'Imperial',
     description: 'Premium Imperial brand products',
-    logo: '/mtc_logo-removebg.png'
+    logo: '/imperial-removebg-.png',
+    logoSize: {
+      width: 200,
+      height: 100,
+      className: 'h-24 w-auto'
+    }
   },
   mb: {
     name: 'MB',
     description: 'Quality MB brand products',
-    logo: '/mtc_logo-removebg.png'
+    logo: '/MB_W_background-remove.png',
+    logoSize: {
+      width: 200,
+      height: 100,
+      className: 'h-24 w-auto'
+    }
   }
 };
 
@@ -114,9 +144,9 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
               <Image
                 src={category.logo}
                 alt={`${category.name} Logo`}
-                width={200}
-                height={100}
-                className="h-20 w-auto"
+                width={category.logoSize?.width || 200}
+                height={category.logoSize?.height || 100}
+                className={category.logoSize?.className || 'h-20 w-auto'}
                 priority
               />
             )}

@@ -2,51 +2,58 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
-interface Product {
+interface Brand {
   id: number;
   name: string;
-  image: string;
-  category: string;
+  logo: string;
+  slug: string;
   description: string;
+  scale?: number;
 }
 
-// Sample products for the slider - replace with real data later
-const sampleProducts: Product[] = [
+// Brand logos for the slider
+const brands: Brand[] = [
   {
     id: 1,
-    name: "Premium PP Containers",
-    image: "/demo.png", // Using existing demo image for now
-    category: "Plastic Containers",
-    description: "High-quality polypropylene containers perfect for food storage and takeout."
+    name: "TKN",
+    logo: "/TKN.png",
+    slug: "tkn",
+    description: "Premium TKN brand products for all your needs",
+    scale: 1.15
   },
   {
     id: 2,
-    name: "Soup & Portion Cups",
-    image: "/demo.png",
-    category: "Cups",
-    description: "Durable soup cups ideal for hot liquids and portion control."
+    name: "HD",
+    logo: "/HD_logo-removebg.png",
+    slug: "hd",
+    description: "High-quality HD brand products",
+    scale: 1
   },
   {
     id: 3,
-    name: "Sushi & Bento Boxes",
-    image: "/demo.png",
-    category: "Specialty",
-    description: "Elegant containers designed specifically for sushi and bento presentations."
+    name: "TD",
+    logo: "/TD no background.png",
+    slug: "td",
+    description: "Reliable TD brand products",
+    scale: 1
   },
   {
     id: 4,
-    name: "Meat Trays",
-    image: "/demo.png",
-    category: "Trays",
-    description: "Professional-grade trays for meat packaging and display."
+    name: "Imperial",
+    logo: "/imperial-removebg-.png",
+    slug: "imperial",
+    description: "Premium Imperial brand products",
+    scale: 1
   },
   {
     id: 5,
-    name: "Hinged Clamshells",
-    image: "/demo.png",
-    category: "Containers",
-    description: "Versatile hinged containers for various food packaging needs."
+    name: "MB",
+    logo: "/MB_W_background-remove.png",
+    slug: "mb",
+    description: "Quality MB brand products",
+    scale: 1.15
   }
 ];
 
@@ -59,8 +66,8 @@ export default function ProductSlider() {
     if (!isAutoPlaying) return;
     
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % sampleProducts.length);
-    }, 4000);
+      setCurrentSlide((prev) => (prev + 1) % brands.length);
+    }, 2800); // Reduced from 4000ms to 2800ms (30% faster)
 
     return () => clearInterval(timer);
   }, [isAutoPlaying]);
@@ -73,13 +80,13 @@ export default function ProductSlider() {
   };
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % sampleProducts.length);
+    setCurrentSlide((prev) => (prev + 1) % brands.length);
     setIsAutoPlaying(false);
     setTimeout(() => setIsAutoPlaying(true), 10000);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + sampleProducts.length) % sampleProducts.length);
+    setCurrentSlide((prev) => (prev - 1 + brands.length) % brands.length);
     setIsAutoPlaying(false);
     setTimeout(() => setIsAutoPlaying(true), 10000);
   };
@@ -93,41 +100,38 @@ export default function ProductSlider() {
           className="flex transition-transform duration-500 ease-in-out h-full"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
-          {sampleProducts.map((product) => (
-            <div key={product.id} className="w-full flex-shrink-0 relative">
-              <div className="flex flex-col md:flex-row h-full items-center justify-between px-4 md:px-12 py-6 md:py-0">
-                {/* Left side - Product info */}
-                <div className="flex-1 md:pr-8 text-center md:text-left">
-                  <div className="inline-block px-3 py-1 bg-blue-500 text-white text-xs md:text-sm rounded-full mb-2 md:mb-4">
-                    {product.category}
-                  </div>
-                  <h2 className="text-xl md:text-4xl font-bold text-gray-900 mb-2 md:mb-4">
-                    {product.name}
-                  </h2>
-                  <p className="text-sm md:text-lg text-gray-600 mb-4 md:mb-6 leading-relaxed hidden md:block">
-                    {product.description}
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-2 md:gap-4 justify-center md:justify-start">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg text-sm md:text-base font-semibold transition-colors">
-                      View Products
-                    </button>
-                    <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-4 md:px-6 py-2 md:py-3 rounded-lg text-sm md:text-base font-semibold transition-colors">
-                      Learn More
-                    </button>
-                  </div>
+          {brands.map((brand) => (
+            <div key={brand.id} className="w-full flex-shrink-0 relative">
+              <div className="flex flex-col h-full items-center justify-center px-4 md:px-12 py-6">
+                {/* Brand Logo */}
+                <div className="relative w-48 h-48 md:w-64 md:h-64 mb-4 md:mb-6 flex items-center justify-center overflow-hidden">
+                  <Image
+                    src={brand.logo}
+                    alt={`${brand.name} Logo`}
+                    width={256}
+                    height={256}
+                    className="object-contain drop-shadow-lg max-h-full w-auto"
+                    style={{ transform: `scale(${brand.scale || 1})` }}
+                    priority={currentSlide === brand.id - 1}
+                  />
                 </div>
                 
-                {/* Right side - Product image */}
-                <div className="flex-1 flex justify-center mt-4 md:mt-0 order-first md:order-last">
-                  <div className="relative w-32 h-32 md:w-80 md:h-80">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      fill
-                      className="object-cover rounded-xl shadow-lg"
-                    />
-                  </div>
-                </div>
+                {/* Brand Name */}
+                <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-2 md:mb-4">
+                  {brand.name}
+                </h2>
+                
+                {/* Description */}
+                <p className="text-sm md:text-lg text-gray-600 mb-4 md:mb-6 text-center max-w-2xl">
+                  {brand.description}
+                </p>
+                
+                {/* View Products Button */}
+                <Link href={`/category/${brand.slug}`}>
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
+                    View {brand.name} Products
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -136,7 +140,7 @@ export default function ProductSlider() {
 
       {/* Slide indicators */}
       <div className="flex justify-center gap-2 mt-6">
-        {sampleProducts.map((_, index) => (
+        {brands.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
@@ -145,6 +149,7 @@ export default function ProductSlider() {
                 ? 'bg-blue-600 w-8' 
                 : 'bg-gray-300 hover:bg-gray-400'
             }`}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
