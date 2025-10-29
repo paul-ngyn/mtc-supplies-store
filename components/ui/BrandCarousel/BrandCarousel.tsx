@@ -33,17 +33,17 @@ export default function BrandCarousel() {
             {brandLogos.map((brand) => (
               <div
                 key={`first-${brand.id}`}
-                className="flex-shrink-0 flex items-center justify-center px-8"
+                className="flex-shrink-0 flex items-center justify-center px-2 md:px-8"
                 style={{ width: `${100 / brandLogos.length / 2}%` }}
               >
                 <Link href={`/category/${brand.slug}`}>
-                  <div className="bg-white rounded-lg p-6 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-40 h-28 flex items-center justify-center border border-gray-100 cursor-pointer group overflow-hidden">
+                  <div className="bg-white rounded-lg p-2 md:p-4 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-36 h-24 md:w-40 md:h-28 flex items-center justify-center border border-gray-100 cursor-pointer group overflow-hidden">
                     <Image
                       src={brand.logo}
                       alt={`${brand.name} logo`}
-                      width={160}
-                      height={112}
-                      className="object-contain transition-all duration-300 max-h-full w-auto"
+                      width={200}
+                      height={140}
+                      className="object-contain transition-all duration-300 max-h-full max-w-full"
                       style={{ transform: `scale(${brand.scale})` }}
                     />
                   </div>
@@ -55,17 +55,17 @@ export default function BrandCarousel() {
             {brandLogos.map((brand) => (
               <div
                 key={`second-${brand.id}`}
-                className="flex-shrink-0 flex items-center justify-center px-8"
+                className="flex-shrink-0 flex items-center justify-center px-2 md:px-8"
                 style={{ width: `${100 / brandLogos.length / 2}%` }}
               >
                 <Link href={`/category/${brand.slug}`}>
-                  <div className="bg-white rounded-lg p-6 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-40 h-28 flex items-center justify-center border border-gray-100 cursor-pointer group overflow-hidden">
+                  <div className="bg-white rounded-lg p-2 md:p-4 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-36 h-24 md:w-40 md:h-28 flex items-center justify-center border border-gray-100 cursor-pointer group overflow-hidden">
                     <Image
                       src={brand.logo}
                       alt={`${brand.name} logo`}
-                      width={160}
-                      height={112}
-                      className="object-contain transition-all duration-300 max-h-full w-auto"
+                      width={200}
+                      height={140}
+                      className="object-contain transition-all duration-300 max-h-full max-w-full"
                       style={{ transform: `scale(${brand.scale})` }}
                     />
                   </div>

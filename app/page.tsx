@@ -2,6 +2,48 @@ import { createClient } from '@/utils/supabase/server';
 import { getProducts, getUser } from '@/utils/supabase/queries';
 import ProductSlider from '@/components/ui/ProductSlider';
 import BrandCarousel from '@/components/ui/BrandCarousel';
+import Link from 'next/link';
+import Image from 'next/image';
+
+// Featured product categories for the homepage
+const featuredCategories = [
+  {
+    id: 1,
+    name: 'Paper Bags',
+    slug: 'paper-bags',
+    brand: 'TKN',
+    brandSlug: 'tkn',
+    description: 'Eco-friendly paper bags for all your packaging needs',
+    image: '/demo.png'
+  },
+  {
+    id: 2,
+    name: 'REROBOX',
+    slug: 'rerobox',
+    brand: 'HD',
+    brandSlug: 'hd',
+    description: 'Premium REROBOX food containers for quality storage',
+    image: '/demo.png'
+  },
+  {
+    id: 3,
+    name: 'Bio Boxes',
+    slug: 'bio-boxes',
+    brand: 'TKN',
+    brandSlug: 'tkn',
+    description: 'Biodegradable food boxes for eco-friendly packaging',
+    image: '/demo.png'
+  },
+  {
+    id: 4,
+    name: 'Hinged Clamshells',
+    slug: 'hinged-clamshells',
+    brand: 'MB',
+    brandSlug: 'mb',
+    description: 'Versatile hinged clamshell containers for takeout',
+    image: '/demo.png'
+  }
+];
 
 export default async function HomePage() {
   const supabase = createClient();
@@ -21,126 +63,106 @@ export default async function HomePage() {
       </section>
 
       {/* Product Categories Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Our Product Categories
+            Shop by Category
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {/* PP Containers */}
-            <div className="group cursor-pointer">
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-                <div className="aspect-square bg-blue-50 flex items-center justify-center p-6">
-                  <img
-                    src="/demo.png"
-                    alt="Small PP Container"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {featuredCategories.map((category) => (
+              <Link
+                key={category.id}
+                href={`/category/${category.brandSlug}/${category.slug}`}
+                className="group cursor-pointer"
+              >
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-blue-200 h-full">
+                  <div className="relative h-64 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center p-8">
+                    <Image
+                      src={category.image}
+                      alt={category.name}
+                      width={300}
+                      height={300}
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <span className="absolute top-4 right-4 text-sm font-bold text-white bg-blue-600 px-4 py-2 rounded-lg shadow-lg">
+                      {category.brand}
+                    </span>
+                  </div>
+                  <div className="p-6 text-center bg-white">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                      {category.name}
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {category.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4 text-center">
-                  <h3 className="font-semibold text-gray-900 mb-1">Small PP Container</h3>
-                  <p className="text-sm text-gray-600">Durable containers for food storage</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Large PP Containers */}
-            <div className="group cursor-pointer">
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-                <div className="aspect-square bg-blue-50 flex items-center justify-center p-6">
-                  <img
-                    src="/demo.png"
-                    alt="Large PP Container"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="font-semibold text-gray-900 mb-1">Large PP Container</h3>
-                  <p className="text-sm text-gray-600">Heavy-duty containers for bulk storage</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Soup Cups */}
-            <div className="group cursor-pointer">
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-                <div className="aspect-square bg-blue-50 flex items-center justify-center p-6">
-                  <img
-                    src="/demo.png"
-                    alt="Soup Cup"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="font-semibold text-gray-900 mb-1">Soup Cup</h3>
-                  <p className="text-sm text-gray-600">Perfect for hot liquids and soups</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Sushi Boxes */}
-            <div className="group cursor-pointer">
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-                <div className="aspect-square bg-blue-50 flex items-center justify-center p-6">
-                  <img
-                    src="/demo.png"
-                    alt="Sushi Box"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="font-semibold text-gray-900 mb-1">Sushi Box</h3>
-                  <p className="text-sm text-gray-600">Elegant packaging for sushi</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Meat Trays */}
-            <div className="group cursor-pointer">
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-                <div className="aspect-square bg-blue-50 flex items-center justify-center p-6">
-                  <img
-                    src="/demo.png"
-                    alt="Meat Tray"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="font-semibold text-gray-900 mb-1">Meat Tray</h3>
-                  <p className="text-sm text-gray-600">Professional meat packaging</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Clamshells */}
-            <div className="group cursor-pointer">
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-                <div className="aspect-square bg-blue-50 flex items-center justify-center p-6">
-                  <img
-                    src="/demo.png"
-                    alt="Hinged Clamshell"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="font-semibold text-gray-900 mb-1">Hinged Clamshell</h3>
-                  <p className="text-sm text-gray-600">Versatile takeout containers</p>
-                </div>
-              </div>
-            </div>
+              </Link>
+            ))}
           </div>
 
           {/* View All Products Button */}
           <div className="text-center mt-12">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-              View All Products
-            </button>
+            <Link href="/products">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg text-md font-semibold transition-colors shadow-md hover:shadow-lg">
+                View All Product Categories
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Imperial Products Section */}
+      <section className="py-8 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="flex justify-center mb-4">
+              <Image
+                src="/imperial-removebg-.png"
+                alt="Imperial Logo"
+                width={350}
+                height={200}
+                className="h-40 w-auto"
+              />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Imperial Premium Products
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Discover our exclusive Imperial line of high-quality food packaging solutions
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+            <Link href="#" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
+              <h3 className="font-semibold text-gray-900">Sushi Trays</h3>
+            </Link>
+            <Link href="#" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
+              <h3 className="font-semibold text-gray-900">Bento Boxes</h3>
+            </Link>
+            <Link href="#" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
+              <h3 className="font-semibold text-gray-900">Poke Bowls</h3>
+            </Link>
+            <Link href="#" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
+              <h3 className="font-semibold text-gray-900">Rice Containers</h3>
+            </Link>
+            <Link href="#" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
+              <h3 className="font-semibold text-gray-900">Meal Trays</h3>
+            </Link>
+          </div>
+
+          <div className="text-center">
+            <Link href="/category/imperial">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-4 rounded-lg text-md font-semibold transition-colors shadow-md hover:shadow-lg">
+                Check Out All Our Imperial Products
+              </button>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Why Choose Maple Trade Corp?

@@ -22,12 +22,12 @@ export default function Navbar() {
       </div>
       
       {/* Top Row */}
-      <div className="max-w-7xl px-20 mx-auto">
-        <div className="flex items-center justify-between py-4 gap-3">
+      <div className="max-w-7xl px-4 sm:px-20 mx-auto">
+        <div className="flex items-start sm:items-center justify-between py-4 gap-3">
           {/* Mobile: Menu Button (Left) / Desktop: Logo (Left) */}
-          <div className="flex items-center">
+          <div className="flex items-start sm:items-center">
             {/* Mobile Menu */}
-            <div className="sm:hidden">
+            <div className="sm:hidden pt-1">
               <MobileMenu />
             </div>
             
@@ -42,7 +42,7 @@ export default function Navbar() {
                   alt="MTC Logo" 
                   width={280} 
                   height={100}
-                  className="h-20 w-auto"
+                  className="h-20 w-auto rounded-lg"
                   priority
                 />
               </Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
                   alt="MTC Logo" 
                   width={200} 
                   height={100}
-                  className="h-16 w-auto"
+                  className="h-16 w-auto rounded-lg"
                   priority
                 />
               </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
           <div className="sm:hidden w-6"></div>
         </div>
       </div>
-
+      
       {/* Mobile: Search Bar Row */}
       <div className="sm:hidden max-w-6xl px-6 mx-auto pb-3">
         <div className="flex justify-center">
