@@ -116,7 +116,7 @@ export default function FiveCompartmentBentoPage() {
                     <h3 className="text-md font-bold text-gray-900 mb-0.5">
                       {option.size}
                     </h3>
-                    <p className="text-xs font-semibold text-blue-600">
+                    <p className="text-sm font-semibold text-blue-600">
                       {option.itemNo}
                     </p>
                   </div>
