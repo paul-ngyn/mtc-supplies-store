@@ -33,11 +33,11 @@ export default function BrandCarousel() {
             {brandLogos.map((brand) => (
               <div
                 key={`first-${brand.id}`}
-                className="flex-shrink-0 flex items-center justify-center px-2 md:px-8"
+                className="flex-shrink-0 flex items-center justify-center px-6 md:px-8"
                 style={{ width: `${100 / brandLogos.length / 2}%` }}
               >
                 <Link href={`/category/${brand.slug}`}>
-                  <div className="bg-white rounded-lg p-2 md:p-4 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-36 h-24 md:w-40 md:h-28 flex items-center justify-center border border-gray-100 cursor-pointer group overflow-hidden">
+                  <div className="bg-white rounded-lg p-4 md:p-4 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-28 h-20 md:w-40 md:h-28 flex items-center justify-center cursor-pointer group overflow-hidden">
                     <Image
                       src={brand.logo}
                       alt={`${brand.name} logo`}
@@ -55,11 +55,11 @@ export default function BrandCarousel() {
             {brandLogos.map((brand) => (
               <div
                 key={`second-${brand.id}`}
-                className="flex-shrink-0 flex items-center justify-center px-2 md:px-8"
+                className="flex-shrink-0 flex items-center justify-center px-6 md:px-8"
                 style={{ width: `${100 / brandLogos.length / 2}%` }}
               >
                 <Link href={`/category/${brand.slug}`}>
-                  <div className="bg-white rounded-lg p-2 md:p-4 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-36 h-24 md:w-40 md:h-28 flex items-center justify-center border border-gray-100 cursor-pointer group overflow-hidden">
+                  <div className="bg-white rounded-lg p-4 md:p-4 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-28 h-20 md:w-40 md:h-28 flex items-center justify-center cursor-pointer group overflow-hidden">
                     <Image
                       src={brand.logo}
                       alt={`${brand.name} logo`}

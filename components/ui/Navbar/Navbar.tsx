@@ -15,9 +15,11 @@ export default function Navbar() {
       {/* Desktop Only: Miniature Header */}
       <div className="hidden sm:block bg-blue-200 text-blue-800 py-2">
         <div className="max-w-6xl px-6 mx-auto text-center">
-          <p className="text-sm font-medium">
-            New Kraft Paper Products Ready For Order or Customization
-          </p>
+          <Link href="/category/tkn" className="hover:underline">
+            <p className="text-sm font-medium">
+              New Kraft Paper Products Ready For Order or Customization!
+            </p>
+          </Link>
         </div>
       </div>
       
