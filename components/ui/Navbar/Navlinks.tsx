@@ -113,69 +113,21 @@ export default function Navlinks() {
                 <div className="py-2">
                   <Link 
                     href="/category/hd/rerobox"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 border-b hover:bg-gray-50 transition-colors"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     REROBOX
                   </Link>
                   <Link 
-                    href="/category/hd/rerobox/rectangular"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Rectangular
-                  </Link>
-                  <Link 
-                    href="/category/hd/rerobox/round"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Round
-                  </Link>
-                  <Link 
-                    href="/category/hd/rerobox/compartment"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Compartment
-                  </Link>
-                  <Link 
                     href="/category/hd/clipin"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 border-b hover:bg-gray-50 transition-colors mt-2"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     Clipin
                   </Link>
                   <Link 
-                    href="/category/hd/clipin/rectangular"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Rectangular
-                  </Link>
-                  <Link 
-                    href="/category/hd/clipin/round"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Round
-                  </Link>
-                  <Link 
-                    href="/category/hd/clipin/compartment"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Compartment
-                  </Link>
-                  <Link 
                     href="/category/hd/v-series"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 border-b hover:bg-gray-50 transition-colors mt-2"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     V Series
-                  </Link>
-                  <Link 
-                    href="/category/hd/v-series/rectangular"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Rectangular
-                  </Link>
-                  <Link 
-                    href="/category/hd/v-series/round"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Round
                   </Link>
                   <Link 
                     href="/category/hd/meat-trays"
@@ -218,27 +170,9 @@ export default function Navlinks() {
                 <div className="py-2">
                   <Link 
                     href="/category/td/plastic-containers"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 border-b hover:bg-gray-50 transition-colors"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     Plastic Containers
-                  </Link>
-                  <Link 
-                    href="/category/td/plastic-containers/round"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Round
-                  </Link>
-                  <Link 
-                    href="/category/td/plastic-containers/rectangular"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Rectangular
-                  </Link>
-                  <Link 
-                    href="/category/td/plastic-containers/compartments"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Compartments
                   </Link>
                   <Link 
                     href="/category/td/soup-containers"
@@ -280,7 +214,7 @@ export default function Navlinks() {
                     Sushi Tray
                   </Link>
                   <Link 
-                    href="/category/imperial/sushi-tray/rectangular"
+                    href="/category/imperial/sushi-tray/rectangular-sushi-tray"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
                   >
                     Rectangular
