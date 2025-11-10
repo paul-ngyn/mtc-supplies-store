@@ -1,0 +1,197 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
+export default function BioBoxesWhitePage() {
+  // Product sizes/options - Real data from product catalog
+  const sizeOptions = [
+    { 
+      id: 1, 
+      itemNo: 'EB1W',
+      size: '#1 - 28 oz',
+      dimensions: '5" x 4"',
+      description: '#1 28 oz White Paper Box',
+      caseQty: '450 PCS',
+      caseWeight: '22 lb',
+      palletCount: '20',
+      tiHi: '5 x 4'
+    },
+    { 
+      id: 2, 
+      itemNo: 'EB2W',
+      size: '#2 - 48 oz',
+      dimensions: '8.5" x 6.25"',
+      description: '#2 48 oz White Paper Box',
+      caseQty: '200 PCS',
+      caseWeight: '18 lb',
+      palletCount: '20',
+      tiHi: '5 x 4'
+    },
+    { 
+      id: 3, 
+      itemNo: 'EB3W',
+      size: '#3 - 64 oz',
+      dimensions: '8.5" x 6.25"',
+      description: '#3 64 oz White Paper Box',
+      caseQty: '200 PCS',
+      caseWeight: '23 lb',
+      palletCount: '20',
+      tiHi: '5 x 4'
+    },
+    { 
+      id: 4, 
+      itemNo: 'EB4W',
+      size: '#4 - 80 oz',
+      dimensions: '8.5" x 6.25"',
+      description: '#4 80 oz White Paper Box',
+      caseQty: '160 PCS',
+      caseWeight: '23 lb',
+      palletCount: '20',
+      tiHi: '5 x 4'
+    },
+    { 
+      id: 5, 
+      itemNo: 'EB8W',
+      size: '#8 - 48 oz',
+      dimensions: '6.75" x 5.5"',
+      description: '#8 48 oz White Paper Box',
+      caseQty: '300 PCS',
+      caseWeight: '27 lb',
+      palletCount: '20',
+      tiHi: '5 x 4'
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        {/* Breadcrumb Navigation */}
+        <nav className="flex items-center space-x-2 text-sm text-gray-500 mb-6">
+          <Link href="/" className="hover:text-gray-700 transition-colors">
+            Home
+          </Link>
+          <span>/</span>
+          <Link href="/category/tkn" className="hover:text-gray-700 transition-colors">
+            TKN
+          </Link>
+          <span>/</span>
+          <Link href="/category/tkn/bio-boxes" className="hover:text-gray-700 transition-colors">
+            Bio Boxes
+          </Link>
+          <span>/</span>
+          <span className="text-gray-700 font-medium">White</span>
+        </nav>
+
+        {/* Product Section */}
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+            {/* Product Image */}
+            <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
+              <Image
+                src="/TKN.png"
+                alt="White Bio Boxes"
+                fill
+                className="object-contain p-8"
+                priority
+              />
+            </div>
+
+            {/* Product Info */}
+            <div className="flex flex-col">
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                White Bio Boxes
+              </h1>
+              
+              <div className="mb-6">
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Eco-friendly white paper bio boxes designed for sustainable food packaging with a clean, professional 
+                  appearance. These bright white boxes are perfect for takeout, food service, and businesses looking 
+                  for an elegant presentation. Made from renewable materials, they offer excellent durability while 
+                  maintaining an environmentally responsible footprint. Available in multiple sizes from 28 oz to 80 oz.
+                </p>
+              </div>
+
+              <div className="mb-6">
+                <h2 className="text-xl font-semibold text-gray-900 mb-3">Features:</h2>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  <li>Clean white color for premium presentation</li>
+                  <li>Eco-friendly and biodegradable</li>
+                  <li>Grease and moisture resistant</li>
+                  <li>Multiple size options available</li>
+                  <li>Perfect for takeout and delivery</li>
+                  <li>Sustainable food packaging solution</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Details / Options Section */}
+          <div className="border-t border-gray-200 p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Available Sizes & Specifications</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+              {sizeOptions.map((option) => (
+                <div
+                  key={option.id}
+                  className="border border-gray-400 rounded-lg p-3 bg-white"
+                >
+                  <div className="mb-2 pb-2 border-b border-gray-100">
+                    <h3 className="text-md font-bold text-gray-900 mb-0.5">
+                      {option.size}
+                    </h3>
+                    <p className="text-sm font-semibold text-blue-600">
+                      {option.itemNo}
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-1 text-sm">
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Dimensions:</span>
+                      <span className="font-medium text-gray-900 text-right">{option.dimensions}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Case Qty:</span>
+                      <span className="font-medium text-gray-900">{option.caseQty}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Case Wt:</span>
+                      <span className="font-medium text-gray-900">{option.caseWeight}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Pallet:</span>
+                      <span className="font-medium text-gray-900">{option.palletCount}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">TI/HI:</span>
+                      <span className="font-medium text-gray-900">{option.tiHi}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 p-6 bg-blue-50 rounded-lg">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Need a Custom Size?</h3>
+              <p className="text-gray-600 mb-4">
+                Contact us for bulk orders or custom sizing options. We're here to help with your specific needs.
+              </p>
+              <Link 
+                href="/contact" 
+                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Generate metadata for SEO
+export async function generateMetadata() {
+  return {
+    title: 'White Bio Boxes - TKN Products - Maple Trade Corp',
+    description: 'Eco-friendly white paper bio boxes from 28oz to 80oz. Sustainable food packaging with premium presentation.',
+  };
+}

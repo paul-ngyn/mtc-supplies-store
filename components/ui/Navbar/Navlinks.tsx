@@ -9,6 +9,10 @@ export default function Navlinks() {
   const [showTDDropdown, setShowTDDropdown] = useState(false);
   const [showImperialDropdown, setShowImperialDropdown] = useState(false);
   const [showMBDropdown, setShowMBDropdown] = useState(false);
+  const [showPortionCupsDropdown, setShowPortionCupsDropdown] = useState(false);
+  const [showSushiTrayDropdown, setShowSushiTrayDropdown] = useState(false);
+  const [showMBClamshellsDropdown, setShowMBClamshellsDropdown] = useState(false);
+  const [showBentoDropdown, setShowBentoDropdown] = useState(false);
 
   return (
     <div className="bg-[#1c51a3] border-t border-[#163d7a]">
@@ -32,55 +36,76 @@ export default function Navlinks() {
                 <div className="py-2">
                   <Link 
                     href="/category/tkn/paper-bags"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     Paper Bags
                   </Link>
                   <Link 
                     href="/category/tkn/bio-boxes"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     Bio Boxes
                   </Link>
                   <Link 
                     href="/category/tkn/food-pails"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     Food Pails
                   </Link>
                   <Link 
                     href="/category/tkn/boat-trays"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     Boat Trays
                   </Link>
-                  <Link 
-                    href="/category/tkn/portion-cups"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                  <div 
+                    className="relative group"
+                    onMouseEnter={() => setShowPortionCupsDropdown(true)}
+                    onMouseLeave={() => setShowPortionCupsDropdown(false)}
                   >
-                    Portion Cups
-                  </Link>
-                  <Link 
-                    href="/category/tkn/portion-cup-lids"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
-                  >
-                    Portion Cup Lids
-                  </Link>
+                    <Link 
+                      href="/category/tkn/portion-cups"
+                      className="px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                    >
+                      <span>Portion Cups & Lids</span>
+                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                    {showPortionCupsDropdown && (
+                      <div className="absolute left-full top-0 ml-0 bg-white shadow-lg rounded-md min-w-[200px] z-50">
+                        <div className="py-2">
+                          <Link 
+                            href="/category/tkn/portion-cups"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            Portion Cups
+                          </Link>
+                          <Link 
+                            href="/category/tkn/portion-cup-lids"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            Portion Cup Lids
+                          </Link>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                   <Link 
                     href="/category/tkn/bagasse-hinged-clamshells"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     Bagasse Hinged Clamshells
                   </Link>
                   <Link 
                     href="/category/tkn/chopsticks"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     Chopsticks
                   </Link>
                   <Link 
                     href="/category/tkn/napkins-papertowels"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
                   >
                     Napkins & Papertowels
                   </Link>
@@ -207,42 +232,72 @@ export default function Navlinks() {
             {showImperialDropdown && (
               <div className="absolute top-full left-0 mt-0 bg-white shadow-lg rounded-md min-w-[280px] z-50">
                 <div className="py-2">
-                  <Link 
-                    href="/category/imperial/sushi-tray"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 border-b hover:bg-gray-50 transition-colors"
+                  <div 
+                    className="relative group"
+                    onMouseEnter={() => setShowSushiTrayDropdown(true)}
+                    onMouseLeave={() => setShowSushiTrayDropdown(false)}
                   >
-                    Sushi Tray
-                  </Link>
-                  <Link 
-                    href="/category/imperial/sushi-tray/rectangular-sushi-tray"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
+                    <Link 
+                      href="/category/imperial/sushi-tray"
+                      className="px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                    >
+                      <span>Sushi Tray</span>
+                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                    {showSushiTrayDropdown && (
+                      <div className="absolute left-full top-0 ml-0 bg-white shadow-lg rounded-md min-w-[220px] z-50">
+                        <div className="py-2">
+                          <Link 
+                            href="/category/imperial/sushi-tray/rectangular-sushi-tray"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            Rectangular
+                          </Link>
+                          <Link 
+                            href="/category/imperial/sushi-tray/round-party-tray"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            Round Party
+                          </Link>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  <div 
+                    className="relative group"
+                    onMouseEnter={() => setShowBentoDropdown(true)}
+                    onMouseLeave={() => setShowBentoDropdown(false)}
                   >
-                    Rectangular
-                  </Link>
-                  <Link 
-                    href="/category/imperial/sushi-tray/round-party-tray"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Round Party 
-                  </Link>
-                  <Link 
-                    href="/category/imperial/bento"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 border-b hover:bg-gray-50 transition-colors mt-2"
-                  >
-                    Bento
-                  </Link>
-                  <Link 
-                    href="/category/imperial/bento/single-compartment"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    Single Compartment
-                  </Link>
-                  <Link 
-                    href="/category/imperial/bento/5-compartment"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    5 Compartment
-                  </Link>
+                    <Link 
+                      href="/category/imperial/bento"
+                      className="px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                    >
+                      <span>Bento</span>
+                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                    {showBentoDropdown && (
+                      <div className="absolute left-full top-0 ml-0 bg-white shadow-lg rounded-md min-w-[220px] z-50">
+                        <div className="py-2">
+                          <Link 
+                            href="/category/imperial/bento/single-compartment"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            Single Compartment
+                          </Link>
+                          <Link 
+                            href="/category/imperial/bento/5-compartment"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            5 Compartment
+                          </Link>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                   <Link 
                     href="/category/imperial/pokebowl"
                     className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
@@ -277,24 +332,39 @@ export default function Navlinks() {
             {showMBDropdown && (
               <div className="absolute top-full left-0 mt-0 bg-white shadow-lg rounded-md min-w-[280px] z-50">
                 <div className="py-2">
-                  <Link 
-                    href="/category/mb/hinged-clamshells"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 border-b hover:bg-gray-50 transition-colors"
+                  <div 
+                    className="relative group"
+                    onMouseEnter={() => setShowMBClamshellsDropdown(true)}
+                    onMouseLeave={() => setShowMBClamshellsDropdown(false)}
                   >
-                    Hinged Clam shells
-                  </Link>
-                  <Link 
-                    href="/category/mb/hinged-clamshells/tfpp-white"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    TFPP Hinged Clamshell White
-                  </Link>
-                  <Link 
-                    href="/category/mb/hinged-clamshells/pp-vented-black"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors pl-6"
-                  >
-                    PP Hinged Vented Clamshell Black
-                  </Link>
+                    <Link 
+                      href="/category/mb/hinged-clamshells"
+                      className="px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                    >
+                      <span>Hinged Clamshells</span>
+                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                    {showMBClamshellsDropdown && (
+                      <div className="absolute left-full top-0 ml-0 bg-white shadow-lg rounded-md min-w-[260px] z-50">
+                        <div className="py-2">
+                          <Link 
+                            href="/category/mb/hinged-clamshells/tfpp-white"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            TFPP White
+                          </Link>
+                          <Link 
+                            href="/category/mb/hinged-clamshells/pp-vented-black"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            PP Vented Black
+                          </Link>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                   <Link 
                     href="/category/mb"
                     className="block px-4 py-3 text-sm font-semibold text-blue-600 hover:text-blue-800 hover:bg-blue-50 transition-colors border-t mt-2 text-center"
