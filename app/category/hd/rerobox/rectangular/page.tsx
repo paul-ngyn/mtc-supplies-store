@@ -1,0 +1,307 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
+export default function ReroboxRectangularPage() {
+  // Product sizes/options - Real data from product catalog
+  const sizeOptions = [
+    { 
+      id: 1, 
+      itemNo: 'RE8',
+      size: '8 oz',
+      dimensions: '5.43" x 3.72" x 1.16"',
+      description: '8 oz Plastic Rectangular Containers',
+      caseQty: '200 SETS',
+      caseWeight: '9.8 lb',
+      palletCount: '100',
+      tiHi: '20 x 5'
+    },
+    { 
+      id: 2, 
+      itemNo: 'RE12',
+      size: '12 oz',
+      dimensions: '5.5" x 4.5" x 1.8"',
+      description: '12 oz Plastic Rectangular Containers',
+      caseQty: '200 SETS',
+      caseWeight: '12.63 lb',
+      palletCount: '70',
+      tiHi: '14 x 5'
+    },
+    { 
+      id: 3, 
+      itemNo: 'RE16',
+      size: '16 oz',
+      dimensions: '7.5" x 5" x 1.8"',
+      description: '16 oz Plastic Rectangular Containers',
+      caseQty: '120 SETS',
+      caseWeight: '10.05 lb',
+      palletCount: '90',
+      tiHi: '15 x 6'
+    },
+    { 
+      id: 4, 
+      itemNo: 'RE24',
+      size: '24 oz',
+      dimensions: '7.5" x 5" x 2"',
+      description: '24 oz Plastic Rectangular Containers',
+      caseQty: '120 SETS',
+      caseWeight: '10.63 lb',
+      palletCount: '90',
+      tiHi: '15 x 6'
+    },
+    { 
+      id: 5, 
+      itemNo: 'RE28',
+      size: '28 oz',
+      dimensions: '8.7" x 6" x 1.5"',
+      description: '28 oz Plastic Rectangular Containers',
+      caseQty: '120 SETS',
+      caseWeight: '13.7 lb',
+      palletCount: '60',
+      tiHi: '10 x 6'
+    },
+    { 
+      id: 6, 
+      itemNo: 'RE32',
+      size: '32 oz',
+      dimensions: '8.7" x 6" x 1.8"',
+      description: '32 oz Plastic Rectangular Containers',
+      caseQty: '120 SETS',
+      caseWeight: '13.89 lb',
+      palletCount: '60',
+      tiHi: '10 x 6'
+    },
+    { 
+      id: 7, 
+      itemNo: 'RE38',
+      size: '38 oz',
+      dimensions: '8.7" x 6" x 2"',
+      description: '38 oz Plastic Rectangular Containers',
+      caseQty: '120 SETS',
+      caseWeight: '14.77 lb',
+      palletCount: '60',
+      tiHi: '10 x 6'
+    },
+    { 
+      id: 8, 
+      itemNo: 'RE48',
+      size: '48 oz',
+      dimensions: '8.5" x 8.5" x 1.77"',
+      description: '48 oz Plastic Square Containers',
+      caseQty: '100 SETS',
+      caseWeight: '18.3 lb',
+      palletCount: '50',
+      tiHi: '10 x 5'
+    },
+    { 
+      id: 9, 
+      itemNo: 'RE58',
+      size: '58 oz',
+      dimensions: '11.5" x 7.9" x 1.8"',
+      description: '58 oz Plastic Rectangular Containers',
+      caseQty: '100 SETS',
+      caseWeight: '20.9 lb',
+      palletCount: '40',
+      tiHi: '8 x 5'
+    },
+    { 
+      id: 10, 
+      itemNo: 'RE68',
+      size: '68 oz',
+      dimensions: '8.5" x 8.5" x 2.46"',
+      description: '68 oz Plastic Square Containers',
+      caseQty: '100 SETS',
+      caseWeight: '19 lb',
+      palletCount: '50',
+      tiHi: '10 x 5'
+    },
+    { 
+      id: 11, 
+      itemNo: 'RE78',
+      size: '78 oz',
+      dimensions: '11.5" x 7.9" x 2.24"',
+      description: '78 oz Plastic Rectangular Containers',
+      caseQty: '100 SETS',
+      caseWeight: '23.15 lb',
+      palletCount: '40',
+      tiHi: '8 x 5'
+    },
+    { 
+      id: 12, 
+      itemNo: 'RE88',
+      size: '88 oz',
+      dimensions: '13.49" x 9.24" x 1.72"',
+      description: '88 oz Plastic Rectangular Containers',
+      caseQty: '100 SETS',
+      caseWeight: '31.4 lb',
+      palletCount: '30',
+      tiHi: '6 x 5'
+    },
+    { 
+      id: 13, 
+      itemNo: 'RE88DL',
+      size: '88 oz w/ Dome',
+      dimensions: '13.49" x 9.24" x 1.72"',
+      description: '88 oz Plastic Rectangular Containers with Dome Lid',
+      caseQty: '100 SETS',
+      caseWeight: '31.4 lb',
+      palletCount: '30',
+      tiHi: '6 x 5'
+    },
+    { 
+      id: 14, 
+      itemNo: 'RE128',
+      size: '128 oz',
+      dimensions: '13.6" x 9.3" x 2.44"',
+      description: '128 oz Plastic Rectangular Containers',
+      caseQty: '100 SETS',
+      caseWeight: '33 lb',
+      palletCount: '30',
+      tiHi: '6 x 5'
+    },
+    { 
+      id: 15, 
+      itemNo: 'RE128DL',
+      size: '128 oz w/ Dome',
+      dimensions: '13.6" x 9.3" x 2.44"',
+      description: '128 oz Plastic Rectangular Containers with Dome Lid',
+      caseQty: '100 SETS',
+      caseWeight: '33 lb',
+      palletCount: '30',
+      tiHi: '6 x 5'
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        {/* Breadcrumb Navigation */}
+        <nav className="flex items-center space-x-2 text-sm text-gray-500 mb-6">
+          <Link href="/" className="hover:text-gray-700 transition-colors">
+            Home
+          </Link>
+          <span>/</span>
+          <Link href="/category/hd" className="hover:text-gray-700 transition-colors">
+            HD
+          </Link>
+          <span>/</span>
+          <Link href="/category/hd/rerobox" className="hover:text-gray-700 transition-colors">
+            REROBOX
+          </Link>
+          <span>/</span>
+          <span className="text-gray-700 font-medium">Rectangular Containers</span>
+        </nav>
+
+        {/* Product Section */}
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+            {/* Product Image */}
+            <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
+              <Image
+                src="/Rero_w_background-remove.png"
+                alt="REROBOX Rectangular Containers"
+                fill
+                className="object-contain p-8"
+                priority
+              />
+            </div>
+
+            {/* Product Info */}
+            <div className="flex flex-col">
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                REROBOX Rectangular Containers
+              </h1>
+              
+              <div className="mb-6">
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Premium REROBOX rectangular and square plastic containers designed for versatile food storage. 
+                  Perfect for restaurants, delis, catering services, and meal prep operations. These space-efficient 
+                  containers come in a wide range of sizes from 8 oz to 128 oz, with dome lid options available for 
+                  larger sizes.
+                </p>
+              </div>
+
+              <div className="mb-6">
+                <h2 className="text-xl font-semibold text-gray-900 mb-3">Features:</h2>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  <li>Premium REROBOX quality construction</li>
+                  <li>Space-efficient rectangular design</li>
+                  <li>Dome lid options for select sizes</li>
+                  <li>Food-safe plastic materials</li>
+                  <li>Wide capacity range (8-128 oz)</li>
+                  <li>Stackable for efficient storage</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Details / Options Section */}
+          <div className="border-t border-gray-200 p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Available Sizes & Specifications</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+              {sizeOptions.map((option) => (
+                <div
+                  key={option.id}
+                  className="border border-gray-400 rounded-lg p-3 bg-white"
+                >
+                  <div className="mb-2 pb-2 border-b border-gray-100">
+                    <h3 className="text-md font-bold text-gray-900 mb-0.5">
+                      {option.size}
+                    </h3>
+                    <p className="text-sm font-semibold text-blue-600">
+                      {option.itemNo}
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-1 text-sm">
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Dimensions:</span>
+                      <span className="font-medium text-gray-900 text-right">{option.dimensions}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Case Qty:</span>
+                      <span className="font-medium text-gray-900">{option.caseQty}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Case Wt:</span>
+                      <span className="font-medium text-gray-900">{option.caseWeight}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Pallet:</span>
+                      <span className="font-medium text-gray-900">{option.palletCount}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">TI/HI:</span>
+                      <span className="font-medium text-gray-900">{option.tiHi}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 p-6 bg-blue-50 rounded-lg">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Need a Custom Size?</h3>
+              <p className="text-gray-600 mb-4">
+                Contact us for bulk orders or custom sizing options. We're here to help with your specific needs.
+              </p>
+              <Link 
+                href="/contact" 
+                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Generate metadata for SEO
+export async function generateMetadata() {
+  return {
+    title: 'REROBOX Rectangular Containers - HD Products - Maple Trade Corp',
+    description: 'Premium REROBOX rectangular containers from 8oz to 128oz. Available with dome lids. Perfect for food storage and meal prep.',
+  };
+}
