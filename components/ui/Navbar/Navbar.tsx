@@ -73,11 +73,14 @@ export default function Navbar() {
             <SearchBar />
           </div>
 
-          {/* Desktop: Contact Info */}
+          {/* Desktop: Contact Button */}
           <div className="hidden sm:flex items-center">
-            <div className="text-gray-700 text-sm">
-              <span className="font-medium">Contact:</span> (555) 123-4567
-            </div>
+            <Link 
+              href="/contact"
+              className="px-5 py-2.5 bg-[#1c51a3] text-white font-medium rounded-lg hover:bg-[#153d7f] transition-colors duration-200 shadow-sm hover:shadow-md"
+            >
+              Contact Us
+            </Link>
           </div>
 
           {/* Mobile: Empty space for balance */}
