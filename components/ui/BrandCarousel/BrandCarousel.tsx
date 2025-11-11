@@ -17,7 +17,7 @@ export default function BrandCarousel() {
   return (
     <div className="w-full overflow-hidden bg-white py-12">
       <div className="max-w-7xl mx-auto px-4">
-        <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+        <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
           Our Brands
         </h3>
         
@@ -73,6 +73,16 @@ export default function BrandCarousel() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* View All Brands Button */}
+        <div className="flex justify-center mt-16">
+          <Link 
+            href="/brands"
+            className="px-6 py-3 bg-[#1c51a3] text-white font-semibold rounded-lg hover:bg-[#153d7f] transition-colors duration-200 shadow-md hover:shadow-lg"
+          >
+            View All Our Brands
+          </Link>
         </div>
       </div>
     </div>

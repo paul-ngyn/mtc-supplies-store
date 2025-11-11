@@ -28,13 +28,10 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#1c51a3]">
       <div className="mx-auto max-w-[1920px] px-6">
-        <div className="grid grid-cols-1 gap-8 py-8 text-white transition-colors duration-150 lg:grid-cols-12">
-          
-          {/* Empty space to shift right */}
-          <div className="hidden lg:block lg:col-span-1"></div>
+        <div className="grid grid-cols-1 gap-6 py-8 text-white transition-colors duration-150 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-6">
           
           {/* MTC Logo */}
-          <div className="col-span-1 lg:col-span-2">
+          <div className="col-span-1 lg:col-span-2 lg:pr-0">
             <Link
               href="/"
               className="flex items-center flex-initial hover:opacity-80 transition-opacity"
@@ -78,9 +75,6 @@ export default function Footer() {
               </form>
             </div>
           </div>
-
-          {/* Extra gap before Get Help */}
-          <div className="hidden lg:block lg:col-span-1"></div>
 
           {/* Get Help Section */}
           <div className="col-span-1 lg:col-span-2">
@@ -155,6 +149,33 @@ export default function Footer() {
                   className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
                 >
                   Delivery Updates
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* About Section */}
+          <div className="col-span-1 lg:col-span-2">
+            <ul className="flex flex-col flex-initial md:flex-1">
+              <li className="py-3 md:py-0 md:pb-4">
+                <p className="font-bold text-white">
+                  ABOUT
+                </p>
+              </li>
+              <li className="py-3 md:py-0 md:pb-4">
+                <Link
+                  href="/brands"
+                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                >
+                  Our Brands
+                </Link>
+              </li>
+              <li className="py-3 md:py-0 md:pb-4">
+                <Link
+                  href="/aboutus"
+                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                >
+                  About Us
                 </Link>
               </li>
             </ul>

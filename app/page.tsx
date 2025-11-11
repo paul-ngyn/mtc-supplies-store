@@ -84,12 +84,12 @@ export default async function HomePage() {
                       height={300}
                       className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     />
-                    <span className="absolute top-4 right-4 text-sm font-bold text-white bg-blue-600 px-4 py-2 rounded-lg shadow-lg">
+                    <span className="absolute top-4 right-4 text-sm font-bold text-white bg-[#1c51a3] px-4 py-2 rounded-lg shadow-lg">
                       {category.brand}
                     </span>
                   </div>
                   <div className="p-6 text-center bg-white">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#1c51a3] transition-colors">
                       {category.name}
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed">
@@ -104,7 +104,7 @@ export default async function HomePage() {
           {/* View All Products Button */}
           <div className="text-center mt-12">
             <Link href="/products">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg text-md font-semibold transition-colors shadow-md hover:shadow-lg">
+              <button className="bg-[#1c51a3] hover:bg-[#153d7f] text-white px-5 py-3 rounded-lg text-md font-semibold transition-colors shadow-md hover:shadow-lg">
                 View All Product Categories
               </button>
             </Link>
@@ -113,7 +113,7 @@ export default async function HomePage() {
       </section>
 
       {/* Imperial Products Section */}
-      <section className="py-8 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-4">
@@ -153,7 +153,7 @@ export default async function HomePage() {
 
           <div className="text-center">
             <Link href="/category/imperial">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-4 rounded-lg text-md font-semibold transition-colors shadow-md hover:shadow-lg">
+              <button className="bg-[#1c51a3] hover:bg-[#153d7f] text-white px-5 py-4 rounded-lg text-md font-semibold transition-colors shadow-md hover:shadow-lg">
                 Check Out All Our Imperial Products
               </button>
             </Link>
@@ -162,7 +162,7 @@ export default async function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-12 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Why Choose Maple Trade Corp?
@@ -170,7 +170,7 @@ export default async function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#1c51a3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -181,7 +181,7 @@ export default async function HomePage() {
             </div>
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#1c51a3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -192,7 +192,7 @@ export default async function HomePage() {
             </div>
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-[#1c51a3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                 </svg>
               </div>
@@ -206,19 +206,19 @@ export default async function HomePage() {
           {/* Trust indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 text-center">
             <div className="p-4">
-              <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
+              <div className="text-3xl font-bold text-[#1c51a3] mb-2">500+</div>
               <div className="text-gray-600">Happy Clients</div>
             </div>
             <div className="p-4">
-              <div className="text-3xl font-bold text-blue-600 mb-2">20+</div>
+              <div className="text-3xl font-bold text-[#1c51a3] mb-2">20+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div className="p-4">
-              <div className="text-3xl font-bold text-blue-600 mb-2">1M+</div>
+              <div className="text-3xl font-bold text-[#1c51a3] mb-2">1M+</div>
               <div className="text-gray-600">Products Delivered</div>
             </div>
             <div className="p-4">
-              <div className="text-3xl font-bold text-blue-600 mb-2">99%</div>
+              <div className="text-3xl font-bold text-[#1c51a3] mb-2">99%</div>
               <div className="text-gray-600">Customer Satisfaction</div>
             </div>
           </div>
@@ -238,10 +238,10 @@ export default async function HomePage() {
             Browse our extensive catalog and find the perfect packaging solutions for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            <button className="bg-[#1c51a3] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#153d7f] transition-colors">
               View All Products
             </button>
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors">
+            <button className="border-2 border-[#1c51a3] text-[#1c51a3] px-8 py-3 rounded-lg font-semibold hover:bg-[#1c51a3] hover:text-white transition-colors">
               Contact Us
             </button>
           </div>
@@ -263,7 +263,7 @@ export default async function HomePage() {
                 >
                   <h3 className="font-semibold text-lg mb-2 text-gray-900">{product.name}</h3>
                   <p className="text-gray-600 mb-4">{product.description}</p>
-                  <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                  <button className="w-full bg-[#1c51a3] text-white py-2 rounded-lg hover:bg-[#153d7f] transition-colors">
                     View Details
                   </button>
                 </div>
