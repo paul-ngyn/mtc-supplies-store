@@ -154,22 +154,6 @@ export default function BoatTraysPage() {
                   <li>Strong and leak-resistant</li>
                 </ul>
               </div>
-
-              {/* Grease Resistant Notice */}
-              <div className="p-4 bg-green-50 border-l-4 border-green-500 rounded">
-                <div className="flex items-start">
-                  <svg className="w-5 h-5 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <div>
-                    <p className="text-sm font-semibold text-green-900">Grease Resistant</p>
-                    <p className="text-sm text-green-800 mt-1">
-                      All boat trays feature a grease-resistant coating for superior performance with oily 
-                      and greasy foods.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -183,11 +167,11 @@ export default function BoatTraysPage() {
                   key={option.id}
                   className="border border-gray-400 rounded-lg p-4 bg-white hover:shadow-lg transition-shadow"
                 >
-                  <div className="mb-3 pb-3 border-b border-gray-100">
+                  <div className="mb-3 pb-3 border-b border-gray-200">
                     <h3 className="text-lg font-bold text-gray-900 mb-1">
                       {option.name}
                     </h3>
-                    <p className="text-sm font-semibold text-[#1c51a3] mb-2">
+                    <p className="text-sm font-semibold text-[#1c51a3]">
                       {option.itemNo}
                     </p>
                   </div>

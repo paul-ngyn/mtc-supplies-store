@@ -10,7 +10,7 @@ export default function PortionCupLidsPage() {
       size: '2 oz',
       dimensions: '2 oz',
       description: '2 oz Portion Cup Lids',
-      compatibility: 'Fits 2 oz cups',
+      compatibility: 'Fits TKN 2 oz cups',
       caseQty: '2500 pcs',
       caseWeight: '10.00 lb',
       palletCount: '72',
@@ -22,7 +22,7 @@ export default function PortionCupLidsPage() {
       size: '3.25 - 5.5 oz',
       dimensions: '3.25 - 5.5 oz',
       description: '3.25 - 5.5 oz Portion Cup Lids',
-      compatibility: 'Fits 3.25, 4, and 5.5 oz cups',
+      compatibility: 'Fits TKN 3.25, 4, and 5.5 oz cups',
       caseQty: '2500 pcs',
       caseWeight: '12.75 lb',
       palletCount: '45',
@@ -95,7 +95,7 @@ export default function PortionCupLidsPage() {
                   <div>
                     <p className="text-sm font-semibold text-green-900">Universal Compatibility</p>
                     <p className="text-sm text-green-800 mt-1">
-                      PL40 lids fit 3.25 oz, 4 oz, and 5.5 oz cups - one lid for multiple sizes!
+                      PL40 lids fit TKN 3.25 oz, 4 oz, and 5.5 oz Cups - one lid for multiple sizes!
                     </p>
                   </div>
                 </div>
