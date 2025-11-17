@@ -1,5 +1,3 @@
-import { createClient } from '@/utils/supabase/server';
-import { getProducts, getUser } from '@/utils/supabase/queries';
 import ProductSlider from '@/components/ui/ProductSlider';
 import BrandCarousel from '@/components/ui/BrandCarousel';
 import Link from 'next/link';
@@ -45,13 +43,7 @@ const featuredCategories = [
   }
 ];
 
-export default async function HomePage() {
-  const supabase = createClient();
-  const [user, products] = await Promise.all([
-    getUser(supabase),
-    getProducts(supabase),
-  ]);
-
+export default function HomePage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section with Product Slider */}
@@ -248,30 +240,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Products Section (if any exist) */}
-      {products && products.length > 0 && (
-        <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-              Featured Products
-            </h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {products.map((product: any) => (
-                <div
-                  key={product.id}
-                  className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow"
-                >
-                  <h3 className="font-semibold text-lg mb-2 text-gray-900">{product.name}</h3>
-                  <p className="text-gray-600 mb-4">{product.description}</p>
-                  <button className="w-full bg-[#1c51a3] text-white py-2 rounded-lg hover:bg-[#153d7f] transition-colors">
-                    View Details
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
     </div>
   );
 }
