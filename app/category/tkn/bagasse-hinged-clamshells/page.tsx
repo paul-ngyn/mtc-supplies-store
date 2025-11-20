@@ -205,10 +205,9 @@ export default function BagasseClamshellsPage() {
             </div>
 
             <div className="mt-8 p-6 bg-blue-50 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Need a Custom Size or Bulk Order?</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Want to place an order or have any product questions?</h3>
               <p className="text-gray-600 mb-4">
-                Contact us for bulk pricing, custom sizing options, or any questions about our bagasse clamshells. 
-                We're here to help with your specific needs.
+                Contact us for bulk orders or custom sizing options. We're here to help with your specific needs.
               </p>
               <Link 
                 href="/contact" 

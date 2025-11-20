@@ -7,8 +7,8 @@ export default function BoatTraysPage() {
     { 
       id: 1, 
       itemNo: 'BT-1025K',
-      name: '¼ lb - Small',
-      weight: '¼ lb',
+      name: 'Â¼ lb - Small',
+      weight: 'Â¼ lb',
       description: 'Grease Resistant',
       productDimension: '3.62" x 4.61"',
       bottomDimension: '1.85" x 2.87"',
@@ -20,8 +20,8 @@ export default function BoatTraysPage() {
     { 
       id: 2, 
       itemNo: 'BT-2050K',
-      name: '½ lb - Small',
-      weight: '½ lb',
+      name: 'Â½ lb - Small',
+      weight: 'Â½ lb',
       description: 'Grease Resistant',
       productDimension: '4.1" x 5.43"',
       bottomDimension: '1.97" x 3.35"',
@@ -148,7 +148,7 @@ export default function BoatTraysPage() {
                   <li>Natural kraft paper construction</li>
                   <li>Grease-resistant coating</li>
                   <li>Eco-friendly and biodegradable</li>
-                  <li>Available in 7 sizes (¼ lb to 5 lb capacity)</li>
+                  <li>Available in 7 sizes (Â¼ lb to 5 lb capacity)</li>
                   <li>Perfect for hot dogs, fries, nachos, and more</li>
                   <li>Ideal for food service and catering</li>
                   <li>Strong and leak-resistant</li>
@@ -207,10 +207,9 @@ export default function BoatTraysPage() {
             </div>
 
             <div className="mt-8 p-6 bg-blue-50 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Need a Custom Size or Bulk Order?</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Want to place an order or have any product questions?</h3>
               <p className="text-gray-600 mb-4">
-                Contact us for bulk pricing, custom sizing options, or any questions about our boat trays. 
-                We're here to help with your specific needs.
+                Contact us for bulk orders or custom sizing options. We're here to help with your specific needs.
               </p>
               <Link 
                 href="/contact" 
@@ -230,6 +229,6 @@ export default function BoatTraysPage() {
 export async function generateMetadata() {
   return {
     title: 'Natural Kraft Boat Trays - Grease Resistant - TKN Products - Maple Trade Corp',
-    description: 'Premium natural kraft boat trays with grease-resistant coating. Available in 7 sizes from ¼ lb to 5 lb capacity. Perfect for food service, concessions, and takeout.',
+    description: 'Premium natural kraft boat trays with grease-resistant coating. Available in 7 sizes from Â¼ lb to 5 lb capacity. Perfect for food service, concessions, and takeout.',
   };
 }

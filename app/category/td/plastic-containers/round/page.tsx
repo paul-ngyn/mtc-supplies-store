@@ -170,13 +170,13 @@ export default function TDRoundContainersPage() {
             </div>
 
             <div className="mt-8 p-6 bg-blue-50 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Need a Custom Size?</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Want to place an order or have any product questions?</h3>
               <p className="text-gray-600 mb-4">
                 Contact us for bulk orders or custom sizing options. We're here to help with your specific needs.
               </p>
               <Link 
                 href="/contact" 
-                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium"
+                className="inline-block bg-[#1c51a3] text-white px-6 py-3 rounded-md hover:bg-[#153d7f] transition-colors font-medium"
               >
                 Contact Us
               </Link>
