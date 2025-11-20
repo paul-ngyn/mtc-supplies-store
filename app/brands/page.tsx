@@ -44,7 +44,7 @@ export default function OurBrandsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header Section */}
-      <div className="bg-white border-b border-gray-200">
+      <div className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -68,7 +68,7 @@ export default function OurBrandsPage() {
             >
               <div className="grid grid-cols-1 md:grid-cols-5 gap-6 p-6">
                 {/* Brand Logo - Left Side */}
-                <div className="md:col-span-2 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6">
+                <div className="md:col-span-2 flex items-center justify-center bg-white rounded-lg p-6">
                   <Link href={`/category/${brand.slug}`} className="block w-full h-full flex items-center justify-center">
                     <Image
                       src={brand.logo}
