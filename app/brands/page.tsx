@@ -8,14 +8,14 @@ const brands = [
     name: 'TKN',
     logo: '/TKN.png',
     slug: 'tkn',
-    description: 'Committed to sustainability, TKN specializes in premium paper-based packaging products. From kraft paper bags and boat trays to bio boxes and food pails, this line provides environmentally responsible options for modern food service. Choose TKN for quality paper products that align with your green initiatives.',
+    description: 'Committed to sustainability, TKN specializes in premium kraft paper packaging products. From kraft paper bags and boat trays to bio boxes and food pails, this line provides environmentally responsible options for modern food service. Choose TKN for quality paper products that align with your green initiatives.',
   },
   {
     id: 2,
     name: 'HD',
     logo: '/HD_logo-removebg.png',
     slug: 'hd',
-    description: 'Built for demanding food service operations, HD delivers top-quality plastic containers engineered for superior performance. From the durable REROBOX and Clipin containers to versatile deli containers and meat trays, this line meets the highest standards of quality. Elevate your food service with HD and deliver excellence!',
+    description: 'Built for demanding food service operations, HD delivers top quality plastic containers engineered for superior performance. From the durable REROBOX and Clipin containers to versatile deli containers and meat trays, this line meets the highest standards of quality.',
   },
   {
     id: 3,
@@ -29,14 +29,14 @@ const brands = [
     name: 'Imperial',
     logo: '/imperial-removebg-.png',
     slug: 'imperial',
-    description: 'Imperial brings authentic Asian food packaging with premium sushi trays, bento boxes, and poke bowls. Featuring elegant black and gold designs, Imperial products offer traditional Japanese-style presentation perfect for restaurants and food service establishments.',
+    description: 'Imperial brings authentic Asian food packaging with premium sushi trays, bento boxes, and poke bowls. Featuring elegant black and gold designs, Imperial products offer traditional presentation perfect for restaurants and food service establishments.',
   },
   {
     id: 5,
     name: 'MB',
     logo: '/MB_W_background-remove.png',
     slug: 'mb',
-    description: 'Engineered for versatility, MB manufactures professional-grade food packaging solutions for modern operations. Offering secure closure systems and excellent visibility, this line provides dependable containers for fresh food presentation. Trust MB for quality packaging that keeps your food fresh!',
+    description: 'Engineered for versatility, MB manufactures professional-grade food packaging solutions for modern operations. Offering secure closure systems and excellent visibility, this line provides dependable containers for fresh food presentation.',
   },
 ];
 
@@ -75,7 +75,7 @@ export default function OurBrandsPage() {
                       alt={`${brand.name} logo`}
                       width={200}
                       height={150}
-                      className="object-contain max-h-32 w-auto hover:scale-105 transition-transform duration-300"
+                      className={`object-contain max-h-32 w-auto hover:scale-105 transition-transform duration-300 ${brand.name === 'MB' ? 'scale-150' : ''} ${brand.name === 'HD' ? 'scale-125' : ''}`}
                     />
                   </Link>
                 </div>
@@ -112,17 +112,17 @@ export default function OurBrandsPage() {
       </div>
 
       {/* Call to Action Section */}
-      <div className="bg-blue-600 text-white">
+      <div className="bg-blue-200 mt-12">
         <div className="max-w-7xl mx-auto px-6 py-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 text-gray-900">
             Need Help Choosing the Right Products?
           </h2>
-          <p className="text-lg mb-6 text-blue-100">
+          <p className="text-lg mb-6 text-gray-700">
             Our team is here to help you find the perfect packaging solutions for your business needs.
           </p>
           <Link 
             href="/contact"
-            className="inline-block bg-white text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
+            className="inline-block bg-[#1c51a3] text-white px-8 py-3 rounded-md font-semibold hover:bg-[#153d7f] transition-colors"
           >
             Contact Us
           </Link>

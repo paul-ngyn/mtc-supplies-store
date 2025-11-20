@@ -6,18 +6,6 @@ export default function NapkinsPage() {
   const sizeOptions = [
     { 
       id: 1, 
-      itemNo: 'NK1517-2',
-      name: '15 x 17 2 PLY White Dinner Napkin',
-      ply: '2 PLY',
-      productDimension: '15" x 17"',
-      pack: '150 Sheets',
-      casePack: '16 Packs',
-      caseWeight: '22.22 lb',
-      palletCount: '45',
-      tiHi: '9 x 5'
-    },
-    { 
-      id: 2, 
       itemNo: 'NK1517-1',
       name: '15 x 17 1 PLY White Dinner Napkin',
       ply: '1 PLY',
@@ -27,6 +15,18 @@ export default function NapkinsPage() {
       caseWeight: '23 lb',
       palletCount: '40',
       tiHi: '8 x 5'
+    },
+    { 
+      id: 2, 
+      itemNo: 'NK1517-2',
+      name: '15 x 17 2 PLY White Dinner Napkin',
+      ply: '2 PLY',
+      productDimension: '15" x 17"',
+      pack: '150 Sheets',
+      casePack: '16 Packs',
+      caseWeight: '22.22 lb',
+      palletCount: '45',
+      tiHi: '9 x 5'
     },
     { 
       id: 3, 

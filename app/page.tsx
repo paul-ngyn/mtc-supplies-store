@@ -230,12 +230,12 @@ export default function HomePage() {
             Browse our extensive catalog and find the perfect packaging solutions for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#1c51a3] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#153d7f] transition-colors">
+            <Link href="/products" className="bg-[#1c51a3] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#153d7f] transition-colors">
               View All Products
-            </button>
-            <button className="border-2 border-[#1c51a3] text-[#1c51a3] px-8 py-3 rounded-lg font-semibold hover:bg-[#1c51a3] hover:text-white transition-colors">
+            </Link>
+            <Link href="/contact" className="border-2 border-[#1c51a3] text-[#1c51a3] px-8 py-3 rounded-lg font-semibold hover:bg-[#1c51a3] hover:text-white transition-colors">
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       </section>

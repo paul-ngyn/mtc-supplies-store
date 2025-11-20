@@ -5,7 +5,15 @@ import { Toaster } from '@/components/ui/Toasts/toaster';
 import { PropsWithChildren, Suspense } from 'react';
 import { getURL } from '@/utils/helpers';
 import { headers } from 'next/headers';
+import { DM_Sans } from 'next/font/google';
 import 'styles/main.css';
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-sans',
+  display: 'swap',
+});
 
 const title = 'Maple Trade Corp Store';
 const description = 'Your one-stop shop for all supplies.';
@@ -27,7 +35,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
 
   return (
     <html lang="en">
-      <body className={isAuthPage ? "bg-gray-50" : "bg-white"}>
+      <body className={`${dmSans.variable} font-sans ${isAuthPage ? "bg-gray-50" : "bg-white"}`}>
         {/* Always show navbar - don't disable it on auth pages */}
         <Navbar />
         <main
