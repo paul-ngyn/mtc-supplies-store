@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -60,6 +60,12 @@ const brands: Brand[] = [
 export default function ProductSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  // Minimum swipe distance (in px)
+  const minSwipeDistance = 50;
 
   // Auto-advance slides
   useEffect(() => {
@@ -91,10 +97,40 @@ export default function ProductSlider() {
     setTimeout(() => setIsAutoPlaying(true), 10000);
   };
 
+  // Touch event handlers
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(0); // Reset
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      nextSlide();
+    } else if (isRightSwipe) {
+      prevSlide();
+    }
+  };
+
   return (
     <div className="relative w-full max-w-6xl mx-auto">
       {/* Main slider container */}
-      <div className="relative h-64 md:h-96 overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-r from-blue-50 to-blue-100">
+      <div 
+        ref={sliderRef}
+        className="relative h-64 md:h-96 overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-r from-blue-50 to-blue-100 touch-pan-y"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
         {/* Slides */}
         <div 
           className="flex transition-transform duration-500 ease-in-out h-full"

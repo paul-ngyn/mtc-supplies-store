@@ -41,15 +41,6 @@ export default function MobileMenu() {
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-50" onClick={() => setIsOpen(false)}>
           <div className="fixed top-0 right-0 h-full w-64 bg-white shadow-lg p-6 overflow-y-auto rounded-l-2xl">
-            <div className="flex justify-end items-center mb-4">
-              <button
-                onClick={() => setIsOpen(false)}
-                className="text-gray-700 hover:text-white hover:bg-[#1c51a3] px-3 h-10 rounded-full flex items-center justify-center gap-1 text-2xl font-bold transition-all duration-200"
-              >
-                <span>×</span>
-                <span className="text-sm font-semibold">Close</span>
-              </button>
-            </div>
             
             {/* Main Navigation Links */}
             <div className="flex flex-col gap-2 mb-6">
@@ -159,26 +150,30 @@ export default function MobileMenu() {
                 >
                   About Us
                 </Link>
+                <Link 
+                  href="/contact" 
+                  className="text-gray-800 hover:text-[#1c51a3] py-2 text-sm font-medium animate-slide-in"
+                  style={{ animationDelay: '550ms' }}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Contact Us
+                </Link>
               </div>
             </div>
 
-            {/* Contact Section */}
-            <div className="pt-4 mt-5 animate-slide-in" style={{ animationDelay: '550ms' }}>
-              <div className="mb-2.5">
-                <h3 className="text-gray-900 font-bold text-xs uppercase tracking-wider">CONTACT US</h3>
-                <div className="w-20 h-0.5 bg-[#1c51a3] mt-1"></div>
-              </div>
+            {/* Contact Info */}
+            <div className="pt-4 mt-5 border-t border-gray-200 animate-slide-in" style={{ animationDelay: '600ms' }}>
               <a 
                 href="tel:5107833888" 
                 className="text-gray-800 hover:text-[#1c51a3] py-2 text-xs block animate-slide-in"
-                style={{ animationDelay: '600ms' }}
+                style={{ animationDelay: '650ms' }}
               >
                 <span className="font-semibold text-gray-900">Phone:</span> (510) 783-3888
               </a>
               <a 
                 href="mailto:info@mapletradecorp.com" 
                 className="text-gray-800 hover:text-[#1c51a3] py-2 text-xs block animate-slide-in"
-                style={{ animationDelay: '650ms' }}
+                style={{ animationDelay: '700ms' }}
               >
                 <span className="font-semibold text-gray-900">Email:</span> info@mapletradecorp.com
               </a>
