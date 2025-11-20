@@ -22,7 +22,7 @@ export default function BrandCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const animationFrameRef = useRef<number>();
 
-  const minSwipeDistance = 30;
+  const minSwipeDistance = 25.5; // Reduced by 15% from 30 to make swipes easier to trigger
 
   // Continuous sliding animation with deceleration
   useEffect(() => {
@@ -123,7 +123,7 @@ export default function BrandCarousel() {
                   style={{ width: `${100 / brandLogos.length / 4}%` }}
                 >
                   <Link href={`/category/${brand.slug}`}>
-                    <div className="bg-white rounded-lg p-4 md:p-4 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3),0_-5px_20px_-5px_rgba(0,0,0,0.15)] transition-shadow duration-300 w-28 h-20 md:w-40 md:h-28 flex items-center justify-center cursor-pointer group overflow-hidden">
+                    <div className="bg-white rounded-lg p-4 md:p-4 transition-shadow duration-300 w-28 h-20 md:w-40 md:h-28 flex items-center justify-center cursor-pointer group overflow-hidden">
                       <Image
                         src={brand.logo}
                         alt={`${brand.name} logo`}
