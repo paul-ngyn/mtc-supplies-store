@@ -3,19 +3,19 @@ import Image from 'next/image';
 
 const hdCategories = [
   {
-    name: 'Clipin Containers',
-    slug: 'clipin',
-    description: 'Premium containers with secure clip-in lids',
-    subcategories: [
-      { name: 'Round Clipin', slug: 'round' },
-      { name: 'Rectangular Clipin', slug: 'rectangular' },
-      { name: 'Compartment Clipin', slug: 'compartment' }
-    ]
+    name: 'REROBOX Containers',
+    slug: 'rerobox',
+    description: 'High-quality reusable containers in round, rectangular, and compartment configurations',
   },
   {
-    name: 'Deli Containers',
-    slug: 'deli-containers',
-    description: 'Versatile clear containers for deli and food storage',
+    name: 'Clipin Containers',
+    slug: 'clipin',
+    description: 'Premium containers with secure clip-in lids in round, rectangular, and compartment styles',
+  },
+  {
+    name: 'V-Series Containers',
+    slug: 'v-series',
+    description: 'Versatile microwave-safe containers with vented lids in round and rectangular styles',
   },
   {
     name: 'Meat Trays',
@@ -23,29 +23,14 @@ const hdCategories = [
     description: 'Heavy-duty trays designed for meat and protein products',
   },
   {
-    name: 'REROBOX Containers',
-    slug: 'rerobox',
-    description: 'High-quality reusable and recyclable containers',
-    subcategories: [
-      { name: 'Round Rerobox', slug: 'round' },
-      { name: 'Rectangular Rerobox', slug: 'rectangular' },
-      { name: 'Compartment Rerobox', slug: 'compartment' }
-    ]
+    name: 'Deli Containers',
+    slug: 'deli-containers',
+    description: 'Versatile clear containers for deli and food storage',
   },
   {
     name: 'Soup Containers',
     slug: 'soup-containers',
     description: 'Leak-resistant containers perfect for soups and liquids',
-  },
-  {
-    name: 'V-Series Containers',
-    slug: 'v-series',
-    description: 'Versatile microwave-safe containers',
-    subcategories: [
-      { name: 'Round V-Series', slug: 'round' },
-      { name: 'Rectangular V-Series', slug: 'rectangular' },
-      { name: 'Rectangular Vented V-Series', slug: 'rectangular-vented' }
-    ]
   }
 ];
 
@@ -93,40 +78,20 @@ export default function HDPage() {
                   {category.description}
                 </p>
                 
-                {category.subcategories && category.subcategories.length > 0 ? (
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
-                      Products:
-                    </h3>
-                    <ul className="space-y-2">
-                      {category.subcategories.map((sub) => (
-                        <li key={sub.slug}>
-                          <Link
-                            href={`/category/hd/${category.slug}/${sub.slug}`}
-                            className="text-[#1c51a3] hover:text-[#153d7f] hover:underline transition-colors"
-                          >
-                            {sub.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : (
-                  <Link
-                    href={`/category/hd/${category.slug}`}
-                    className="inline-flex items-center text-[#1c51a3] font-semibold hover:text-[#153d7f] transition-colors mt-4"
+                <Link
+                  href={`/category/hd/${category.slug}`}
+                  className="inline-flex items-center text-[#1c51a3] font-semibold hover:text-[#153d7f] transition-colors mt-4"
+                >
+                  View Containers
+                  <svg 
+                    className="w-4 h-4 ml-2" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
                   >
-                    View Products
-                    <svg 
-                      className="w-4 h-4 ml-2" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                )}
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             </div>
           ))}

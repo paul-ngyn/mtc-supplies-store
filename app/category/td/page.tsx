@@ -5,12 +5,7 @@ const tdCategories = [
   {
     name: 'Plastic Containers',
     slug: 'plastic-containers',
-    description: 'Budget-friendly plastic containers for everyday use',
-    subcategories: [
-      { name: 'Round Containers', slug: 'round' },
-      { name: 'Rectangular Containers', slug: 'rectangular' },
-      { name: 'Compartment Containers', slug: 'compartments' }
-    ]
+    description: 'Budget-friendly plastic containers in round, rectangular, and compartment styles for everyday use',
   },
   {
     name: 'Soup Containers',
@@ -63,40 +58,20 @@ export default function TDPage() {
                   {category.description}
                 </p>
                 
-                {category.subcategories && category.subcategories.length > 0 ? (
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
-                      Products:
-                    </h3>
-                    <ul className="space-y-2">
-                      {category.subcategories.map((sub) => (
-                        <li key={sub.slug}>
-                          <Link
-                            href={`/category/td/${category.slug}/${sub.slug}`}
-                            className="text-[#1c51a3] hover:text-[#153d7f] hover:underline transition-colors"
-                          >
-                            {sub.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : (
-                  <Link
-                    href={`/category/td/${category.slug}`}
-                    className="inline-flex items-center text-[#1c51a3] font-semibold hover:text-[#153d7f] transition-colors mt-4"
+                <Link
+                  href={`/category/td/${category.slug}`}
+                  className="inline-flex items-center text-[#1c51a3] font-semibold hover:text-[#153d7f] transition-colors mt-4"
+                >
+                  View Containers
+                  <svg 
+                    className="w-4 h-4 ml-2" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
                   >
-                    View Products
-                    <svg 
-                      className="w-4 h-4 ml-2" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                )}
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             </div>
           ))}

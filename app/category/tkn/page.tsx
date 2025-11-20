@@ -3,23 +3,19 @@ import Image from 'next/image';
 
 const tknCategories = [
   {
-    name: 'Bagasse Clamshells',
-    slug: 'bagasse-clamshells',
-    description: 'Eco-friendly sugarcane fiber clamshells',
-  },
-  {
-    name: 'Bagasse Hinged Clamshells',
-    slug: 'bagasse-hinged-clamshells',
-    description: 'Sustainable hinged containers made from sugarcane',
+    name: 'Paper Bags',
+    slug: 'paper-bags',
+    description: 'Durable kraft paper bags for takeout and retail',
   },
   {
     name: 'Bio Boxes',
     slug: 'bio-boxes',
-    description: 'Kraft paper boxes for environmentally conscious businesses',
-    subcategories: [
-      { name: 'White Bio Boxes', slug: 'white' },
-      { name: 'Kraft Bio Boxes', slug: 'kraft' }
-    ]
+    description: 'Kraft paper boxes in white and kraft colors for environmentally conscious businesses',
+  },
+  {
+    name: 'Food Pails',
+    slug: 'food-pails',
+    description: 'Paper food pails in white and kraft colors perfect for takeout',
   },
   {
     name: 'Boat Trays',
@@ -27,18 +23,19 @@ const tknCategories = [
     description: 'Versatile paper boat trays for various food items',
   },
   {
+    name: 'Portion Cups & Lids',
+    slug: 'portion-cups-lids',
+    description: 'Small containers for sauces and condiments with compatible lids',
+  },
+  {
     name: 'Chopsticks',
     slug: 'chopsticks',
     description: 'Eco-friendly disposable chopsticks',
   },
   {
-    name: 'Food Pails',
-    slug: 'food-pails',
-    description: 'Paper food pails perfect for takeout',
-    subcategories: [
-      { name: 'White Food Pails', slug: 'white' },
-      { name: 'Kraft Food Pails', slug: 'kraft' }
-    ]
+    name: 'Bagasse Hinged Clamshells',
+    slug: 'bagasse-hinged-clamshells',
+    description: 'Sustainable hinged containers made from sugarcane',
   },
   {
     name: 'Napkins & Paper Towels',
@@ -50,21 +47,6 @@ const tknCategories = [
       { name: 'Tissue', slug: 'tissue' },
       { name: 'Toilet Seat Covers', slug: 'toilet-seat-covers' }
     ]
-  },
-  {
-    name: 'Paper Bags',
-    slug: 'paper-bags',
-    description: 'Durable kraft paper bags for takeout and retail',
-  },
-  {
-    name: 'Portion Cups',
-    slug: 'portion-cups',
-    description: 'Small containers for sauces and condiments',
-  },
-  {
-    name: 'Portion Cup Lids',
-    slug: 'portion-cup-lids',
-    description: 'Compatible lids for portion cups',
   }
 ];
 
@@ -90,7 +72,7 @@ export default function TKNPage() {
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Committed to sustainability, TKN specializes in premium kraft paper packaging products. From kraft paper 
               bags and boat trays to bio boxes and food pails, this line provides environmentally responsible options 
-              for modern food service. Choose TKN for quality paper products that align with your green initiatives.
+              for modern food service. 
             </p>
           </div>
         </div>
@@ -149,6 +131,26 @@ export default function TKNPage() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Custom Paper Bags Banner */}
+      <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-y border-amber-200">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+          <div className="text-center">
+            <p className="text-lg text-gray-800">
+              Looking for custom paper bag solutions? Make sure to check out{' '}
+              <a
+                href="https://tknpaperbags.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#1c51a3] hover:text-[#153d7f] hover:underline transition-colors"
+              >
+                tknpaperbags.com 
+              </a>
+               !
+            </p>
+          </div>
         </div>
       </div>
 
