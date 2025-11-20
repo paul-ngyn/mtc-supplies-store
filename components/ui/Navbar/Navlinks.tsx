@@ -13,6 +13,7 @@ export default function Navlinks() {
   const [showSushiTrayDropdown, setShowSushiTrayDropdown] = useState(false);
   const [showMBClamshellsDropdown, setShowMBClamshellsDropdown] = useState(false);
   const [showBentoDropdown, setShowBentoDropdown] = useState(false);
+  const [showNapkinsPapertowelsDropdown, setShowNapkinsPapertowelsDropdown] = useState(false);
 
   return (
     <div className="bg-[#1c51a3] border-t border-[#163d7a]">
@@ -64,7 +65,7 @@ export default function Navlinks() {
                     onMouseLeave={() => setShowPortionCupsDropdown(false)}
                   >
                     <Link 
-                      href="/category/tkn/portion-cups"
+                      href="/category/tkn/portion-cups-lids"
                       className="px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors flex items-center justify-between"
                     >
                       <span>Portion Cups & Lids</span>
@@ -103,12 +104,51 @@ export default function Navlinks() {
                   >
                     Chopsticks
                   </Link>
-                  <Link 
-                    href="/category/tkn/napkins-papertowels"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                  <div 
+                    className="relative group"
+                    onMouseEnter={() => setShowNapkinsPapertowelsDropdown(true)}
+                    onMouseLeave={() => setShowNapkinsPapertowelsDropdown(false)}
                   >
-                    Napkins & Papertowels
-                  </Link>
+                    <Link 
+                      href="/category/tkn/napkins-papertowels"
+                      className="px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                    >
+                      <span>Napkins & Papertowels</span>
+                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                    {showNapkinsPapertowelsDropdown && (
+                      <div className="absolute left-full top-0 ml-0 bg-white shadow-lg rounded-md min-w-[220px] z-50">
+                        <div className="py-2">
+                          <Link 
+                            href="/category/tkn/napkins-papertowels/napkins"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            Napkins
+                          </Link>
+                          <Link 
+                            href="/category/tkn/napkins-papertowels/paper-towels"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            Paper Towels
+                          </Link>
+                          <Link 
+                            href="/category/tkn/napkins-papertowels/tissue"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            Tissue
+                          </Link>
+                          <Link 
+                            href="/category/tkn/napkins-papertowels/toilet-seat-covers"
+                            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition-colors"
+                          >
+                            Toilet Seat Covers
+                          </Link>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                   <Link 
                     href="/category/tkn"
                     className="block px-4 py-3 text-sm font-semibold text-blue-600 hover:text-blue-800 hover:bg-blue-50 transition-colors border-t mt-2 text-center"
