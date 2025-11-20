@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,6 +13,15 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
+      );
+    }
+
+    // If Resend is not configured, just log the message
+    if (!resend) {
+      console.log('Contact form submission (email not configured):', { name, email, phone, company, inquiry });
+      return NextResponse.json(
+        { message: 'Contact form submitted successfully (email service not configured)' },
+        { status: 200 }
       );
     }
 

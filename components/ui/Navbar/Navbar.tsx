@@ -40,7 +40,7 @@ export default function Navbar() {
                 className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
               >
                 <Image 
-                  src="/mtc_logo-removebg.png " 
+                  src="/mtc_logo-removebg.png" 
                   alt="MTC Logo" 
                   width={280} 
                   height={100}
