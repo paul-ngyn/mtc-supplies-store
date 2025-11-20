@@ -7,8 +7,8 @@ export default function BoatTraysPage() {
     { 
       id: 1, 
       itemNo: 'BT-1025K',
-      name: 'Â¼ lb - Small',
-      weight: 'Â¼ lb',
+      name: '¼ lb - Small',
+      weight: '¼ lb',
       description: 'Grease Resistant',
       productDimension: '3.62" x 4.61"',
       bottomDimension: '1.85" x 2.87"',
@@ -20,8 +20,8 @@ export default function BoatTraysPage() {
     { 
       id: 2, 
       itemNo: 'BT-2050K',
-      name: 'Â½ lb - Small',
-      weight: 'Â½ lb',
+      name: '½ lb - Small',
+      weight: '½ lb',
       description: 'Grease Resistant',
       productDimension: '4.1" x 5.43"',
       bottomDimension: '1.97" x 3.35"',

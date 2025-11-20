@@ -118,7 +118,7 @@ export default function MobileMenu() {
                 </Link>
                 <Link 
                   href="/products" 
-                  className="text-gray-800 hover:text-[#1c51a3] py-2 text-xl font-semibold animate-slide-in"
+                  className="text-gray-800 hover:text-[#1c51a3] py-2 text-xl font-semibold animate-slide-in pb-1"
                   style={{ animationDelay: '350ms' }}
                   onClick={() => setIsOpen(false)}
                 >
@@ -128,7 +128,7 @@ export default function MobileMenu() {
             </div>
 
             {/* More Section */}
-            <div className="pt-4 animate-slide-in" style={{ animationDelay: '400ms' }}>
+            <div className="pt-1 animate-slide-in" style={{ animationDelay: '400ms' }}>
               <div className="mb-2.5">
                 <h3 className="text-gray-900 font-bold text-xs uppercase tracking-wider">MORE</h3>
                 <div className="w-8 h-0.5 bg-[#1c51a3] mt-1"></div>
