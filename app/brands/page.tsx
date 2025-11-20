@@ -111,6 +111,26 @@ export default function OurBrandsPage() {
         </div>
       </div>
 
+      {/* Custom Paper Bags Banner */}
+      <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-y border-amber-200">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+          <div className="text-center">
+            <p className="text-lg text-gray-800">
+              Looking for custom paper bag solutions? Make sure to check out{' '}
+              <a
+                href="https://tknpaperbags.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#1c51a3] hover:text-[#153d7f] hover:underline transition-colors"
+              >
+                tknpaperbags.com
+              </a>
+              !
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Call to Action Section */}
       <div className="bg-blue-200 mt-12">
         <div className="max-w-7xl mx-auto px-6 py-12 text-center">

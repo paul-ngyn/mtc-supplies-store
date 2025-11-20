@@ -174,6 +174,24 @@ export default function PaperBagsPage() {
               ))}
             </div>
 
+            {/* Custom Paper Bags Banner */}
+            <div className="mt-8 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-lg">
+              <div className="px-6 py-4 text-center">
+                <p className="text-lg text-gray-800">
+                  Looking for custom paper bag solutions? Make sure to check out{' '}
+                  <a
+                    href="https://tknpaperbags.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-[#1c51a3] hover:text-[#153d7f] hover:underline transition-colors"
+                  >
+                    tknpaperbags.com
+                  </a>
+                  !
+                </p>
+              </div>
+            </div>
+
             <div className="mt-8 p-6 bg-blue-50 rounded-lg">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Want to place an order or have any product questions?</h3>
               <p className="text-gray-600 mb-4">
