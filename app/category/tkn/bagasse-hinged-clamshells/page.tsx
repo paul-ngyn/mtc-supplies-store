@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import SimilarProducts from '@/components/ui/SimilarProducts';
+import { getSuggestedProducts } from '@/utils/suggestedProducts';
 
 export default function BagasseClamshellsPage() {
   // Product sizes/options - Real data from product catalog
@@ -216,6 +218,14 @@ export default function BagasseClamshellsPage() {
                 Contact Us
               </Link>
             </div>
+
+            {/* Similar Products Section */}
+            <SimilarProducts
+              currentBrand="TKN"
+              currentCategory="Bagasse Hinged Clamshells"
+              products={getSuggestedProducts('tkn', 'bagasse-hinged-clamshells')}
+              maxProducts={4}
+            />
           </div>
         </div>
       </div>
