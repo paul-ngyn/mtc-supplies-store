@@ -28,7 +28,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#1c51a3]">
       <div className="mx-auto max-w-[1920px] px-6">
-        <div className="grid grid-cols-1 gap-6 py-8 text-white transition-colors duration-150 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-6">
+        <div className="grid grid-cols-1 gap-6 py-8 text-white transition-colors duration-150 lg:grid-cols-10 lg:gap-x-12 lg:gap-y-6">
           
           {/* MTC Logo */}
           <div className="col-span-1 lg:col-span-2 lg:pr-0">
@@ -86,14 +86,6 @@ export default function Footer() {
               </li>
               <li className="py-3 md:py-0 md:pb-4">
                 <Link
-                  href="/support"
-                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
-                >
-                  Customer Support
-                </Link>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link
                   href="/faq"
                   className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
                 >
@@ -106,49 +98,6 @@ export default function Footer() {
                   className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
                 >
                   Contact Us
-                </Link>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link
-                  href="/returns"
-                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
-                >
-                  Returns & Exchanges
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Track My Order Section */}
-          <div className="col-span-1 lg:col-span-2">
-            <ul className="flex flex-col flex-initial md:flex-1">
-              <li className="py-3 md:py-0 md:pb-4">
-                <p className="font-bold text-white">
-                  TRACK MY ORDER
-                </p>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link
-                  href="/orders"
-                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
-                >
-                  Order Status
-                </Link>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link
-                  href="/shipping"
-                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
-                >
-                  Shipping Info
-                </Link>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link
-                  href="/delivery"
-                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
-                >
-                  Delivery Updates
                 </Link>
               </li>
             </ul>
@@ -178,10 +127,26 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
+              <li className="py-3 md:py-0 md:pb-4">
+                <Link
+                  href="/shipping"
+                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                >
+                  Shipping Info
+                </Link>
+              </li>
+              <li className="py-3 md:py-0 md:pb-4">
+                <Link
+                  href="/delivery"
+                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                >
+                  Delivery Updates
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Legal Section - Expanded to Fill Space */}
+          {/* Legal Section */}
           <div className="col-span-1 lg:col-span-2">
             <ul className="flex flex-col flex-initial md:flex-1">
               <li className="py-3 md:py-0 md:pb-4">
