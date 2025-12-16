@@ -302,6 +302,7 @@ function SearchResults() {
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [selectedBrand, setSelectedBrand] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('relevance');
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   // Get unique brands
   const brands = ['all', ...Array.from(new Set(products.map(p => p.brand)))];
@@ -369,10 +370,34 @@ function SearchResults() {
               </div>
             </div>
 
-            {/* Results Count */}
-            <div className="text-gray-600">
-              <span className="font-semibold text-gray-900">{filteredProducts.length}</span> results
-              {searchTerm && <span> for "{searchTerm}"</span>}
+            {/* Results Count & Filter Toggle */}
+            <div className="flex items-center gap-3">
+              {/* Mobile Filter Toggle Button */}
+              <button
+                onClick={() => setIsFilterOpen(!isFilterOpen)}
+                className="lg:hidden flex items-center gap-2 px-4 py-2 bg-[#1c51a3] text-white rounded-lg hover:bg-[#153d7f] transition-colors"
+              >
+                <svg 
+                  className="w-5 h-5" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                </svg>
+                <span className="font-medium">Filters</span>
+                {(selectedBrand !== 'all' || sortBy !== 'relevance') && (
+                  <span className="bg-white text-[#1c51a3] text-xs font-bold px-2 py-0.5 rounded-full">
+                    {(selectedBrand !== 'all' ? 1 : 0) + (sortBy !== 'relevance' ? 1 : 0)}
+                  </span>
+                )}
+              </button>
+
+              {/* Results Count */}
+              <div className="text-gray-600">
+                <span className="font-semibold text-gray-900">{filteredProducts.length}</span> results
+                {searchTerm && <span className="hidden sm:inline"> for "{searchTerm}"</span>}
+              </div>
             </div>
           </div>
         </div>
@@ -380,10 +405,24 @@ function SearchResults() {
 
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Filters Sidebar */}
-          <aside className="lg:w-64 flex-shrink-0">
-            <div className="bg-white rounded-lg shadow-md p-6 sticky top-24">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Filters</h3>
+          {/* Filters Sidebar - Mobile Collapsible */}
+          <aside className={`
+            lg:w-64 flex-shrink-0
+            ${isFilterOpen ? 'block' : 'hidden lg:block'}
+          `}>
+            <div className="bg-white rounded-lg shadow-md p-6 lg:sticky lg:top-24">
+              {/* Mobile Header with Close Button */}
+              <div className="flex items-center justify-between mb-4 lg:block">
+                <h3 className="text-lg font-bold text-gray-900">Filters</h3>
+                <button
+                  onClick={() => setIsFilterOpen(false)}
+                  className="lg:hidden text-gray-500 hover:text-gray-700"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
               
               {/* Brand Filter */}
               <div className="mb-6">
@@ -433,6 +472,14 @@ function SearchResults() {
                   Clear Filters
                 </button>
               )}
+
+              {/* Mobile: Apply Filters Button */}
+              <button
+                onClick={() => setIsFilterOpen(false)}
+                className="lg:hidden w-full mt-4 px-4 py-3 bg-[#1c51a3] text-white font-semibold rounded-lg hover:bg-[#153d7f] transition-colors"
+              >
+                Apply Filters
+              </button>
             </div>
           </aside>
 
