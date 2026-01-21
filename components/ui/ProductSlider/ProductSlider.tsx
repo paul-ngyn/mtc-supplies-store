@@ -47,7 +47,7 @@ const brands: Brand[] = [
     slug: "imperial",
     description: "For all your sushi and bento needs",
     scale: 1,
-    fullBanner: "/MTC_IMP_PP/MTC IMPERIAL no bg/ImpProductCarouselfin.png"
+    fullBanner: "/MTC_IMP_PP/MTC IMPERIAL no bg/ImpProductCarouselLast.png"
   },
   {
     id: 5,

@@ -105,8 +105,96 @@ export default function HomePage() {
       </section>
 
       {/* Imperial Products Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="pt-32 pb-28 md:pt-44 md:pb-40 bg-white relative overflow-hidden">
+        {/* Top Cherry Blossom Border - Repeating */}
+        <div className="absolute top-0 left-0 w-full h-24 md:h-32 flex">
+          <div className="relative flex-1 min-w-[200px]">
+            <Image
+              src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+              alt="Cherry Blossom Border"
+              fill
+              className="object-contain object-bottom"
+            />
+          </div>
+          <div className="relative flex-1 min-w-[200px]">
+            <Image
+              src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+              alt="Cherry Blossom Border"
+              fill
+              className="object-contain object-bottom"
+            />
+          </div>
+          <div className="relative flex-1 min-w-[200px]">
+            <Image
+              src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+              alt="Cherry Blossom Border"
+              fill
+              className="object-contain object-bottom"
+            />
+          </div>
+          <div className="relative flex-1 min-w-[200px]">
+            <Image
+              src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+              alt="Cherry Blossom Border"
+              fill
+              className="object-contain object-bottom"
+            />
+          </div>
+          <div className="relative flex-1 min-w-[200px]">
+            <Image
+              src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+              alt="Cherry Blossom Border"
+              fill
+              className="object-contain object-bottom"
+            />
+          </div>
+        </div>
+        
+        {/* Bottom Cherry Blossom Border - Repeating */}
+        <div className="absolute bottom-0 left-0 w-full h-24 md:h-32 flex">
+          <div className="relative flex-1 min-w-[200px]">
+            <Image
+              src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+              alt="Cherry Blossom Border"
+              fill
+              className="object-contain object-top rotate-180"
+            />
+          </div>
+          <div className="relative flex-1 min-w-[200px]">
+            <Image
+              src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+              alt="Cherry Blossom Border"
+              fill
+              className="object-contain object-top rotate-180"
+            />
+          </div>
+          <div className="relative flex-1 min-w-[200px]">
+            <Image
+              src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+              alt="Cherry Blossom Border"
+              fill
+              className="object-contain object-top rotate-180"
+            />
+          </div>
+          <div className="relative flex-1 min-w-[200px]">
+            <Image
+              src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+              alt="Cherry Blossom Border"
+              fill
+              className="object-contain object-top rotate-180"
+            />
+          </div>
+          <div className="relative flex-1 min-w-[200px]">
+            <Image
+              src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+              alt="Cherry Blossom Border"
+              fill
+              className="object-contain object-top rotate-180"
+            />
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
               <Image
