@@ -128,7 +128,7 @@ export default function ProductSlider() {
       {/* Main slider container */}
       <div 
         ref={sliderRef}
-        className="relative h-[310px] md:h-[490px] lg:h-[540px] overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-r from-blue-50 to-blue-100 touch-pan-y"
+        className="relative h-[200px] sm:h-[280px] md:h-[490px] lg:h-[540px] overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-r from-blue-50 to-blue-100 touch-pan-y"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -142,18 +142,18 @@ export default function ProductSlider() {
             <div key={brand.id} className="w-full flex-shrink-0 relative">
               {brand.fullBanner ? (
                 /* Full Banner Layout */
-                <div className="relative h-full w-full">
+                <div className="relative h-full w-full overflow-hidden">
                   <Image
                     src={brand.fullBanner}
                     alt={`${brand.name} Banner`}
                     fill
-                    className="object-cover"
+                    className="object-cover scale-105"
                     priority={currentSlide === brand.id - 1}
                   />
                   {/* Shop All Button Overlay */}
-                  <div className="absolute bottom-6 md:bottom-10 left-8 md:left-16">
+                  <div className="absolute bottom-[8%] md:bottom-10 left-1/2 -translate-x-1/2 md:left-16 md:translate-x-0">
                     <Link href={`/category/${brand.slug}`}>
-                      <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-7 py-2.5 md:py-3 rounded-lg text-sm md:text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
+                      <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 md:px-7 py-1.5 md:py-3 rounded-md md:rounded-lg text-[10px] md:text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
                         Shop All
                       </button>
                     </Link>

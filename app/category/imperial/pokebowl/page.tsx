@@ -1,7 +1,35 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function PokeBowlPage() {
+  const [currentImage, setCurrentImage] = useState(0);
+  
+  const productImages = [
+    {
+      src: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke_bowl_full-removebg-preview.png',
+      alt: 'Poke Bowl - Full'
+    },
+    {
+      src: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke open.png',
+      alt: 'Poke Bowl - Open'
+    },
+    {
+      src: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke half.png',
+      alt: 'Poke Bowl - Half Filled'
+    },
+    {
+      src: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke closed.png',
+      alt: 'Poke Bowl - Closed'
+    },
+    {
+      src: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke stack.png',
+      alt: 'Poke Bowl - Stack'
+    }
+  ];
+
   // Product sizes/options - Real data from product catalog
   const sizeOptions = [
     { 
@@ -58,15 +86,74 @@ export default function PokeBowlPage() {
         {/* Product Section */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
-            {/* Product Image */}
-            <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
-              <Image
-                src="/demo.png"
-                alt="Poke Bowl with Clear Lid"
-                fill
-                className="object-contain p-8"
-                priority
-              />
+            {/* Product Image Slider */}
+            <div className="relative">
+              {/* Main Image Display */}
+              <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
+                <Image
+                  src={productImages[currentImage].src}
+                  alt={productImages[currentImage].alt}
+                  fill
+                  className="object-contain p-8"
+                  priority
+                />
+                
+                {/* Previous Button */}
+                <button
+                  onClick={() => setCurrentImage((prev) => (prev - 1 + productImages.length) % productImages.length)}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
+                  aria-label="Previous image"
+                >
+                  <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                
+                {/* Next Button */}
+                <button
+                  onClick={() => setCurrentImage((prev) => (prev + 1) % productImages.length)}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
+                  aria-label="Next image"
+                >
+                  <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+                
+                {/* Image Indicator Dots */}
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                  {productImages.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentImage(index)}
+                      className={`w-2 h-2 rounded-full transition-all ${
+                        currentImage === index ? 'bg-blue-600 w-6' : 'bg-gray-400'
+                      }`}
+                      aria-label={`Go to image ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
+              
+              {/* Thumbnail Images */}
+              <div className="flex gap-2 mt-4">
+                {productImages.map((image, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImage(index)}
+                    className={`relative w-20 h-20 rounded-lg overflow-hidden border-2 transition-all ${
+                      currentImage === index ? 'border-blue-600' : 'border-gray-200 hover:border-gray-300'
+                    }`}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-contain p-2"
+                    />
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Product Info */}
@@ -160,12 +247,4 @@ export default function PokeBowlPage() {
       </div>
     </div>
   );
-}
-
-// Generate metadata for SEO
-export async function generateMetadata() {
-  return {
-    title: 'Poke Bowl with Clear Lid - Imperial Products - Maple Trade Corp',
-    description: 'Premium poke bowls with clear lids in 18oz, 24oz, and 32oz sizes. Perfect for poke restaurants, rice bowls, and takeout.',
-  };
 }
