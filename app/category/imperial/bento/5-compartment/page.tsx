@@ -15,6 +15,10 @@ export default function FiveCompartmentBentoPage() {
     {
       src: '/MTC_IMP_PP/MTC IMPERIAL no bg/5 COMP BENTO CLOSED.png',
       alt: '5-Compartment Bento Box - Closed'
+    },
+    {
+      src: '/MTC_IMP_PP/MTC IMPERIAL no bg/full_bent_5-removebg-preview.png',
+      alt: '5-Compartment Bento Box - Full Display'
     }
   ];
 

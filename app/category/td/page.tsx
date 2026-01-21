@@ -6,11 +6,13 @@ const tdCategories = [
     name: 'Plastic Containers',
     slug: 'plastic-containers',
     description: 'Budget-friendly plastic containers in round, rectangular, and compartment styles for everyday use',
+    image: null
   },
   {
     name: 'Soup Containers',
     slug: 'soup-containers',
-    description: 'Value-priced containers for soups and liquids',
+    description: 'Value-priced containers for anything from soup to snacks',
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png'
   }
 ];
 
@@ -46,32 +48,46 @@ export default function TDPage() {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {tdCategories.map((category) => (
-            <div
-              key={category.slug}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="p-6">
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  {category.name}
-                </h2>
-                <p className="text-gray-600 mb-4">
-                  {category.description}
-                </p>
-                
-                <Link
-                  href={`/category/td/${category.slug}`}
-                  className="inline-flex items-center text-[#1c51a3] font-semibold hover:text-[#153d7f] transition-colors mt-4"
-                >
-                  View Containers
-                  <svg 
-                    className="w-4 h-4 ml-2" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
+            <div key={category.slug} className="flex flex-col rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              {/* Image above the card (if available) */}
+              {category.image && (
+                <div className="relative h-80 bg-gray-50 p-6 flex items-center justify-center">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={category.image}
+                      alt={category.name}
+                      fill
+                      className="object-contain scale-110"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {/* Card with text */}
+              <div className="bg-white">
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                    {category.name}
+                  </h2>
+                  <p className="text-gray-600 mb-4">
+                    {category.description}
+                  </p>
+                  
+                  <Link
+                    href={`/category/td/${category.slug}`}
+                    className="inline-flex items-center text-[#1c51a3] font-semibold hover:text-[#153d7f] transition-colors mt-4"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
+                    View Containers
+                    <svg 
+                      className="w-4 h-4 ml-2" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

@@ -1,7 +1,36 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function TDSoupContainersPage() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Product images for slider
+  const productImages = [
+    {
+      src: '/MTC_TD_PP/MTC TD no bg pics/deli S.png',
+      alt: 'Deli Container - Small (8oz)'
+    },
+    {
+      src: '/MTC_TD_PP/MTC TD no bg pics/med.png',
+      alt: 'Deli Container - Medium (12oz)'
+    },
+    {
+      src: '/MTC_TD_PP/MTC TD no bg pics/deli L.png',
+      alt: 'Deli Container - Large (16oz)'
+    },
+    {
+      src: '/MTC_TD_PP/MTC TD no bg pics/deli xl.png',
+      alt: 'Deli Container - Extra Large (24oz-32oz)'
+    },
+    {
+      src: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
+      alt: 'Fruit Cup Container - Extra Large'
+    },
+  ];
+
   // Product sizes/options - Real data from product catalog
   const sizeOptions = [
     { 
@@ -13,7 +42,8 @@ export default function TDSoupContainersPage() {
       caseQty: '240 SETS',
       caseWeight: '12.5 lb',
       palletCount: '56',
-      tiHi: '8 x 7'
+      tiHi: '8 x 7',
+      image: '/MTC_TD_PP/MTC TD no bg pics/deli S.png'
     },
     { 
       id: 2, 
@@ -24,7 +54,8 @@ export default function TDSoupContainersPage() {
       caseQty: '240 SETS',
       caseWeight: '14 lb',
       palletCount: '48',
-      tiHi: '8 x 6'
+      tiHi: '8 x 6',
+      image: '/MTC_TD_PP/MTC TD no bg pics/med.png'
     },
     { 
       id: 3, 
@@ -35,7 +66,8 @@ export default function TDSoupContainersPage() {
       caseQty: '240 SETS',
       caseWeight: '15.5 lb',
       palletCount: '48',
-      tiHi: '8 x 6'
+      tiHi: '8 x 6',
+      image: '/MTC_TD_PP/MTC TD no bg pics/deli L.png'
     },
     { 
       id: 4, 
@@ -46,7 +78,8 @@ export default function TDSoupContainersPage() {
       caseQty: '240 SETS',
       caseWeight: '18.7 lb',
       palletCount: '40',
-      tiHi: '8 x 5'
+      tiHi: '8 x 5',
+      image: '/MTC_TD_PP/MTC TD no bg pics/deli xl.png'
     },
     { 
       id: 5, 
@@ -57,7 +90,8 @@ export default function TDSoupContainersPage() {
       caseQty: '240 SETS',
       caseWeight: '23 lb',
       palletCount: '32',
-      tiHi: '8 x 4'
+      tiHi: '8 x 4',
+      image: '/MTC_TD_PP/MTC TD no bg pics/deli xl.png'
     },
   ];
 
@@ -80,15 +114,74 @@ export default function TDSoupContainersPage() {
         {/* Product Section */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
-            {/* Product Image */}
-            <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
-              <Image
-                src="/demo.png"
-                alt="TD Microwave Deli Soup Containers"
-                fill
-                className="object-contain p-8"
-                priority
-              />
+            {/* Product Image Slider */}
+            <div className="relative">
+              {/* Main Image Display */}
+              <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
+                <Image
+                  src={productImages[currentImageIndex].src}
+                  alt={productImages[currentImageIndex].alt}
+                  fill
+                  className="object-contain p-8"
+                  priority
+                />
+                
+                {/* Previous Button */}
+                <button
+                  onClick={() => setCurrentImageIndex((prev) => (prev - 1 + productImages.length) % productImages.length)}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
+                  aria-label="Previous image"
+                >
+                  <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                
+                {/* Next Button */}
+                <button
+                  onClick={() => setCurrentImageIndex((prev) => (prev + 1) % productImages.length)}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
+                  aria-label="Next image"
+                >
+                  <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+                
+                {/* Image Indicator Dots */}
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                  {productImages.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentImageIndex(index)}
+                      className={`w-2 h-2 rounded-full transition-all ${
+                        currentImageIndex === index ? 'bg-blue-600 w-6' : 'bg-gray-400'
+                      }`}
+                      aria-label={`Go to image ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
+              
+              {/* Thumbnail Images */}
+              <div className="flex gap-2 mt-4">
+                {productImages.map((image, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`relative w-20 h-20 rounded-lg overflow-hidden border-2 transition-all ${
+                      currentImageIndex === index ? 'border-blue-600' : 'border-gray-200 hover:border-gray-300'
+                    }`}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-contain p-2"
+                    />
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Product Info */}
@@ -182,12 +275,4 @@ export default function TDSoupContainersPage() {
       </div>
     </div>
   );
-}
-
-// Generate metadata for SEO
-export async function generateMetadata() {
-  return {
-    title: 'Microwave Deli Soup Containers - TD Products - Maple Trade Corp',
-    description: 'Premium microwave-safe soup containers in 8oz to 32oz sizes. Perfect for delis, takeout, and food delivery.',
-  };
 }

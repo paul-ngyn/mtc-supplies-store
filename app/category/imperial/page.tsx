@@ -6,7 +6,7 @@ const imperialCategories = [
     name: 'Sushi Trays',
     slug: 'sushi-tray',
     description: 'Premium sushi packaging with elegant black and gold designs',
-    thumbnail: '/MTC_IMP_PP/MTC IMPERIAL no bg/sushi open.png',
+    thumbnail: '/MTC_IMP_PP/full tray sushi.png',
     subcategories: [
       { name: 'Rectangular Sushi Trays', slug: 'rectangular-sushi-tray' },
       { name: 'Round Party Trays', slug: 'round-party-tray' }
@@ -16,7 +16,7 @@ const imperialCategories = [
     name: 'Bento Boxes',
     slug: 'bento',
     description: 'Traditional Asian-style compartmented containers',
-    thumbnail: '/MTC_IMP_PP/MTC IMPERIAL no bg/5 COMP BENTO CLOSED.png',
+    thumbnail: '/MTC_IMP_PP/MTC IMPERIAL no bg/full_bent_5-removebg-preview.png',
     subcategories: [
       { name: 'Single Compartment', slug: 'single-compartment' },
       { name: '5 Compartment', slug: '5-compartment' }
@@ -26,7 +26,7 @@ const imperialCategories = [
     name: 'Poke Bowls',
     slug: 'pokebowl',
     description: 'Stylish containers perfect for poke and rice bowls',
-    thumbnail: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke stack.png',
+    thumbnail: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke_bowl_full-removebg-preview.png',
     subcategories: []
   }
 ];
@@ -74,7 +74,9 @@ export default function ImperialPage() {
                   alt={category.name}
                   width={300}
                   height={300}
-                  className="object-contain h-full w-full scale-115"
+                  className={`object-contain h-full w-full scale-125 ${
+                    category.slug === 'pokebowl' ? 'translate-x-[10%] -translate-y-[15%]' : ''
+                  }`}
                 />
               </div>
               

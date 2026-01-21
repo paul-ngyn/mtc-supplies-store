@@ -39,7 +39,7 @@ const featuredCategories = [
     brand: 'MB',
     brandSlug: 'mb',
     description: 'Versatile hinged clamshell containers for takeout',
-    image: '/demo.png'
+    image: '/MTC_MP_PP/MTC MB no bg pics/tri stack black side.png'
   }
 ];
 
@@ -67,21 +67,24 @@ export default function HomePage() {
                 href={`/category/${category.brandSlug}/${category.slug}`}
                 className="group cursor-pointer"
               >
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-blue-200 h-full">
-                  <div className="relative h-64 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center p-8">
+                <div className="flex flex-col">
+                  {/* Image above the card */}
+                  <div className="relative h-64 mb-4">
                     <Image
                       src={category.image}
                       alt={category.name}
                       width={300}
                       height={300}
-                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                     />
+                  </div>
+                  
+                  {/* Card with text */}
+                  <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-blue-200 p-6 text-center relative">
                     <span className="absolute top-4 right-4 text-sm font-bold text-white bg-[#1c51a3] px-4 py-2 rounded-lg shadow-lg">
                       {category.brand}
                     </span>
-                  </div>
-                  <div className="p-6 text-center bg-white">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#1c51a3] transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#1c51a3] transition-colors mt-8">
                       {category.name}
                     </h3>
                     <p className="text-sm text-gray-600 leading-relaxed">

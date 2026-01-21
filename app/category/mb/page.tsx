@@ -45,52 +45,64 @@ export default function MBPage() {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {mbCategories.map((category) => (
-            <div
-              key={category.slug}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="p-6">
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  {category.name}
-                </h2>
-                <p className="text-gray-600 mb-4">
-                  {category.description}
-                </p>
-                
-                {category.subcategories && category.subcategories.length > 0 ? (
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
-                      Products:
-                    </h3>
-                    <ul className="space-y-2">
-                      {category.subcategories.map((sub) => (
-                        <li key={sub.slug}>
-                          <Link
-                            href={`/category/mb/${category.slug}/${sub.slug}`}
-                            className="text-[#1c51a3] hover:text-[#153d7f] hover:underline transition-colors"
-                          >
-                            {sub.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : (
-                  <Link
-                    href={`/category/mb/${category.slug}`}
-                    className="inline-flex items-center text-[#1c51a3] font-semibold hover:text-[#153d7f] transition-colors mt-4"
-                  >
-                    View Products
-                    <svg 
-                      className="w-4 h-4 ml-2" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
+            <div key={category.slug} className="flex flex-col rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              {/* Image above the card */}
+              <div className="relative h-64 bg-gray-50 p-6 flex items-center justify-center">
+                <div className="relative w-64 h-64">
+                  <Image
+                    src="/MTC_MP_PP/MTC MB no bg pics/tri stack black side.png"
+                    alt="MB Hinged Clamshells"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
+              {/* Card with text */}
+              <div className="bg-white">
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                    {category.name}
+                  </h2>
+                  <p className="text-gray-600 mb-4">
+                    {category.description}
+                  </p>
+                  
+                  {category.subcategories && category.subcategories.length > 0 ? (
+                    <div className="space-y-2">
+                      <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
+                        Products:
+                      </h3>
+                      <ul className="space-y-2">
+                        {category.subcategories.map((sub) => (
+                          <li key={sub.slug}>
+                            <Link
+                              href={`/category/mb/${category.slug}/${sub.slug}`}
+                              className="text-[#1c51a3] hover:text-[#153d7f] hover:underline transition-colors"
+                            >
+                              {sub.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : (
+                    <Link
+                      href={`/category/mb/${category.slug}`}
+                      className="inline-flex items-center text-[#1c51a3] font-semibold hover:text-[#153d7f] transition-colors mt-4"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                )}
+                      View Products
+                      <svg 
+                        className="w-4 h-4 ml-2" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           ))}

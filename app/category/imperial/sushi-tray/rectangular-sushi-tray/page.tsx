@@ -15,6 +15,10 @@ export default function RectangularSushiTrayPage() {
     {
       src: '/MTC_IMP_PP/MTC IMPERIAL no bg/sushi closed.png',
       alt: 'Rectangular Sushi Tray - Closed'
+    },
+    {
+      src: '/MTC_IMP_PP/full tray sushi.png',
+      alt: 'Rectangular Sushi Tray - Full Display'
     }
   ];
 
