@@ -11,6 +11,7 @@ interface Brand {
   slug: string;
   description: string;
   scale?: number;
+  fullBanner?: string; // Full-width banner image that replaces the entire slide
 }
 
 // Brand logos for the slider
@@ -44,8 +45,9 @@ const brands: Brand[] = [
     name: "Imperial",
     logo: "/imperial-removebg-.png",
     slug: "imperial",
-    description: "Premium Imperial brand products",
-    scale: 1
+    description: "For all your sushi and bento needs",
+    scale: 1,
+    fullBanner: "/MTC_IMP_PP/MTC IMPERIAL no bg/ImpProductCarouselfin.png"
   },
   {
     id: 5,
@@ -122,11 +124,11 @@ export default function ProductSlider() {
   };
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto">
+    <div className="relative w-full max-w-7xl mx-auto px-2 md:px-4">
       {/* Main slider container */}
       <div 
         ref={sliderRef}
-        className="relative h-64 md:h-96 overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-r from-blue-50 to-blue-100 touch-pan-y"
+        className="relative h-[310px] md:h-[490px] lg:h-[540px] overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-r from-blue-50 to-blue-100 touch-pan-y"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -138,37 +140,59 @@ export default function ProductSlider() {
         >
           {brands.map((brand) => (
             <div key={brand.id} className="w-full flex-shrink-0 relative">
-              <div className="flex flex-col h-full items-center justify-center px-4 md:px-12 py-6">
-                {/* Brand Logo */}
-                <div className="relative w-48 h-48 md:w-64 md:h-64 mb-4 md:mb-6 flex items-center justify-center overflow-hidden">
+              {brand.fullBanner ? (
+                /* Full Banner Layout */
+                <div className="relative h-full w-full">
                   <Image
-                    src={brand.logo}
-                    alt={`${brand.name} Logo`}
-                    width={256}
-                    height={256}
-                    className="object-contain drop-shadow-lg max-h-full w-auto"
-                    style={{ transform: `scale(${brand.scale || 1})` }}
+                    src={brand.fullBanner}
+                    alt={`${brand.name} Banner`}
+                    fill
+                    className="object-cover"
                     priority={currentSlide === brand.id - 1}
                   />
+                  {/* Shop All Button Overlay */}
+                  <div className="absolute bottom-6 md:bottom-10 left-8 md:left-16">
+                    <Link href={`/category/${brand.slug}`}>
+                      <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-7 py-2.5 md:py-3 rounded-lg text-sm md:text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
+                        Shop All
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-                
-                {/* Brand Name */}
-                <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-2 md:mb-4">
-                  {brand.name}
-                </h2>
-                
-                {/* Description */}
-                <p className="text-sm md:text-lg text-gray-600 mb-4 md:mb-6 text-center max-w-2xl">
-                  {brand.description}
-                </p>
-                
-                {/* View Products Button */}
-                <Link href={`/category/${brand.slug}`}>
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
-                    View {brand.name} Products
-                  </button>
-                </Link>
-              </div>
+              ) : (
+                /* Default Layout */
+                <div className="flex flex-col h-full items-center justify-center px-4 md:px-12 py-6">
+                  {/* Brand Logo */}
+                  <div className="relative w-48 h-48 md:w-64 md:h-64 mb-4 md:mb-6 flex items-center justify-center overflow-hidden">
+                    <Image
+                      src={brand.logo}
+                      alt={`${brand.name} Logo`}
+                      width={256}
+                      height={256}
+                      className="object-contain drop-shadow-lg max-h-full w-auto"
+                      style={{ transform: `scale(${brand.scale || 1})` }}
+                      priority={currentSlide === brand.id - 1}
+                    />
+                  </div>
+                  
+                  {/* Brand Name */}
+                  <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-2 md:mb-4">
+                    {brand.name}
+                  </h2>
+                  
+                  {/* Description */}
+                  <p className="text-sm md:text-lg text-gray-600 mb-4 md:mb-6 text-center max-w-2xl">
+                    {brand.description}
+                  </p>
+                  
+                  {/* View Products Button */}
+                  <Link href={`/category/${brand.slug}`}>
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
+                      View {brand.name} Products
+                    </button>
+                  </Link>
+                </div>
+              )}
             </div>
           ))}
         </div>

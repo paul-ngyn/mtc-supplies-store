@@ -6,6 +6,7 @@ const imperialCategories = [
     name: 'Sushi Trays',
     slug: 'sushi-tray',
     description: 'Premium sushi packaging with elegant black and gold designs',
+    thumbnail: '/MTC_IMP_PP/MTC IMPERIAL no bg/sushi open.png',
     subcategories: [
       { name: 'Rectangular Sushi Trays', slug: 'rectangular-sushi-tray' },
       { name: 'Round Party Trays', slug: 'round-party-tray' }
@@ -15,6 +16,7 @@ const imperialCategories = [
     name: 'Bento Boxes',
     slug: 'bento',
     description: 'Traditional Asian-style compartmented containers',
+    thumbnail: '/MTC_IMP_PP/MTC IMPERIAL no bg/5 COMP BENTO CLOSED.png',
     subcategories: [
       { name: 'Single Compartment', slug: 'single-compartment' },
       { name: '5 Compartment', slug: '5-compartment' }
@@ -24,6 +26,7 @@ const imperialCategories = [
     name: 'Poke Bowls',
     slug: 'pokebowl',
     description: 'Stylish containers perfect for poke and rice bowls',
+    thumbnail: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke stack.png',
     subcategories: []
   }
 ];
@@ -64,6 +67,17 @@ export default function ImperialPage() {
               key={category.slug}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
+              {/* Category Thumbnail */}
+              <div className="relative h-64 bg-gray-50 flex items-center justify-center p-6 overflow-hidden">
+                <Image
+                  src={category.thumbnail}
+                  alt={category.name}
+                  width={300}
+                  height={300}
+                  className="object-contain h-full w-full scale-115"
+                />
+              </div>
+              
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
                   {category.name}

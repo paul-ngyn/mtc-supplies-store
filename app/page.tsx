@@ -108,7 +108,7 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="flex justify-center mb-4">
+            <div className="flex justify-center mb-6">
               <Image
                 src="/imperial-removebg-.png"
                 alt="Imperial Logo"
@@ -125,21 +125,15 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
-            <Link href="#" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-3xl mx-auto">
+            <Link href="/category/imperial/sushi-tray" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
               <h3 className="font-semibold text-gray-900">Sushi Trays</h3>
             </Link>
-            <Link href="#" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
+            <Link href="/category/imperial/bento" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
               <h3 className="font-semibold text-gray-900">Bento Boxes</h3>
             </Link>
-            <Link href="#" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
+            <Link href="/category/imperial/pokebowl" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
               <h3 className="font-semibold text-gray-900">Poke Bowls</h3>
-            </Link>
-            <Link href="#" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
-              <h3 className="font-semibold text-gray-900">Rice Containers</h3>
-            </Link>
-            <Link href="#" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
-              <h3 className="font-semibold text-gray-900">Meal Trays</h3>
             </Link>
           </div>
 
