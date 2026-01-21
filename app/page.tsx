@@ -110,7 +110,7 @@ export default function HomePage() {
       {/* Imperial Products Section */}
       <section className="pt-32 pb-28 md:pt-44 md:pb-40 bg-white relative overflow-hidden">
         {/* Top Cherry Blossom Border - Repeating */}
-        <div className="absolute -top-1 left-0 w-full h-24 md:h-32 flex">
+        <div className="absolute -top-10 left-0 w-full h-24 md:h-32 flex">
           <div className="relative flex-1 min-w-[200px]">
             <Image
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
