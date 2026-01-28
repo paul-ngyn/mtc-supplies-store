@@ -18,7 +18,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Eco-friendly paper bags for all your needs',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Biodegradable food boxes',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Convenient food pail containers',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Versatile boat-shaped serving trays',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Perfect portioning solutions',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Compatible lids for portion cups',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Sustainable hinged clamshell containers',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Quality chopsticks for dining',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 9,
@@ -90,7 +90,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Essential napkins and paper towels',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   // HD Categories
   {
@@ -100,7 +100,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Premium REROBOX food containers',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 11,
@@ -109,7 +109,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Innovative Clipin container solutions',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 12,
@@ -118,7 +118,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Versatile V Series containers',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 13,
@@ -127,7 +127,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Professional meat packaging trays',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 14,
@@ -136,7 +136,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Quality deli storage containers',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   // TD Categories
   {
@@ -146,7 +146,7 @@ const allProductCategories = [
     brand: 'TD',
     brandSlug: 'td',
     description: 'Durable plastic food containers',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 16,
@@ -155,7 +155,7 @@ const allProductCategories = [
     brand: 'TD',
     brandSlug: 'td',
     description: 'Leak-proof soup containers',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   // Imperial Categories
   {
@@ -165,7 +165,7 @@ const allProductCategories = [
     brand: 'Imperial',
     brandSlug: 'imperial',
     description: 'Premium sushi presentation trays',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 18,
@@ -174,7 +174,7 @@ const allProductCategories = [
     brand: 'Imperial',
     brandSlug: 'imperial',
     description: 'Traditional bento box containers',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 19,
@@ -183,7 +183,7 @@ const allProductCategories = [
     brand: 'Imperial',
     brandSlug: 'imperial',
     description: 'Specialized poke bowl containers',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   // MB Categories
   {
@@ -193,7 +193,7 @@ const allProductCategories = [
     brand: 'MB',
     brandSlug: 'mb',
     description: 'Versatile hinged clamshell containers',
-    image: '/demo.png'
+    image: '/TKN.png'
   }
 ];
 

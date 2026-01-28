@@ -8,21 +8,21 @@ const reroboxSubcategories = [
     name: 'Rectangular',
     slug: 'rectangular',
     description: 'Rectangular REROBOX containers for versatile food storage',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 2,
     name: 'Round',
     slug: 'round',
     description: 'Round REROBOX containers for optimal portioning',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 3,
     name: 'Compartment',
     slug: 'compartment',
     description: 'Multi-compartment REROBOX containers for organized meals',
-    image: '/demo.png'
+    image: '/TKN.png'
   }
 ];
 

@@ -16,7 +16,7 @@ const products = [
     category: 'Hinged Clamshells',
     categorySlug: 'bagasse-hinged-clamshells',
     description: 'Eco-friendly bagasse hinged clamshells for hot and cold foods',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['clamshell', 'hinged', 'bagasse', 'eco-friendly', 'biodegradable', 'takeout', 'container', 'food packaging', 'sustainable', 'compostable', 'disposable']
   },
   
@@ -29,7 +29,7 @@ const products = [
     category: 'Clamshells',
     categorySlug: 'bagasse-clamshells',
     description: 'Sustainable bagasse clamshells for various food types',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['clamshell', 'bagasse', 'eco-friendly', 'biodegradable', 'takeout', 'container', 'food packaging', 'sustainable', 'compostable']
   },
   
@@ -42,7 +42,7 @@ const products = [
     category: 'Hinged Clamshells',
     categorySlug: 'hinged-clamshells',
     description: 'Durable hinged clamshells perfect for takeout',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['clamshell', 'hinged', 'takeout', 'food container', 'disposable', 'food service', 'to-go', 'restaurant', 'plastic']
   },
   
@@ -55,7 +55,7 @@ const products = [
     category: 'Paper Bags',
     categorySlug: 'paper-bags',
     description: 'Recyclable kraft paper bags for retail and takeout',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['paper', 'bag', 'kraft', 'recyclable', 'eco-friendly', 'shopping', 'retail', 'grocery', 'takeout', 'brown bag', 'packaging']
   },
   
@@ -68,7 +68,7 @@ const products = [
     category: 'Bio Boxes',
     categorySlug: 'bio-boxes',
     description: 'Fully compostable food boxes',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['bio', 'box', 'compostable', 'eco-friendly', 'sustainable', 'biodegradable', 'food container', 'takeout', 'green', 'earth-friendly']
   },
   
@@ -81,7 +81,7 @@ const products = [
     category: 'Boat Trays',
     categorySlug: 'boat-trays',
     description: 'Paper boat trays for fries, snacks, and appetizers',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['boat', 'tray', 'paper', 'fries', 'snacks', 'appetizers', 'serving', 'food service', 'french fries', 'basket', 'kraft']
   },
   
@@ -94,7 +94,7 @@ const products = [
     category: 'Chopsticks',
     categorySlug: 'chopsticks',
     description: 'Disposable wooden and bamboo chopsticks',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['chopsticks', 'wooden', 'bamboo', 'utensil', 'disposable', 'asian', 'sushi', 'chinese', 'japanese', 'utensils', 'silverware']
   },
   
@@ -107,7 +107,7 @@ const products = [
     category: 'Food Pails',
     categorySlug: 'food-pails',
     description: 'Traditional Chinese takeout food pails',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['food pail', 'chinese', 'takeout', 'container', 'noodles', 'rice', 'asian food', 'to-go', 'oyster pail', 'wire handle']
   },
   
@@ -120,7 +120,7 @@ const products = [
     category: 'Napkins & Paper Towels',
     categorySlug: 'napkins-papertowels',
     description: 'Napkins, paper towels, tissue, and toilet seat covers',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['napkin', 'paper towel', 'tissue', 'toilet seat cover', 'dispenser', 'commercial', 'restaurant', 'beverage napkin', 'dinner napkin', 'serviettes']
   },
   
@@ -133,7 +133,7 @@ const products = [
     category: 'Portion Cups',
     categorySlug: 'portion-cups',
     description: 'Small clear portion cups for sauces, condiments, and samples',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['portion cup', 'sauce cup', 'condiment', 'clear', 'souffle cup', 'sample', 'dressing', 'dipping sauce', '1oz', '2oz', '4oz', 'small container']
   },
   
@@ -146,7 +146,7 @@ const products = [
     category: 'Lids',
     categorySlug: 'portion-cup-lids',
     description: 'Lids for portion cups and small containers',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['lid', 'portion cup lid', 'clear', 'sauce lid', 'souffle lid', 'container lid', 'flat lid', 'tight seal', 'leak-proof']
   },
   
@@ -159,7 +159,7 @@ const products = [
     category: 'Sushi Trays',
     categorySlug: 'sushi-tray',
     description: 'Premium sushi trays for professional presentation',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['sushi', 'tray', 'premium', 'japanese', 'food service', 'platter', 'sashimi', 'nigiri', 'roll', 'container', 'takeout']
   },
   
@@ -172,7 +172,7 @@ const products = [
     category: 'Bento Boxes',
     categorySlug: 'bento',
     description: 'Multi-compartment bento boxes for organized meals',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['bento', 'box', 'compartment', 'lunch', 'japanese', 'meal prep', 'divided', 'container', 'takeout', 'multi-compartment']
   },
   
@@ -185,7 +185,7 @@ const products = [
     category: 'Poke Bowls',
     categorySlug: 'pokebowl',
     description: 'Perfect bowls for poke, grain bowls, and salads',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['poke', 'bowl', 'container', 'fresh', 'salad', 'grain bowl', 'rice bowl', 'hawaiian', 'takeout', 'round container']
   },
   
@@ -198,7 +198,7 @@ const products = [
     category: 'REROBOX',
     categorySlug: 'rerobox',
     description: 'Innovative REROBOX food containers',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['rerobox', 'container', 'innovative', 'storage', 'food packaging', 'stackable', 'versatile', 'reusable']
   },
   
@@ -211,7 +211,7 @@ const products = [
     category: 'Clipin',
     categorySlug: 'clipin',
     description: 'Secure clip-in containers for safe food storage',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['clipin', 'container', 'clip', 'secure', 'storage', 'food packaging', 'lock', 'leak-proof', 'safe']
   },
   
@@ -224,7 +224,7 @@ const products = [
     category: 'V-Series',
     categorySlug: 'v-series',
     description: 'Premium V-Series food containers',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['v-series', 'container', 'premium', 'food packaging', 'storage', 'high-quality', 'durable']
   },
   
@@ -237,7 +237,7 @@ const products = [
     category: 'Deli Containers',
     categorySlug: 'deli-containers',
     description: 'Round deli containers for food storage and takeout',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['deli', 'container', 'round', 'storage', 'food', 'microwavable', 'soup', 'salad', 'sides', 'plastic', 'clear']
   },
   
@@ -250,7 +250,7 @@ const products = [
     category: 'Meat Trays',
     categorySlug: 'meat-trays',
     description: 'Foam and plastic trays for meat and produce',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['meat tray', 'foam', 'plastic', 'butcher', 'produce', 'grocery', 'supermarket', 'protein', 'packaging', 'fresh']
   },
   
@@ -263,7 +263,7 @@ const products = [
     category: 'Soup Containers',
     categorySlug: 'soup-containers',
     description: 'Leak-proof soup containers for hot liquids',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['soup', 'container', 'hot food', 'leak-proof', 'liquid', 'broth', 'stew', 'noodles', 'takeout', 'microwavable']
   },
   
@@ -276,7 +276,7 @@ const products = [
     category: 'Plastic Containers',
     categorySlug: 'plastic-containers',
     description: 'Durable plastic food containers for storage',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['plastic', 'container', 'durable', 'storage', 'food packaging', 'clear', 'takeout', 'versatile', 'reusable']
   },
   
@@ -289,7 +289,7 @@ const products = [
     category: 'Soup Containers',
     categorySlug: 'soup-containers',
     description: 'Leak-proof soup containers with secure lids',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['soup', 'container', 'leak-proof', 'hot food', 'liquid', 'broth', 'stew', 'noodles', 'takeout', 'microwavable', 'secure']
   }
 ];

@@ -8,14 +8,14 @@ const vSeriesSubcategories = [
     name: 'Rectangular',
     slug: 'rectangular',
     description: 'Rectangular V Series containers for efficient food storage',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 2,
     name: 'Round',
     slug: 'round',
     description: 'Round V Series containers for versatile portioning',
-    image: '/demo.png'
+    image: '/TKN.png'
   }
 ];
 

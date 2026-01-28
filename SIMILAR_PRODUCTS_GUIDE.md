@@ -397,7 +397,7 @@ Example:
     brandSlug: 'tkn',
     categorySlug: 'related-category',
     description: 'Brief description',
-    image: '/demo.png',
+    image: '/TKN.png',
     tags: ['tag1', 'tag2', 'tag3']
   },
   // ... more products

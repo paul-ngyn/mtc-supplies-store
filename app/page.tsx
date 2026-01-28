@@ -12,7 +12,7 @@ const featuredCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Eco-friendly paper bags for all your packaging needs',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const featuredCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Premium REROBOX food containers for quality storage',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const featuredCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Biodegradable food boxes for eco-friendly packaging',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 4,

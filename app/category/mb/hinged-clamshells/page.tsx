@@ -8,14 +8,14 @@ const hingedClamsellsSubcategories = [
     name: 'TFPP Hinged Clamshell White',
     slug: 'tfpp-white',
     description: 'Premium TFPP material hinged clamshells in white',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 2,
     name: 'PP Hinged Vented Clamshell Black',
     slug: 'pp-vented-black',
     description: 'Vented polypropylene hinged clamshells in black',
-    image: '/demo.png'
+    image: '/TKN.png'
   }
 ];
 

@@ -8,14 +8,14 @@ const sushiTraySubcategories = [
     name: 'Rectangular',
     slug: 'rectangular',
     description: 'Rectangular sushi trays for professional presentation',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 2,
     name: 'Round Party Tray',
     slug: 'round-party-tray',
     description: 'Round party trays perfect for gatherings and events',
-    image: '/demo.png'
+    image: '/TKN.png'
   }
 ];
 

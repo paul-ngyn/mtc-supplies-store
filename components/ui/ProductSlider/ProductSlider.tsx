@@ -12,6 +12,7 @@ interface Brand {
   description: string;
   scale?: number;
   fullBanner?: string; // Full-width banner image that replaces the entire slide
+  buttonPosition?: string; // Custom button positioning classes for full banner
 }
 
 // Brand logos for the slider
@@ -55,7 +56,9 @@ const brands: Brand[] = [
     logo: "/MB_W_background-remove.png",
     slug: "mb",
     description: "Quality MB brand products",
-    scale: 1.15
+    scale: 1.15,
+    fullBanner: "/MTC_MP_PP/MB BANNER FINALE.png",
+    buttonPosition: "bottom-[3%] md:bottom-[12%] right-[35%] md:right-[76.5%]"
   }
 ];
 
@@ -151,7 +154,7 @@ export default function ProductSlider() {
                     priority={currentSlide === brand.id - 1}
                   />
                   {/* Shop All Button Overlay */}
-                  <div className="absolute bottom-[8%] md:bottom-10 left-1/2 -translate-x-1/2 md:left-16 md:translate-x-0">
+                  <div className={`absolute ${brand.buttonPosition || 'bottom-[8%] md:bottom-10 left-1/2 -translate-x-1/2 md:left-16 md:translate-x-0'}`}>
                     <Link href={`/category/${brand.slug}`}>
                       <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 md:px-7 py-1.5 md:py-3 rounded-md md:rounded-lg text-[10px] md:text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
                         Shop All

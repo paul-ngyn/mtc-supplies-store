@@ -8,14 +8,14 @@ const bentoSubcategories = [
     name: 'Single Compartment',
     slug: 'single-compartment',
     description: 'Single compartment bento boxes for simple meals',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 2,
     name: '5 Compartment',
     slug: '5-compartment',
     description: '5 compartment bento boxes for varied meal presentations',
-    image: '/demo.png'
+    image: '/TKN.png'
   }
 ];
 

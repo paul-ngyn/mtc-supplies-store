@@ -104,7 +104,7 @@ export default function TFPPHingedClamshellWhitePage() {
             {/* Product Image */}
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
-                src="/demo.png"
+                src="/TKN.png"
                 alt="TFPP Hinged Clamshell White"
                 fill
                 className="object-contain p-8"

@@ -21,7 +21,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bagasse-clamshells',
       description: 'Sustainable bagasse clamshells without hinges',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['eco-friendly', 'biodegradable', 'clamshell']
     },
     {
@@ -30,7 +30,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'mb',
       categorySlug: 'hinged-clamshells',
       description: 'Durable hinged clamshells for takeout',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['takeout', 'hinged', 'container']
     },
     {
@@ -39,7 +39,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bio-boxes',
       description: 'Compostable food boxes',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['compostable', 'eco-friendly', 'box']
     },
     {
@@ -48,7 +48,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'boat-trays',
       description: 'Paper boat trays for fries and snacks',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['paper', 'tray', 'serving']
     }
   ],
@@ -60,7 +60,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bagasse-hinged-clamshells',
       description: 'Eco-friendly hinged clamshells',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['eco-friendly', 'hinged', 'bagasse']
     },
     {
@@ -69,7 +69,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bio-boxes',
       description: 'Compostable food boxes',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['compostable', 'eco-friendly', 'box']
     },
     {
@@ -78,7 +78,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'mb',
       categorySlug: 'hinged-clamshells',
       description: 'Durable hinged clamshells',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['takeout', 'hinged', 'container']
     },
     {
@@ -87,7 +87,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'bento',
       description: 'Multi-compartment bento boxes',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['compartment', 'lunch', 'container']
     }
   ],
@@ -99,7 +99,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bagasse-hinged-clamshells',
       description: 'Eco-friendly hinged clamshells',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['eco-friendly', 'hinged', 'biodegradable']
     },
     {
@@ -108,7 +108,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'paper-bags',
       description: 'Recyclable kraft paper bags',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['paper', 'recyclable', 'eco-friendly']
     },
     {
@@ -117,7 +117,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'boat-trays',
       description: 'Paper boat trays for snacks',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['paper', 'tray', 'serving']
     },
     {
@@ -126,7 +126,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'food-pails',
       description: 'Chinese takeout food pails',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['takeout', 'container', 'chinese']
     }
   ],
@@ -138,7 +138,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bio-boxes',
       description: 'Compostable food boxes',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['compostable', 'eco-friendly', 'box']
     },
     {
@@ -147,7 +147,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'paper-bags',
       description: 'Recyclable kraft paper bags',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['paper', 'recyclable', 'kraft']
     },
     {
@@ -156,7 +156,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bagasse-clamshells',
       description: 'Sustainable clamshells',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['eco-friendly', 'biodegradable', 'clamshell']
     },
     {
@@ -165,7 +165,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'food-pails',
       description: 'Traditional takeout pails',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['takeout', 'container', 'pail']
     }
   ],
@@ -177,7 +177,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'sushi-tray',
       description: 'Premium sushi trays',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['sushi', 'japanese', 'premium']
     },
     {
@@ -186,7 +186,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'bento',
       description: 'Multi-compartment bento boxes',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['bento', 'lunch', 'japanese']
     },
     {
@@ -195,7 +195,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'food-pails',
       description: 'Chinese takeout pails',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['chinese', 'takeout', 'asian']
     },
     {
@@ -204,7 +204,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'napkins-papertowels',
       description: 'Paper napkins and towels',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['napkin', 'paper', 'disposable']
     }
   ],
@@ -216,7 +216,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'chopsticks',
       description: 'Disposable chopsticks',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['chopsticks', 'utensil', 'asian']
     },
     {
@@ -225,7 +225,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'bento',
       description: 'Multi-compartment containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['bento', 'compartment', 'asian']
     },
     {
@@ -234,7 +234,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'soup-containers',
       description: 'Leak-proof soup containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['soup', 'container', 'hot food']
     },
     {
@@ -243,7 +243,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'paper-bags',
       description: 'Kraft paper takeout bags',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['paper', 'bag', 'takeout']
     }
   ],
@@ -255,7 +255,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'paper-bags',
       description: 'Recyclable paper bags',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['paper', 'recyclable', 'bag']
     },
     {
@@ -264,7 +264,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'boat-trays',
       description: 'Paper serving trays',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['paper', 'tray', 'serving']
     },
     {
@@ -273,7 +273,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'chopsticks',
       description: 'Disposable utensils',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['utensil', 'disposable', 'chopsticks']
     },
     {
@@ -282,7 +282,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'portion-cups',
       description: 'Small portion cups',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['portion', 'sauce', 'cup']
     }
   ],
@@ -294,7 +294,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bio-boxes',
       description: 'Compostable food boxes',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['compostable', 'eco-friendly', 'box']
     },
     {
@@ -303,7 +303,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'boat-trays',
       description: 'Paper serving boats',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['paper', 'tray', 'serving']
     },
     {
@@ -312,7 +312,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'napkins-papertowels',
       description: 'Paper napkins',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['napkin', 'paper', 'disposable']
     },
     {
@@ -321,7 +321,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bagasse-clamshells',
       description: 'Eco-friendly containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['eco-friendly', 'biodegradable', 'container']
     }
   ],
@@ -333,7 +333,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'portion-cup-lids',
       description: 'Matching lids for portion cups',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['lid', 'portion cup', 'clear']
     },
     {
@@ -342,7 +342,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Round deli containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'storage']
     },
     {
@@ -351,7 +351,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'soup-containers',
       description: 'Leak-proof soup containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['soup', 'container', 'liquid']
     },
     {
@@ -360,7 +360,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'td',
       categorySlug: 'plastic-containers',
       description: 'Versatile plastic containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['plastic', 'container', 'storage']
     }
   ],
@@ -372,7 +372,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'portion-cups',
       description: 'Small portion cups for sauces',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['portion', 'sauce', 'cup']
     },
     {
@@ -381,7 +381,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Containers with lids',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'lid']
     },
     {
@@ -390,7 +390,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'td',
       categorySlug: 'plastic-containers',
       description: 'Plastic storage containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['plastic', 'container', 'storage']
     },
     {
@@ -399,7 +399,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'soup-containers',
       description: 'Containers with secure lids',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['soup', 'container', 'lid']
     }
   ],
@@ -412,7 +412,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'bento',
       description: 'Multi-compartment boxes',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['bento', 'japanese', 'compartment']
     },
     {
@@ -421,7 +421,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'pokebowl',
       description: 'Fresh poke bowls',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['poke', 'bowl', 'fresh']
     },
     {
@@ -430,7 +430,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'chopsticks',
       description: 'Disposable chopsticks',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['chopsticks', 'utensil', 'asian']
     },
     {
@@ -439,7 +439,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Round deli containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'storage']
     }
   ],
@@ -451,7 +451,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'sushi-tray',
       description: 'Premium sushi trays',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['sushi', 'japanese', 'premium']
     },
     {
@@ -460,7 +460,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'pokebowl',
       description: 'Poke and grain bowls',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['poke', 'bowl', 'fresh']
     },
     {
@@ -469,7 +469,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bagasse-hinged-clamshells',
       description: 'Eco-friendly compartment containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['eco-friendly', 'compartment', 'hinged']
     },
     {
@@ -478,7 +478,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'chopsticks',
       description: 'Disposable chopsticks',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['chopsticks', 'utensil', 'asian']
     }
   ],
@@ -490,7 +490,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'bento',
       description: 'Compartment lunch boxes',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['bento', 'compartment', 'lunch']
     },
     {
@@ -499,7 +499,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'sushi-tray',
       description: 'Sushi presentation trays',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['sushi', 'japanese', 'tray']
     },
     {
@@ -508,7 +508,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Round storage containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'round']
     },
     {
@@ -517,7 +517,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'chopsticks',
       description: 'Asian utensils',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['chopsticks', 'utensil', 'asian']
     }
   ],
@@ -530,7 +530,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'v-series',
       description: 'Premium V-Series containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['premium', 'container', 'storage']
     },
     {
@@ -539,7 +539,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'clipin',
       description: 'Secure clip-in containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['clipin', 'secure', 'container']
     },
     {
@@ -548,7 +548,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Round deli containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'storage']
     },
     {
@@ -557,7 +557,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'td',
       categorySlug: 'plastic-containers',
       description: 'Durable plastic containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['plastic', 'container', 'durable']
     }
   ],
@@ -569,7 +569,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'rerobox',
       description: 'Innovative REROBOX containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['rerobox', 'innovative', 'container']
     },
     {
@@ -578,7 +578,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'v-series',
       description: 'Premium containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['premium', 'container', 'v-series']
     },
     {
@@ -587,7 +587,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Round storage containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'storage']
     },
     {
@@ -596,7 +596,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'td',
       categorySlug: 'plastic-containers',
       description: 'Versatile plastic containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['plastic', 'container', 'versatile']
     }
   ],
@@ -608,7 +608,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'rerobox',
       description: 'Innovative containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['rerobox', 'innovative', 'storage']
     },
     {
@@ -617,7 +617,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'clipin',
       description: 'Secure clip containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['clipin', 'secure', 'container']
     },
     {
@@ -626,7 +626,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Deli storage containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'storage']
     },
     {
@@ -635,7 +635,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'mb',
       categorySlug: 'hinged-clamshells',
       description: 'Hinged takeout containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['hinged', 'clamshell', 'takeout']
     }
   ],
@@ -647,7 +647,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'portion-cups',
       description: 'Small sauce cups',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['portion', 'sauce', 'cup']
     },
     {
@@ -656,7 +656,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'soup-containers',
       description: 'Leak-proof soup containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['soup', 'container', 'liquid']
     },
     {
@@ -665,7 +665,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'td',
       categorySlug: 'plastic-containers',
       description: 'Plastic storage containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['plastic', 'container', 'storage']
     },
     {
@@ -674,7 +674,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'pokebowl',
       description: 'Round bowl containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['poke', 'bowl', 'container']
     }
   ],
@@ -686,7 +686,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Round deli containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'storage']
     },
     {
@@ -695,7 +695,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'td',
       categorySlug: 'plastic-containers',
       description: 'Plastic storage containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['plastic', 'container', 'storage']
     },
     {
@@ -704,7 +704,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'portion-cup-lids',
       description: 'Clear container lids',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['lid', 'clear', 'container']
     },
     {
@@ -713,7 +713,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'paper-bags',
       description: 'Kraft paper packaging',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['paper', 'bag', 'packaging']
     }
   ],
@@ -725,7 +725,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'td',
       categorySlug: 'soup-containers',
       description: 'Leak-proof soup containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['soup', 'container', 'leak-proof']
     },
     {
@@ -734,7 +734,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Round storage containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'storage']
     },
     {
@@ -743,7 +743,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'portion-cups',
       description: 'Small portion cups',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['portion', 'sauce', 'cup']
     },
     {
@@ -752,7 +752,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'food-pails',
       description: 'Takeout food pails',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['pail', 'takeout', 'container']
     }
   ],
@@ -765,7 +765,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Round deli containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'storage']
     },
     {
@@ -774,7 +774,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'td',
       categorySlug: 'soup-containers',
       description: 'Soup containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['soup', 'container', 'liquid']
     },
     {
@@ -783,7 +783,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'v-series',
       description: 'Premium containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['premium', 'container', 'storage']
     },
     {
@@ -792,7 +792,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'portion-cups',
       description: 'Small portion cups',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['portion', 'sauce', 'cup']
     }
   ],
@@ -804,7 +804,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'soup-containers',
       description: 'Premium soup containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['soup', 'container', 'premium']
     },
     {
@@ -813,7 +813,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'td',
       categorySlug: 'plastic-containers',
       description: 'Versatile containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['plastic', 'container', 'storage']
     },
     {
@@ -822,7 +822,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'hd',
       categorySlug: 'deli-containers',
       description: 'Round deli containers',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['deli', 'container', 'storage']
     },
     {
@@ -831,7 +831,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'food-pails',
       description: 'Takeout pails',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['pail', 'takeout', 'hot food']
     }
   ],
@@ -844,7 +844,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bagasse-hinged-clamshells',
       description: 'Eco-friendly hinged clamshells',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['eco-friendly', 'hinged', 'biodegradable']
     },
     {
@@ -853,7 +853,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bagasse-clamshells',
       description: 'Sustainable clamshells',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['eco-friendly', 'biodegradable', 'clamshell']
     },
     {
@@ -862,7 +862,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'imperial',
       categorySlug: 'bento',
       description: 'Multi-compartment boxes',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['compartment', 'lunch', 'container']
     },
     {
@@ -871,7 +871,7 @@ export const allProducts: Record<string, SimilarProduct[]> = {
       brandSlug: 'tkn',
       categorySlug: 'bio-boxes',
       description: 'Compostable food boxes',
-      image: '/demo.png',
+      image: '/TKN.png',
       tags: ['compostable', 'eco-friendly', 'box']
     }
   ]

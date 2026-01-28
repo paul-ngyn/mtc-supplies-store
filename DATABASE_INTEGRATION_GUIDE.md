@@ -135,10 +135,10 @@ Create a migration file: `supabase/migrations/seed_products.sql`
 ```sql
 -- Insert sample products from app/search/page.tsx
 INSERT INTO products (name, brand, brand_slug, category, category_slug, description, image_url, tags, price, stock_quantity) VALUES
-  ('Bagasse Hinged Clamshells', 'TKN', 'tkn', 'Hinged Clamshells', 'bagasse-hinged-clamshells', 'Eco-friendly bagasse hinged clamshells for hot and cold foods', '/demo.png', ARRAY['clamshell', 'hinged', 'bagasse', 'eco-friendly', 'biodegradable'], 29.99, 500),
-  ('MB Hinged Clamshells', 'MB', 'mb', 'Hinged Clamshells', 'hinged-clamshells', 'Durable hinged clamshells perfect for takeout', '/demo.png', ARRAY['clamshell', 'hinged', 'takeout', 'food container'], 24.99, 300),
+  ('Bagasse Hinged Clamshells', 'TKN', 'tkn', 'Hinged Clamshells', 'bagasse-hinged-clamshells', 'Eco-friendly bagasse hinged clamshells for hot and cold foods', '/TKN.png', ARRAY['clamshell', 'hinged', 'bagasse', 'eco-friendly', 'biodegradable'], 29.99, 500),
+  ('MB Hinged Clamshells', 'MB', 'mb', 'Hinged Clamshells', 'hinged-clamshells', 'Durable hinged clamshells perfect for takeout', '/TKN.png', ARRAY['clamshell', 'hinged', 'takeout', 'food container'], 24.99, 300),
   -- Add all 43 products from the current array
-  ('Kraft Boat Trays', 'TKN', 'tkn', 'Boat Trays', 'boat-trays', 'Kraft paper serving boats', '/demo.png', ARRAY['boat', 'tray', 'kraft', 'paper', 'serving'], 15.99, 200);
+  ('Kraft Boat Trays', 'TKN', 'tkn', 'Boat Trays', 'boat-trays', 'Kraft paper serving boats', '/TKN.png', ARRAY['boat', 'tray', 'kraft', 'paper', 'serving'], 15.99, 200);
 ```
 
 ### Step 3: Update Supabase Queries Helper

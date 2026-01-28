@@ -8,21 +8,21 @@ const clipinSubcategories = [
     name: 'Rectangular',
     slug: 'rectangular',
     description: 'Rectangular Clipin containers for efficient food storage',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 2,
     name: 'Round',
     slug: 'round',
     description: 'Round Clipin containers for versatile portioning',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 3,
     name: 'Compartment',
     slug: 'compartment',
     description: 'Multi-compartment Clipin containers for organized meals',
-    image: '/demo.png'
+    image: '/TKN.png'
   }
 ];
 

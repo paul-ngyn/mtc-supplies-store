@@ -8,21 +8,21 @@ const plasticContainersSubcategories = [
     name: 'Round',
     slug: 'round',
     description: 'Round plastic containers for versatile food storage',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 2,
     name: 'Rectangular',
     slug: 'rectangular',
     description: 'Rectangular plastic containers for efficient storage',
-    image: '/demo.png'
+    image: '/TKN.png'
   },
   {
     id: 3,
     name: 'Compartments',
     slug: 'compartments',
     description: 'Multi-compartment containers for organized meals',
-    image: '/demo.png'
+    image: '/TKN.png'
   }
 ];
 
