@@ -1,5 +1,118 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
+
+// Product images from MB no bg pics - black variants
+const productImages = [
+  {
+    id: 4,
+    src: '/MTC_MP_PP/MTC MB no bg pics/closed black no comp.png',
+    alt: 'PP Hinged Clamshell Black - Closed No Compartment'
+  },
+  {
+    id: 3,
+    src: '/MTC_MP_PP/MTC MB no bg pics/closed black comp.png',
+    alt: 'PP Hinged Clamshell Black - Closed with Compartment'
+  },
+  {
+    id: 5,
+    src: '/MTC_MP_PP/MTC MB no bg pics/open black comp.png',
+    alt: 'PP Hinged Clamshell Black - Open with Compartment'
+  },
+  {
+    id: 6,
+    src: '/MTC_MP_PP/MTC MB no bg pics/open black no comp.png',
+    alt: 'PP Hinged Clamshell Black - Open No Compartment'
+  },
+  {
+    id: 7,
+    src: '/MTC_MP_PP/MTC MB no bg pics/tri stack black.png',
+    alt: 'PP Hinged Clamshell Black - Triple Stack'
+  },
+  {
+    id: 8,
+    src: '/MTC_MP_PP/MTC MB no bg pics/tri stack black side.png',
+    alt: 'PP Hinged Clamshell Black - Triple Stack Side View'
+  }
+];
+
+// Product Slider Component
+function ProductImageSlider() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  return (
+    <div className="relative w-full">
+      {/* Main Image Display */}
+      <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
+        <Image
+          src={productImages[currentSlide].src}
+          alt={productImages[currentSlide].alt}
+          fill
+          className="object-contain p-8"
+          priority
+        />
+        
+        {/* Previous Button */}
+        <button
+          onClick={() => setCurrentSlide((prev) => (prev - 1 + productImages.length) % productImages.length)}
+          className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
+          aria-label="Previous image"
+        >
+          <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        
+        {/* Next Button */}
+        <button
+          onClick={() => setCurrentSlide((prev) => (prev + 1) % productImages.length)}
+          className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
+          aria-label="Next image"
+        >
+          <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        
+        {/* Image Indicator Dots */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          {productImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2 h-2 rounded-full transition-all ${
+                currentSlide === index ? 'bg-blue-600 w-6' : 'bg-gray-400'
+              }`}
+              aria-label={`Go to image ${index + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+      
+      {/* Thumbnail Images */}
+      <div className="flex gap-2 mt-4">
+        {productImages.map((image, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`relative w-20 h-20 rounded-lg overflow-hidden border-2 transition-all ${
+              currentSlide === index ? 'border-blue-600' : 'border-gray-200 hover:border-gray-300'
+            }`}
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              className="object-contain p-2"
+            />
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function PPHingedVentedClamshellBlackPage() {
   // Product sizes/options - Real data from product catalog
@@ -149,15 +262,9 @@ export default function PPHingedVentedClamshellBlackPage() {
         {/* Product Section */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
-            {/* Product Image */}
-            <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
-              <Image
-                src="/TKN.png"
-                alt="PP Hinged Vented Clamshell Black"
-                fill
-                className="object-contain p-8"
-                priority
-              />
+            {/* Product Image Slider */}
+            <div>
+              <ProductImageSlider />
             </div>
 
             {/* Product Info */}

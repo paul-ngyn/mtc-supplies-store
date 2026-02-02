@@ -8,14 +8,14 @@ const hingedClamsellsSubcategories = [
     name: 'TFPP Hinged Clamshell White',
     slug: 'tfpp-white',
     description: 'Premium TFPP material hinged clamshells in white',
-    image: '/TKN.png'
+    image: '/MTC_MP_PP/MTC MB no bg pics/closed white.png'
   },
   {
     id: 2,
     name: 'PP Hinged Vented Clamshell Black',
     slug: 'pp-vented-black',
     description: 'Vented polypropylene hinged clamshells in black',
-    image: '/TKN.png'
+    image: '/MTC_MP_PP/MTC MB no bg pics/closed black no comp.png'
   }
 ];
 
@@ -72,12 +72,12 @@ export default function HingedClamsellsPage() {
               className="group"
             >
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
-                <div className="relative h-48 bg-gradient-to-br from-blue-50 to-blue-100">
+                <div className="relative h-64 bg-gradient-to-br from-blue-50 to-blue-100">
                   <Image
                     src={subCategory.image}
                     alt={subCategory.name}
                     fill
-                    className="object-contain p-8 group-hover:scale-105 transition-transform duration-300"
+                    className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">
