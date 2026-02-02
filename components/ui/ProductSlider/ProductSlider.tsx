@@ -39,7 +39,9 @@ const brands: Brand[] = [
     logo: "/TD no background.png",
     slug: "td",
     description: "Reliable TD brand products",
-    scale: 1
+    scale: 1,
+    fullBanner: "/MTC_TD_PP/MTC TD no bg pics/TD BANNER TRUST.PNG",
+    buttonPosition: "bottom-[10%] left-1/2 -translate-x-1/2"
   },
   {
     id: 4,

@@ -9,6 +9,10 @@ export default function SingleCompartmentBentoPage() {
   
   const productImages = [
     {
+      src: '/MTC_IMP_PP/MTC IMPERIAL no bg/1compbentochicken (2).png',
+      alt: 'Single Compartment Bento Box - With Food'
+    },
+    {
       src: '/MTC_IMP_PP/MTC IMPERIAL no bg/1 comp bento open.png',
       alt: 'Single Compartment Bento Box - Open'
     },

@@ -94,7 +94,9 @@ export default function PokeBowlPage() {
                   src={productImages[currentImage].src}
                   alt={productImages[currentImage].alt}
                   fill
-                  className="object-contain p-8"
+                  className={`object-contain p-8 ${
+                    (currentImage === 0 || currentImage === 1) ? 'translate-x-[5%] -translate-y-[5%]' : ''
+                  }`}
                   priority
                 />
                 
