@@ -251,11 +251,3 @@ export default function PPHingedVentedClamshellBlackPage() {
     </div>
   );
 }
-
-// Generate metadata for SEO
-export async function generateMetadata() {
-  return {
-    title: 'PP Hinged Vented Clamshell Black - MB Products - Maple Trade Corp',
-    description: 'Premium PP hinged vented clamshell containers in black. Perfect for hot foods with steam release ventilation.',
-  };
-}

@@ -216,19 +216,115 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-3xl mx-auto">
-            <Link href="/category/imperial/sushi-tray" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
-              <h3 className="font-semibold text-gray-900">Sushi Trays</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 max-w-6xl mx-auto">
+            <Link href="/category/imperial/sushi-tray" className="group">
+              <div className="relative">
+                {/* Top Cherry Blossom Border */}
+                <div className="absolute -top-6 left-0 w-full h-12 z-10">
+                  <Image
+                    src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+                    alt="Cherry Blossom"
+                    fill
+                    className="object-contain object-bottom"
+                  />
+                </div>
+                {/* Bottom Cherry Blossom Border */}
+                <div className="absolute -bottom-6 left-0 w-full h-12 z-10">
+                  <Image
+                    src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+                    alt="Cherry Blossom"
+                    fill
+                    className="object-contain object-top rotate-180"
+                  />
+                </div>
+                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
+                  <div className="relative h-64 bg-gray-50">
+                    <Image
+                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png"
+                      alt="Sushi Trays"
+                      fill
+                      className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="p-6 text-center bg-white">
+                    <h3 className="font-semibold text-gray-900 text-lg">Sushi Trays</h3>
+                  </div>
+                </div>
+              </div>
             </Link>
-            <Link href="/category/imperial/bento" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
-              <h3 className="font-semibold text-gray-900">Bento Boxes</h3>
+            <Link href="/category/imperial/bento" className="group">
+              <div className="relative">
+                {/* Top Cherry Blossom Border */}
+                <div className="absolute -top-6 left-0 w-full h-12 z-10">
+                  <Image
+                    src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+                    alt="Cherry Blossom"
+                    fill
+                    className="object-contain object-bottom"
+                  />
+                </div>
+                {/* Bottom Cherry Blossom Border */}
+                <div className="absolute -bottom-6 left-0 w-full h-12 z-10">
+                  <Image
+                    src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+                    alt="Cherry Blossom"
+                    fill
+                    className="object-contain object-top rotate-180"
+                  />
+                </div>
+                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
+                  <div className="relative h-64 bg-gray-50">
+                    <Image
+                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/1compbentochicken (2).png"
+                      alt="Bento Boxes"
+                      fill
+                      className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="p-6 text-center bg-white">
+                    <h3 className="font-semibold text-gray-900 text-lg">Bento Boxes</h3>
+                  </div>
+                </div>
+              </div>
             </Link>
-            <Link href="/category/imperial/pokebowl" className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-6 text-center transition-all duration-300 shadow-md hover:shadow-lg border border-blue-200">
-              <h3 className="font-semibold text-gray-900">Poke Bowls</h3>
+            <Link href="/category/imperial/pokebowl" className="group">
+              <div className="relative">
+                {/* Top Cherry Blossom Border */}
+                <div className="absolute -top-6 left-0 w-full h-12 z-10">
+                  <Image
+                    src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+                    alt="Cherry Blossom"
+                    fill
+                    className="object-contain object-bottom"
+                  />
+                </div>
+                {/* Bottom Cherry Blossom Border */}
+                <div className="absolute -bottom-6 left-0 w-full h-12 z-10">
+                  <Image
+                    src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
+                    alt="Cherry Blossom"
+                    fill
+                    className="object-contain object-top rotate-180"
+                  />
+                </div>
+                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
+                  <div className="relative h-64 bg-gray-50">
+                    <Image
+                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/poke_bowl_full-removebg-preview.png"
+                      alt="Poke Bowls"
+                      fill
+                      className="object-contain p-4 group-hover:scale-105 transition-transform duration-300 translate-x-[5%] -translate-y-[10%]"
+                    />
+                  </div>
+                  <div className="p-6 text-center bg-white">
+                    <h3 className="font-semibold text-gray-900 text-lg">Poke Bowls</h3>
+                  </div>
+                </div>
+              </div>
             </Link>
           </div>
 
-          <div className="text-center">
+          <div className="text-center mt-8">
             <Link href="/category/imperial">
               <button className="bg-[#1c51a3] hover:bg-[#153d7f] text-white px-5 py-4 rounded-lg text-md font-semibold transition-colors shadow-md hover:shadow-lg">
                 Check Out All Our Imperial Products

@@ -202,11 +202,3 @@ export default function TFPPHingedClamshellWhitePage() {
     </div>
   );
 }
-
-// Generate metadata for SEO
-export async function generateMetadata() {
-  return {
-    title: 'TFPP Hinged Clamshell White - MB Products - Maple Trade Corp',
-    description: 'Premium TFPP hinged clamshell containers in white. Microwave safe, leak-resistant, and perfect for food service applications.',
-  };
-}

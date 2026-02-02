@@ -8,14 +8,14 @@ const sushiTraySubcategories = [
     name: 'Rectangular',
     slug: 'rectangular',
     description: 'Rectangular sushi trays for professional presentation',
-    image: '/TKN.png'
+    image: '/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png'
   },
   {
     id: 2,
     name: 'Round Party Tray',
     slug: 'round-party-tray',
     description: 'Round party trays perfect for gatherings and events',
-    image: '/TKN.png'
+    image: '/MTC_IMP_PP/MTC IMPERIAL no bg/sushi open.png'
   }
 ];
 
@@ -72,12 +72,12 @@ export default function SushiTrayPage() {
               className="group"
             >
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
-                <div className="relative h-48 bg-gradient-to-br from-blue-50 to-blue-100">
+                <div className="relative h-64 bg-gradient-to-br from-blue-50 to-blue-100">
                   <Image
                     src={subCategory.image}
                     alt={subCategory.name}
                     fill
-                    className="object-contain p-8 group-hover:scale-105 transition-transform duration-300"
+                    className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">
