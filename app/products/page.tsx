@@ -100,7 +100,8 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Premium REROBOX food containers',
-    image: '/TKN.png'
+    image: '/MTC_HD_PP/MTC HD no bg pics/Rero_Box_Rectangular_3_Compartment-removebg-preview.png',
+    imageStyle: 'scale-150'
   },
   {
     id: 11,
@@ -109,7 +110,8 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Innovative Clipin container solutions',
-    image: '/TKN.png'
+    image: '/MTC_HD_PP/MTC HD no bg pics/Clipin_Round_Compartment-removebg-preview.png',
+    imageStyle: 'scale-150'
   },
   {
     id: 12,
@@ -118,7 +120,8 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Versatile V Series containers',
-    image: '/TKN.png'
+    image: '/MTC_HD_PP/MTC HD no bg pics/V_Round-removebg-preview.png',
+    imageStyle: 'scale-150'
   },
   {
     id: 13,
@@ -127,7 +130,8 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Professional meat packaging trays',
-    image: '/TKN.png'
+    image: '/MTC_HD_PP/MTC HD no bg pics/meat_tray-removebg-preview.png',
+    imageStyle: 'scale-150'
   },
   {
     id: 14,
@@ -136,7 +140,8 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Quality deli storage containers',
-    image: '/TKN.png'
+    image: '/MTC_HD_PP/MTC HD no bg pics/deli 32.png',
+    imageStyle: 'scale-150'
   },
   // TD Categories
   {
@@ -146,7 +151,8 @@ const allProductCategories = [
     brand: 'TD',
     brandSlug: 'td',
     description: 'Durable plastic food containers',
-    image: '/TKN.png'
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
+    imageStyle: 'scale-150'
   },
   {
     id: 16,
@@ -155,7 +161,8 @@ const allProductCategories = [
     brand: 'TD',
     brandSlug: 'td',
     description: 'Leak-proof soup containers',
-    image: '/TKN.png'
+    image: '/MTC_TD_PP/MTC TD no bg pics/deli L.png',
+    imageStyle: 'scale-150'
   },
   // Imperial Categories
   {
@@ -165,7 +172,8 @@ const allProductCategories = [
     brand: 'Imperial',
     brandSlug: 'imperial',
     description: 'Premium sushi presentation trays',
-    image: '/TKN.png'
+    image: '/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png',
+    imageStyle: 'scale-150'
   },
   {
     id: 18,
@@ -174,7 +182,8 @@ const allProductCategories = [
     brand: 'Imperial',
     brandSlug: 'imperial',
     description: 'Traditional bento box containers',
-    image: '/TKN.png'
+    image: '/MTC_IMP_PP/MTC IMPERIAL no bg/full_bent_5-removebg-preview.png',
+    imageStyle: 'scale-150'
   },
   {
     id: 19,
@@ -183,7 +192,8 @@ const allProductCategories = [
     brand: 'Imperial',
     brandSlug: 'imperial',
     description: 'Specialized poke bowl containers',
-    image: '/TKN.png'
+    image: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke_bowl_full-removebg-preview.png',
+    imageStyle: 'object-[80%_10%] scale-125'
   },
   // MB Categories
   {
@@ -193,7 +203,8 @@ const allProductCategories = [
     brand: 'MB',
     brandSlug: 'mb',
     description: 'Versatile hinged clamshell containers',
-    image: '/TKN.png'
+    image: '/MTC_MP_PP/MTC MB no bg pics/closed black no comp.png',
+    imageStyle: 'scale-150'
   }
 ];
 
@@ -239,7 +250,7 @@ export default function AllProductsPage() {
                     src={category.image}
                     alt={category.name}
                     fill
-                    className="object-contain p-8 group-hover:scale-105 transition-transform duration-300"
+                    className={`object-contain p-4 group-hover:scale-105 transition-transform duration-300 ${(category as any).imageStyle || ''}`}
                   />
                 </div>
                 <div className="p-6">
