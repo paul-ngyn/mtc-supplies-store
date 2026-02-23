@@ -152,7 +152,7 @@ export default function ProductSlider() {
                     src={brand.fullBanner}
                     alt={`${brand.name} Banner`}
                     fill
-                    className="object-cover scale-105"
+                    className={`object-cover scale-105 ${brand.name === 'MB' ? 'object-[7%_center] md:object-center' : ''}`}
                     priority={currentSlide === brand.id - 1}
                   />
                   {/* Shop All Button Overlay */}
