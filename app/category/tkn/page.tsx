@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import BrandCarousel from '@/components/ui/BrandCarousel';
 
 const tknCategories = [
   {
@@ -171,6 +172,13 @@ export default function TKNPage() {
           </Link>
         </div>
       </div>
+
+      {/* Brand Carousel Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <BrandCarousel />
+        </div>
+      </section>
     </div>
   );
 }
