@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ProductGrid from '@/components/ui/ProductGrid';
+import BrandCarousel from '@/components/ui/BrandCarousel';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -271,6 +272,13 @@ export default function AllProductsPage() {
           ))}
         </div>
       </div>
+
+      {/* Brand Carousel Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <BrandCarousel />
+        </div>
+      </section>
     </div>
   );
 }
