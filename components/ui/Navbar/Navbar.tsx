@@ -1,6 +1,7 @@
 import s from './Navbar.module.css';
 import Navlinks from './Navlinks';
 import SearchBar from './Searchbar';
+import ListButton from './ListButton';
 import Link from 'next/link';
 import Image from 'next/image';
 import MobileMenu from './MobileMenu';
@@ -73,14 +74,24 @@ export default function Navbar() {
             <SearchBar />
           </div>
 
-          {/* Desktop: Contact Button */}
-          <div className="hidden sm:flex items-center">
-            <Link 
+          {/* Desktop: Contact and List Buttons */}
+          <div className="hidden sm:flex items-center gap-4">
+            <Link
               href="/contact"
-              className="px-5 py-2.5 bg-[#1c51a3] text-white font-medium rounded-lg hover:bg-[#153d7f] transition-colors duration-200 shadow-sm hover:shadow-md"
+              className="flex items-center gap-2 text-[#1c51a3] hover:text-[#153d7f] transition-colors duration-200 py-2 px-1"
             >
-              Contact Us
+              <svg
+                className="w-6 h-6 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                strokeWidth="0.5"
+                stroke="currentColor"
+              >
+                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.01 21 3 13.99 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z" />
+              </svg>
+              <span className="font-medium text-sm">Contact Us</span>
             </Link>
+            <ListButton />
           </div>
 
           {/* Mobile: Empty space for balance */}

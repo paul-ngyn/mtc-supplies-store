@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import AddToListButton from '@/components/ui/AddToListButton';
 
 export default function TDSoupContainersPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -209,6 +210,20 @@ export default function TDSoupContainersPage() {
                   <li>Ideal for deli and takeout</li>
                   <li>Leak-resistant design</li>
                 </ul>
+              </div>
+
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Microwave Deli Soup Containers"
+                  brand="TD"
+                  category="Soup Containers"
+                  slug="soup-containers"
+                  brandSlug="td"
+                  image="/MTC_TD_PP/MTC TD no bg pics/deli L.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
               </div>
             </div>
           </div>

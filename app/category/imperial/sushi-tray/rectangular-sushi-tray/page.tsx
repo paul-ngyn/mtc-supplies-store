@@ -3,13 +3,14 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import AddToListButton from '@/components/ui/AddToListButton';
 
 export default function RectangularSushiTrayPage() {
   const [currentImage, setCurrentImage] = useState(0);
   
   const productImages = [
     {
-      src: '/MTC_IMP_PP/full tray sushi.png',
+      src: '/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png',
       alt: 'Rectangular Sushi Tray - Full Display'
     },
     {
@@ -210,6 +211,20 @@ export default function RectangularSushiTrayPage() {
                   <li>Ideal for takeout and catering</li>
                   <li>Professional presentation</li>
                 </ul>
+              </div>
+
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Rectangular Sushi Tray Black and Gold"
+                  brand="Imperial"
+                  category="Sushi Trays"
+                  slug="rectangular-sushi-tray"
+                  brandSlug="imperial"
+                  image="/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
               </div>
             </div>
           </div>

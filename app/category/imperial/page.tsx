@@ -7,7 +7,7 @@ const imperialCategories = [
     name: 'Sushi Trays',
     slug: 'sushi-tray',
     description: 'Premium sushi packaging with elegant black and gold designs',
-    thumbnail: '/MTC_IMP_PP/full tray sushi.png',
+    thumbnail: '/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png',
     subcategories: [
       { name: 'Rectangular Sushi Trays', slug: 'rectangular-sushi-tray' },
       { name: 'Round Party Trays', slug: 'round-party-tray' }

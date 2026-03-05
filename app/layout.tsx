@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Footer from '@/components/ui/Footer';
 import Navbar from '@/components/ui/Navbar';
 import { Toaster } from '@/components/ui/Toasts/toaster';
+import { ListProvider } from '@/utils/listContext';
 import { PropsWithChildren, Suspense } from 'react';
 import { getURL } from '@/utils/helpers';
 import { headers } from 'next/headers';
@@ -36,18 +37,20 @@ export default async function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={`${dmSans.variable} font-sans ${isAuthPage ? "bg-gray-50" : "bg-white"}`}>
-        {/* Always show navbar - don't disable it on auth pages */}
-        <Navbar />
-        <main
-          id="skip"
-          className={isAuthPage ? "min-h-screen" : "min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"}
-        >
-          {children}
-        </main>
-        {!isAuthPage && <Footer />}
-        <Suspense>
-          <Toaster />
-        </Suspense>
+        <ListProvider>
+          {/* Always show navbar - don't disable it on auth pages */}
+          <Navbar />
+          <main
+            id="skip"
+            className={isAuthPage ? "min-h-screen" : "min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"}
+          >
+            {children}
+          </main>
+          {!isAuthPage && <Footer />}
+          <Suspense>
+            <Toaster />
+          </Suspense>
+        </ListProvider>
       </body>
     </html>
   );

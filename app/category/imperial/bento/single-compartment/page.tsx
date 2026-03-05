@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import AddToListButton from '@/components/ui/AddToListButton';
 
 export default function SingleCompartmentBentoPage() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -221,6 +222,20 @@ export default function SingleCompartmentBentoPage() {
                   <li>Multiple size options</li>
                   <li>Stackable for efficient storage</li>
                 </ul>
+              </div>
+
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Single Compartment Bento Box"
+                  brand="Imperial"
+                  category="Bento Boxes"
+                  slug="single-compartment"
+                  brandSlug="imperial"
+                  image="/MTC_IMP_PP/MTC IMPERIAL no bg/1compbentochicken (2).png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
               </div>
             </div>
           </div>

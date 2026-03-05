@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import AddToListButton from '@/components/ui/AddToListButton';
 
 export default function PokeBowlPage() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -183,6 +184,20 @@ export default function PokeBowlPage() {
                   <li>Multiple capacity options</li>
                   <li>Ideal for takeout and delivery</li>
                 </ul>
+              </div>
+
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Poke Bowl with Clear Lid"
+                  brand="Imperial"
+                  category="Poke Bowls"
+                  slug="pokebowl"
+                  brandSlug="imperial"
+                  image="/MTC_IMP_PP/MTC IMPERIAL no bg/poke_bowl_full-removebg-preview.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
               </div>
             </div>
           </div>

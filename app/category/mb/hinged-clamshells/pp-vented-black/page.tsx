@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import AddToListButton from '@/components/ui/AddToListButton';
 
 // Product images from MB no bg pics - black variants
 const productImages = [
@@ -291,6 +292,20 @@ export default function PPHingedVentedClamshellBlackPage() {
                   <li>Prevents condensation buildup</li>
                   <li>Stackable for efficient storage</li>
                 </ul>
+              </div>
+
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="PP Hinged Vented Clamshell Black"
+                  brand="MB"
+                  category="Hinged Clamshells"
+                  slug="pp-vented-black"
+                  brandSlug="mb"
+                  image="/MTC_MP_PP/MTC MB no bg pics/closed black no comp.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
               </div>
             </div>
           </div>

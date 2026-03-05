@@ -6,7 +6,7 @@ const sushiTraySubcategories = [
   {
     id: 1,
     name: 'Rectangular',
-    slug: 'rectangular',
+    slug: 'rectangular-sushi-tray',
     description: 'Rectangular sushi trays for professional presentation',
     image: '/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png'
   },
