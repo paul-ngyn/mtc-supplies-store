@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation';
 import OrdersContent from '@/components/ui/Orders/OrdersContent';
 
 export default async function OrdersPage() {
-  const supabase = createClient();
+  const supabase = await createClient();
   
   const {
     data: { user },

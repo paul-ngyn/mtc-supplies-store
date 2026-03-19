@@ -38,8 +38,9 @@ export default async function SignIn({
   if (typeof params.id === 'string' && viewTypes.includes(params.id)) {
     viewProp = params.id;
   } else {
+    const cookieStore = await cookies();
     const preferredSignInView =
-      cookies().get('preferredSignInView')?.value || null;
+      cookieStore.get('preferredSignInView')?.value || null;
     viewProp = getDefaultSignInView(preferredSignInView);
     
     // Preserve redirect_to parameter when redirecting to default view
@@ -51,7 +52,7 @@ export default async function SignIn({
   }
 
   // Check if the user is already logged in and redirect appropriately
-  const supabase = createClient();
+  const supabase = await createClient();
 
   const {
     data: { user }
