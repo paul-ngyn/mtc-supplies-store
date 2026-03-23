@@ -398,6 +398,60 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-md border border-gray-200 p-10 md:p-14 text-center">
+            <p className="text-xl text-gray-700 leading-relaxed">
+              At MTC, we carry a variety of high-quality plastic containers! From our premium US patented HD™ and TD™ plastic containers to our durable TFPP clamshell boxes, our products are designed to provide the security and convenience essential to the food industry. Whether you're looking for reusable heavy-duty containers, take-out food boxes, small microwavable portion sizes, or large party trays, we've got you covered.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10">
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-3">
+                  <Image
+                    src="/biodegradablelogo.png"
+                    alt="Biodegradable"
+                    width={34}
+                    height={34}
+                    className="w-8 h-8 object-contain"
+                    style={{
+                      filter:
+                        'invert(24%) sepia(70%) saturate(1400%) hue-rotate(191deg) brightness(91%) contrast(92%)'
+                    }}
+                  />
+                </div>
+                <span className="text-base font-semibold text-[#1c51a3]">Biodegradable</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-3">
+                  <Image
+                    src="/recyclelogo%20%281%29.png"
+                    alt="Recyclable"
+                    width={34}
+                    height={34}
+                    className="w-8 h-8 object-contain"
+                    style={{
+                      filter:
+                        'invert(24%) sepia(70%) saturate(1400%) hue-rotate(191deg) brightness(91%) contrast(92%)'
+                    }}
+                  />
+                </div>
+                <span className="text-base font-semibold text-[#1c51a3]">Recyclable</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-3">
+                  <svg className="w-8 h-8 text-[#1c51a3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3l7 3v6c0 4.2-3 7.7-7 9-4-1.3-7-4.8-7-9V6l7-3z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.5 12.5l1.8 1.8 3.2-3.2" />
+                  </svg>
+                </div>
+                <span className="text-base font-semibold text-[#1c51a3]">US Patented</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Brand Carousel */}
       <BrandCarousel />
 

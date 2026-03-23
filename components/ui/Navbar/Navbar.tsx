@@ -94,8 +94,10 @@ export default function Navbar() {
             <ListButton />
           </div>
 
-          {/* Mobile: Empty space for balance */}
-          <div className="sm:hidden w-6"></div>
+          {/* Mobile: List Button (Right) */}
+          <div className="sm:hidden pt-1">
+            <ListButton iconOnly />
+          </div>
         </div>
       </div>
       

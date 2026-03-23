@@ -39,6 +39,14 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Product Focus Section */}
+        <div className="bg-white rounded-lg shadow-md p-8 md:p-12 mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What We Offer</h2>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            MTC supplies a wide range of dependable food packaging built for real-world food service operations. Our lineup includes premium US patented HD™ and TD™ containers, durable TFPP clamshells, reusable heavy-duty options, convenient take-out boxes, microwavable small portions, and larger party-size trays. Every product is selected to deliver the protection, practicality, and day-to-day convenience businesses rely on.
+          </p>
+        </div>
+
         {/* Values Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="bg-white rounded-lg shadow-md p-8 text-center">

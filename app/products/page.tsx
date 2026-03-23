@@ -152,7 +152,6 @@ const allProductCategories = [
     brand: 'TD',
     brandSlug: 'td',
     description: 'Durable plastic food containers',
-    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
     imageStyle: 'scale-150'
   },
   {
@@ -162,7 +161,7 @@ const allProductCategories = [
     brand: 'TD',
     brandSlug: 'td',
     description: 'Leak-proof soup containers',
-    image: '/MTC_TD_PP/MTC TD no bg pics/deli L.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
     imageStyle: 'scale-150'
   },
   // Imperial Categories
@@ -194,7 +193,7 @@ const allProductCategories = [
     brandSlug: 'imperial',
     description: 'Specialized poke bowl containers',
     image: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke_bowl_full-removebg-preview.png',
-    imageStyle: 'object-[80%_10%] scale-125'
+    imageStyle: 'object-center translate-x-[3%] -translate-y-[12%] scale-125'
   },
   // MB Categories
   {
@@ -247,12 +246,14 @@ export default function AllProductsPage() {
             >
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
                 <div className="relative h-48 bg-gradient-to-br from-blue-50 to-blue-100">
-                  <Image
-                    src={category.image}
-                    alt={category.name}
-                    fill
-                    className={`object-contain p-4 group-hover:scale-105 transition-transform duration-300 ${(category as any).imageStyle || ''}`}
-                  />
+                  {category.image && (
+                    <Image
+                      src={category.image}
+                      alt={category.name}
+                      fill
+                      className={`object-contain p-4 group-hover:scale-105 transition-transform duration-300 ${(category as any).imageStyle || ''}`}
+                    />
+                  )}
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
