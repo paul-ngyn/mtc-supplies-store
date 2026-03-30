@@ -101,7 +101,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Premium REROBOX food containers',
-    image: '/MTC_HD_PP/MTC HD no bg pics/Rero_Box_Rectangular_3_Compartment-removebg-preview.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
     imageStyle: 'scale-150'
   },
   {
@@ -111,7 +111,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Innovative Clipin container solutions',
-    image: '/MTC_HD_PP/MTC HD no bg pics/Clipin_Round_Compartment-removebg-preview.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/med.png',
     imageStyle: 'scale-150'
   },
   {
@@ -121,7 +121,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Versatile V Series containers',
-    image: '/MTC_HD_PP/MTC HD no bg pics/V_Round-removebg-preview.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/deli xl.png',
     imageStyle: 'scale-150'
   },
   {
@@ -131,7 +131,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Professional meat packaging trays',
-    image: '/MTC_HD_PP/MTC HD no bg pics/meat_tray-removebg-preview.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/deli S.png',
     imageStyle: 'scale-150'
   },
   {
@@ -141,7 +141,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Quality deli storage containers',
-    image: '/MTC_HD_PP/MTC HD no bg pics/deli 32.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/deli L.png',
     imageStyle: 'scale-150'
   },
   // TD Categories

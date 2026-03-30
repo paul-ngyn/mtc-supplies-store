@@ -334,6 +334,52 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* MB Hinged Clamshells Panel */}
+      <section className="py-0 bg-gray-50">
+        <div className="w-full">
+          <div className="relative w-full min-h-[56vh] md:min-h-[70vh] overflow-hidden bg-gradient-to-r from-[#a9d8fb] via-[#c7e6fb] to-[#e8f4fd]">
+            {/* Subtle angled overlays for the same visual language as the reference */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute -left-20 top-0 w-72 h-full bg-white/20 skew-x-[-35deg]" />
+              <div className="absolute left-24 top-0 w-40 h-full bg-white/25 skew-x-[-35deg]" />
+              <div className="absolute left-60 top-0 w-24 h-full bg-white/20 skew-x-[-35deg]" />
+            </div>
+
+            <div className="relative z-10 flex flex-col md:flex-row items-center md:items-center min-h-[56vh] md:min-h-[70vh] max-w-7xl mx-auto px-5 md:px-8 lg:px-12 md:gap-2 lg:gap-4">
+              <div className="w-full md:w-[52%] py-6 md:py-8">
+                <p className="text-[#1c51a3] font-semibold tracking-wide text-sm md:text-base uppercase">
+                  US Patented, Recyclable, Biodegradable
+                </p>
+                <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-[1.08]">
+                  MB Hinged Clamshells
+                </h2>
+                <p className="mt-3 text-xl md:text-2xl font-bold text-gray-900">
+                  The Perfect Takeout Container
+                </p>
+                <p className="mt-4 text-base md:text-lg text-gray-700 max-w-xl leading-relaxed">
+                  Durable, secure, and presentation-ready clamshell packaging for busy food service operations.
+                </p>
+                <Link
+                  href="/category/mb/hinged-clamshells"
+                  className="inline-block mt-6 bg-[#2d69d1] hover:bg-[#1c51a3] text-white px-8 py-3 rounded-lg text-base font-semibold transition-colors shadow-md"
+                >
+                  Read More
+                </Link>
+              </div>
+
+              <div className="w-full md:w-[48%] relative h-[16rem] md:h-[22rem] lg:h-[25rem]">
+                <Image
+                  src="/MTC_MP_PP/MTC MB no bg pics/tri stack black side.png"
+                  alt="MB Hinged Clamshells"
+                  fill
+                  className="object-contain p-3 md:p-4 lg:p-6 translate-x-[1%]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
