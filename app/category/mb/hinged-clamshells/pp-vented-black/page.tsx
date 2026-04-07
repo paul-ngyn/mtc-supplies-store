@@ -300,7 +300,7 @@ export default function PPHingedVentedClamshellBlackPage() {
                   productName="PP Hinged Vented Clamshell Black"
                   brand="MB"
                   category="Hinged Clamshells"
-                  slug="pp-vented-black"
+                  slug="hinged-clamshells/pp-vented-black"
                   brandSlug="mb"
                   image="/MTC_MP_PP/MTC MB no bg pics/closed black no comp.png"
                   sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}

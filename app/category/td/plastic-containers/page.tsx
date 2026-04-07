@@ -8,21 +8,27 @@ const plasticContainersSubcategories = [
     name: 'Round',
     slug: 'round',
     description: 'Round plastic containers for versatile food storage',
-    image: '/TKN.png'
+    image: '/MTC_TD_PP/MTC TD no bg pics/bowl closed.png',
+    imageClassName: 'scale-[1.4] group-hover:scale-[1.48]',
+    imagePositionClassName: ''
   },
   {
     id: 2,
     name: 'Rectangular',
     slug: 'rectangular',
     description: 'Rectangular plastic containers for efficient storage',
-    image: '/TKN.png'
+    image: '/MTC_TD_PP/MTC TD no bg pics/1 comp close.png',
+    imageClassName: 'scale-[1.4] group-hover:scale-[1.48]',
+    imagePositionClassName: 'translate-x-[10px] -translate-y-[16px]'
   },
   {
     id: 3,
     name: 'Compartments',
     slug: 'compartments',
     description: 'Multi-compartment containers for organized meals',
-    image: '/TKN.png'
+    image: '/MTC_TD_PP/MTC TD no bg pics/tri comp open.png',
+    imageClassName: 'scale-[1.08] group-hover:scale-[1.14]',
+    imagePositionClassName: ''
   }
 ];
 
@@ -84,7 +90,7 @@ export default function PlasticContainersPage() {
                     src={subCategory.image}
                     alt={subCategory.name}
                     fill
-                    className="object-contain p-8 group-hover:scale-105 transition-transform duration-300"
+                    className={`object-contain p-1 transition-transform duration-300 ${subCategory.imageClassName} ${subCategory.imagePositionClassName}`}
                   />
                 </div>
                 <div className="p-6">

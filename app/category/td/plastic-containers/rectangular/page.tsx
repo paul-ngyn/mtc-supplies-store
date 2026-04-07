@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import AddToListButton from '@/components/ui/AddToListButton';
+import RectangularImageSlider from './RectangularImageSlider';
 
 export default function TDRectangularContainersPage() {
   // Product sizes/options - Real data from product catalog
@@ -106,16 +107,8 @@ export default function TDRectangularContainersPage() {
         {/* Product Section */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
-            {/* Product Image */}
-            <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
-              <Image
-                src="/TKN.png"
-                alt="TD Plastic Rectangular Containers"
-                fill
-                className="object-contain p-8"
-                priority
-              />
-            </div>
+            {/* Product Image Slider */}
+            <RectangularImageSlider />
 
             {/* Product Info */}
             <div className="flex flex-col">
@@ -142,6 +135,19 @@ export default function TDRectangularContainersPage() {
                   <li>Perfect for takeout and meal prep</li>
                   <li>Stackable for easy storage</li>
                 </ul>
+              </div>
+
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Plastic Rectangular Containers"
+                  brand="TD"
+                  category="Rectangular Containers"
+                  slug="plastic-containers/rectangular"
+                  brandSlug="td"
+                  image="/MTC_TD_PP/MTC TD no bg pics/1 comp close.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
               </div>
             </div>
           </div>

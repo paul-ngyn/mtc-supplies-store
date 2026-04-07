@@ -230,7 +230,7 @@ export default function SingleCompartmentBentoPage() {
                   productName="Single Compartment Bento Box"
                   brand="Imperial"
                   category="Bento Boxes"
-                  slug="single-compartment"
+                  slug="bento/single-compartment"
                   brandSlug="imperial"
                   image="/MTC_IMP_PP/MTC IMPERIAL no bg/1compbentochicken (2).png"
                   sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}

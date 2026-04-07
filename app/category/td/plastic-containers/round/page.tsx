@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import AddToListButton from '@/components/ui/AddToListButton';
+import RoundImageSlider from './RoundImageSlider';
 
 export default function TDRoundContainersPage() {
   // Product sizes/options - Real data from product catalog
@@ -7,9 +8,9 @@ export default function TDRoundContainersPage() {
     { 
       id: 1, 
       itemNo: 'F6016',
-      size: '6" Diameter',
+      size: '6" Low',
       dimensions: '5.125" x 1.5"',
-      description: '6" Diameter Plastic Round Containers',
+      description: '6" Plastic Round Containers',
       caseQty: '150 SETS',
       caseWeight: '8.8 lb',
       palletCount: '70',
@@ -84,16 +85,8 @@ export default function TDRoundContainersPage() {
         {/* Product Section */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
-            {/* Product Image */}
-            <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
-              <Image
-                src="/TKN.png"
-                alt="TD Plastic Round Containers"
-                fill
-                className="object-contain p-8"
-                priority
-              />
-            </div>
+            {/* Product Image Slider */}
+            <RoundImageSlider />
 
             {/* Product Info */}
             <div className="flex flex-col">
@@ -120,6 +113,19 @@ export default function TDRoundContainersPage() {
                   <li>Stackable design for storage</li>
                   <li>Clear containers for visibility</li>
                 </ul>
+              </div>
+
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Plastic Round Containers"
+                  brand="TD"
+                  category="Round Containers"
+                  slug="plastic-containers/round"
+                  brandSlug="td"
+                  image="/MTC_TD_PP/MTC TD no bg pics/bowl closed.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
               </div>
             </div>
           </div>

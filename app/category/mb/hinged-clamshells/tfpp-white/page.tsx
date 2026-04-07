@@ -231,7 +231,7 @@ export default function TFPPHingedClamshellWhitePage() {
                   productName="TFPP Hinged Clamshell White"
                   brand="MB"
                   category="Hinged Clamshells"
-                  slug="tfpp-white"
+                    slug="hinged-clamshells/tfpp-white"
                   brandSlug="mb"
                   image="/MTC_MP_PP/MTC MB no bg pics/closed white.png"
                   sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}

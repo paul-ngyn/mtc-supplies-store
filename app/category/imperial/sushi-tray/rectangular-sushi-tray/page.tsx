@@ -219,7 +219,7 @@ export default function RectangularSushiTrayPage() {
                   productName="Rectangular Sushi Tray Black and Gold"
                   brand="Imperial"
                   category="Sushi Trays"
-                  slug="rectangular-sushi-tray"
+                  slug="sushi-tray/rectangular-sushi-tray"
                   brandSlug="imperial"
                   image="/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png"
                   sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}

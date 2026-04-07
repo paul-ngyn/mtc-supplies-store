@@ -7,6 +7,22 @@ import Link from 'next/link';
 export default function ListPage() {
   const { listItems, removeFromList, updateQuantity, clearList, totalItems } = useList();
 
+  const legacySlugMap: Record<string, string> = {
+    'td:round': 'plastic-containers/round',
+    'td:rectangular': 'plastic-containers/rectangular',
+    'td:compartments': 'plastic-containers/compartments',
+    'mb:tfpp-white': 'hinged-clamshells/tfpp-white',
+    'mb:pp-vented-black': 'hinged-clamshells/pp-vented-black',
+    'imperial:single-compartment': 'bento/single-compartment',
+    'imperial:5-compartment': 'bento/5-compartment',
+    'imperial:rectangular-sushi-tray': 'sushi-tray/rectangular-sushi-tray',
+  };
+
+  const getProductDetailsPath = (brandSlug: string, slug: string) => {
+    const normalizedSlug = slug.includes('/') ? slug : (legacySlugMap[`${brandSlug}:${slug}`] || slug);
+    return `/category/${brandSlug}/${normalizedSlug}`;
+  };
+
   if (listItems.length === 0) {
     return (
       <div className="min-h-screen bg-gray-50">
@@ -133,7 +149,7 @@ export default function ListPage() {
 
                     {/* View Product Link */}
                     <Link
-                      href={`/category/${item.brandSlug}/${item.slug}`}
+                      href={getProductDetailsPath(item.brandSlug, item.slug)}
                       className="inline-flex items-center text-[#1c51a3] hover:text-[#153d7f] font-medium text-sm mt-3 transition-colors"
                     >
                       View Product Details

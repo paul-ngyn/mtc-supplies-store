@@ -152,6 +152,7 @@ const allProductCategories = [
     brand: 'TD',
     brandSlug: 'td',
     description: 'Durable plastic food containers',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
     imageStyle: 'scale-150'
   },
   {

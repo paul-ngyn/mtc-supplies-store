@@ -240,10 +240,16 @@ export default function HomePage() {
                 <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
                   <div className="relative h-64 bg-gray-50">
                     <Image
-                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png"
-                      alt="Sushi Trays"
+                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/sushi open.png"
+                      alt="Sushi Trays Empty"
                       fill
-                      className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                      className="hidden md:block object-contain p-4 transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0"
+                    />
+                    <Image
+                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png"
+                      alt="Sushi Trays Filled"
+                      fill
+                      className="object-contain p-4 transition-opacity duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
                     />
                   </div>
                   <div className="p-6 text-center bg-white">
@@ -275,10 +281,16 @@ export default function HomePage() {
                 <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
                   <div className="relative h-64 bg-gray-50">
                     <Image
-                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/1compbentochicken (2).png"
-                      alt="Bento Boxes"
+                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/1 comp bento open.png"
+                      alt="Bento Boxes Empty"
                       fill
-                      className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                      className="hidden md:block object-contain p-4 transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0 -translate-x-[3%]"
+                    />
+                    <Image
+                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/1compbentochicken (2).png"
+                      alt="Bento Boxes Filled"
+                      fill
+                      className="object-contain p-4 transition-opacity duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
                     />
                   </div>
                   <div className="p-6 text-center bg-white">
@@ -310,10 +322,16 @@ export default function HomePage() {
                 <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
                   <div className="relative h-64 bg-gray-50">
                     <Image
-                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/poke_bowl_full-removebg-preview.png"
-                      alt="Poke Bowls"
+                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/poke open.png"
+                      alt="Poke Bowls Empty"
                       fill
-                      className="object-contain p-4 group-hover:scale-105 transition-transform duration-300 translate-x-[5%] -translate-y-[10%]"
+                      className="hidden md:block object-contain p-4 transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0 translate-x-[3%] -translate-y-[12%] scale-[1.2]"
+                    />
+                    <Image
+                      src="/MTC_IMP_PP/MTC IMPERIAL no bg/poke_bowl_full-removebg-preview.png"
+                      alt="Poke Bowls Filled"
+                      fill
+                      className="object-contain p-4 transition-opacity duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100 translate-x-[5%] -translate-y-[10%]"
                     />
                   </div>
                   <div className="p-6 text-center bg-white">
@@ -334,46 +352,41 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* MB Hinged Clamshells Panel */}
-      <section className="py-0 bg-gray-50">
-        <div className="w-full">
-          <div className="relative w-full min-h-[56vh] md:min-h-[70vh] overflow-hidden bg-gradient-to-r from-[#a9d8fb] via-[#c7e6fb] to-[#e8f4fd]">
-            {/* Subtle angled overlays for the same visual language as the reference */}
-            <div className="absolute inset-0 pointer-events-none">
-              <div className="absolute -left-20 top-0 w-72 h-full bg-white/20 skew-x-[-35deg]" />
-              <div className="absolute left-24 top-0 w-40 h-full bg-white/25 skew-x-[-35deg]" />
-              <div className="absolute left-60 top-0 w-24 h-full bg-white/20 skew-x-[-35deg]" />
-            </div>
-
-            <div className="relative z-10 flex flex-col md:flex-row items-center md:items-center min-h-[56vh] md:min-h-[70vh] max-w-7xl mx-auto px-5 md:px-8 lg:px-12 md:gap-2 lg:gap-4">
-              <div className="w-full md:w-[52%] py-6 md:py-8">
-                <p className="text-[#1c51a3] font-semibold tracking-wide text-sm md:text-base uppercase">
-                  US Patented, Recyclable, Biodegradable
+      {/* TD Plastic Containers Panel */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="relative overflow-hidden rounded-3xl border border-[#b9daf5] bg-[#d9efff] shadow-[0_12px_35px_rgba(28,81,163,0.12)]">
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center px-6 py-8 md:px-10 md:py-10 lg:px-12 lg:py-12">
+              <div className="lg:col-span-6 xl:col-span-5">
+                <p className="inline-flex items-center rounded-full bg-white/85 px-4 py-1.5 text-xs md:text-sm font-semibold tracking-wide text-[#1c51a3] uppercase border border-[#bfdcf6]">
+                  US Patented, Recyclable, Affordable
                 </p>
-                <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-[1.08]">
-                  MB Hinged Clamshells
+                <h2 className="mt-6 text-3xl md:text-4xl lg:text-[2.7rem] font-extrabold text-gray-900 leading-[1.08]">
+                  TD Plastic Containers
                 </h2>
-                <p className="mt-3 text-xl md:text-2xl font-bold text-gray-900">
-                  The Perfect Takeout Container
+                <p className="mt-5 text-lg md:text-xl font-bold text-gray-900">
+                  Practical Packaging For Everyday Service
                 </p>
-                <p className="mt-4 text-base md:text-lg text-gray-700 max-w-xl leading-relaxed">
-                  Durable, secure, and presentation-ready clamshell packaging for busy food service operations.
+                <p className="mt-6 text-base md:text-lg text-gray-700 max-w-xl leading-relaxed">
+                  Reliable round, rectangular, and compartment plastic containers built for food prep, takeout, and delivery.
                 </p>
                 <Link
-                  href="/category/mb/hinged-clamshells"
-                  className="inline-block mt-6 bg-[#2d69d1] hover:bg-[#1c51a3] text-white px-8 py-3 rounded-lg text-base font-semibold transition-colors shadow-md"
+                  href="/category/td/plastic-containers"
+                  className="inline-block mt-8 bg-[#2d69d1] hover:bg-[#1c51a3] text-white px-8 py-3 rounded-lg text-base font-semibold transition-colors shadow-md"
                 >
-                  Read More
+                  View Options
                 </Link>
               </div>
 
-              <div className="w-full md:w-[48%] relative h-[16rem] md:h-[22rem] lg:h-[25rem]">
-                <Image
-                  src="/MTC_MP_PP/MTC MB no bg pics/tri stack black side.png"
-                  alt="MB Hinged Clamshells"
-                  fill
-                  className="object-contain p-3 md:p-4 lg:p-6 translate-x-[1%]"
-                />
+              <div className="lg:col-span-6 xl:col-span-7">
+                <div className="relative h-[18rem] md:h-[24rem] lg:h-[28rem]">
+                  <Image
+                    src="/MTC_TD_PP/MTC TD no bg pics/7 stack closed.png"
+                    alt="TD Plastic Containers"
+                    fill
+                    className="object-contain p-2 md:p-4 lg:p-6 scale-110"
+                  />
+                </div>
               </div>
             </div>
           </div>

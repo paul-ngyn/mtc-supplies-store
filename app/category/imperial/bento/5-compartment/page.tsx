@@ -186,7 +186,7 @@ export default function FiveCompartmentBentoPage() {
                   productName="5 Compartment Bento Box"
                   brand="Imperial"
                   category="Bento Boxes"
-                  slug="5-compartment"
+                  slug="bento/5-compartment"
                   brandSlug="imperial"
                   image="/MTC_IMP_PP/MTC IMPERIAL no bg/full_bent_5-removebg-preview.png"
                   sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}

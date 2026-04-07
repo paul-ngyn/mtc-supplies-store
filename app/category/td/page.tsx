@@ -7,7 +7,7 @@ const tdCategories = [
     name: 'Plastic Containers',
     slug: 'plastic-containers',
     description: 'Budget-friendly plastic containers in round, rectangular, and compartment styles for everyday use',
-    image: null
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png'
   },
   {
     name: 'Soup Containers',
