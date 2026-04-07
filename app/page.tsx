@@ -69,7 +69,7 @@ export default function HomePage() {
               >
                 <div className="flex flex-col">
                   {/* Image above the card */}
-                  <div className="relative h-64 mb-4">
+                  <div className="relative h-64 rounded-t-2xl border border-gray-200 border-b-0 overflow-hidden">
                     <Image
                       src={category.image}
                       alt={category.name}
@@ -80,7 +80,7 @@ export default function HomePage() {
                   </div>
                   
                   {/* Card with text */}
-                  <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-blue-200 p-6 text-center relative">
+                  <div className="bg-white rounded-b-2xl shadow-md hover:shadow-lg transition-all duration-300 p-6 text-center relative border border-gray-100 border-t-0">
                     <span className="absolute top-4 right-4 text-sm font-bold text-white bg-[#1c51a3] px-4 py-2 rounded-lg shadow-lg">
                       {category.brand}
                     </span>
@@ -237,8 +237,8 @@ export default function HomePage() {
                     className="object-contain object-top rotate-180"
                   />
                 </div>
-                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
-                  <div className="relative h-64 bg-gray-50">
+                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+                  <div className="relative h-64 bg-white">
                     <Image
                       src="/MTC_IMP_PP/MTC IMPERIAL no bg/sushi open.png"
                       alt="Sushi Trays Empty"
@@ -278,8 +278,8 @@ export default function HomePage() {
                     className="object-contain object-top rotate-180"
                   />
                 </div>
-                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
-                  <div className="relative h-64 bg-gray-50">
+                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+                  <div className="relative h-64 bg-white">
                     <Image
                       src="/MTC_IMP_PP/MTC IMPERIAL no bg/1 comp bento open.png"
                       alt="Bento Boxes Empty"
@@ -319,8 +319,8 @@ export default function HomePage() {
                     className="object-contain object-top rotate-180"
                   />
                 </div>
-                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
-                  <div className="relative h-64 bg-gray-50">
+                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+                  <div className="relative h-64 bg-white">
                     <Image
                       src="/MTC_IMP_PP/MTC IMPERIAL no bg/poke open.png"
                       alt="Poke Bowls Empty"
