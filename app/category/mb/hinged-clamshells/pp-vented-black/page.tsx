@@ -36,6 +36,12 @@ const productImages = [
     id: 8,
     src: '/MTC_MP_PP/MTC MB no bg pics/tri stack black side.png',
     alt: 'PP Hinged Clamshell Black - Triple Stack Side View'
+  },
+  {
+    id: 9,
+    src: '/MTC_MP_PP/MTC MB no bg pics/clamshellboxblack.png',
+    alt: 'PP Hinged Clamshell Black - Clamshell Box',
+    imageStyle: 'brightness-110'
   }
 ];
 
@@ -51,7 +57,7 @@ function ProductImageSlider() {
           src={productImages[currentSlide].src}
           alt={productImages[currentSlide].alt}
           fill
-          className="object-contain p-8"
+          className={`object-contain p-8 ${productImages[currentSlide].imageStyle || ''}`}
           priority
         />
         
@@ -106,7 +112,7 @@ function ProductImageSlider() {
               src={image.src}
               alt={image.alt}
               fill
-              className="object-contain p-2"
+              className={`object-contain p-2 ${image.imageStyle || ''}`}
             />
           </button>
         ))}

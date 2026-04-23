@@ -42,7 +42,7 @@ const products = [
     category: 'Hinged Clamshells',
     categorySlug: 'hinged-clamshells',
     description: 'Durable hinged clamshells perfect for takeout',
-    image: '/TKN.png',
+    image: '/MTC_MP_PP/MTC MB no bg pics/closed black no comp.png',
     tags: ['clamshell', 'hinged', 'takeout', 'food container', 'disposable', 'food service', 'to-go', 'restaurant', 'plastic']
   },
   
@@ -159,7 +159,7 @@ const products = [
     category: 'Sushi Trays',
     categorySlug: 'sushi-tray',
     description: 'Premium sushi trays for professional presentation',
-    image: '/TKN.png',
+    image: '/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png',
     tags: ['sushi', 'tray', 'premium', 'japanese', 'food service', 'platter', 'sashimi', 'nigiri', 'roll', 'container', 'takeout']
   },
   
@@ -172,7 +172,7 @@ const products = [
     category: 'Bento Boxes',
     categorySlug: 'bento',
     description: 'Multi-compartment bento boxes for organized meals',
-    image: '/TKN.png',
+    image: '/MTC_IMP_PP/MTC IMPERIAL no bg/full_bent_5-removebg-preview.png',
     tags: ['bento', 'box', 'compartment', 'lunch', 'japanese', 'meal prep', 'divided', 'container', 'takeout', 'multi-compartment']
   },
   
@@ -185,7 +185,7 @@ const products = [
     category: 'Poke Bowls',
     categorySlug: 'pokebowl',
     description: 'Perfect bowls for poke, grain bowls, and salads',
-    image: '/TKN.png',
+    image: '/MTC_IMP_PP/MTC IMPERIAL no bg/poke_bowl_full-removebg-preview.png',
     tags: ['poke', 'bowl', 'container', 'fresh', 'salad', 'grain bowl', 'rice bowl', 'hawaiian', 'takeout', 'round container']
   },
   
@@ -198,7 +198,7 @@ const products = [
     category: 'REROBOX',
     categorySlug: 'rerobox',
     description: 'Innovative REROBOX food containers',
-    image: '/TKN.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
     tags: ['rerobox', 'container', 'innovative', 'storage', 'food packaging', 'stackable', 'versatile', 'reusable']
   },
   
@@ -211,7 +211,7 @@ const products = [
     category: 'Clipin',
     categorySlug: 'clipin',
     description: 'Secure clip-in containers for safe food storage',
-    image: '/TKN.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
     tags: ['clipin', 'container', 'clip', 'secure', 'storage', 'food packaging', 'lock', 'leak-proof', 'safe']
   },
   
@@ -224,7 +224,7 @@ const products = [
     category: 'V-Series',
     categorySlug: 'v-series',
     description: 'Premium V-Series food containers',
-    image: '/TKN.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
     tags: ['v-series', 'container', 'premium', 'food packaging', 'storage', 'high-quality', 'durable']
   },
   
@@ -237,7 +237,7 @@ const products = [
     category: 'Deli Containers',
     categorySlug: 'deli-containers',
     description: 'Round deli containers for food storage and takeout',
-    image: '/TKN.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
     tags: ['deli', 'container', 'round', 'storage', 'food', 'microwavable', 'soup', 'salad', 'sides', 'plastic', 'clear']
   },
   
@@ -249,8 +249,8 @@ const products = [
     brandSlug: 'hd',
     category: 'Meat Trays',
     categorySlug: 'meat-trays',
-    description: 'Foam and plastic trays for meat and produce',
-    image: '/TKN.png',
+    description: 'Heavy-duty Polypropylene trays designed for meat packaging',
+    image: '/MTC_HD_PP/MTC HD no bg pics/blacktraylong.png',
     tags: ['meat tray', 'foam', 'plastic', 'butcher', 'produce', 'grocery', 'supermarket', 'protein', 'packaging', 'fresh']
   },
   
@@ -263,7 +263,7 @@ const products = [
     category: 'Soup Containers',
     categorySlug: 'soup-containers',
     description: 'Leak-proof soup containers for hot liquids',
-    image: '/TKN.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
     tags: ['soup', 'container', 'hot food', 'leak-proof', 'liquid', 'broth', 'stew', 'noodles', 'takeout', 'microwavable']
   },
   
@@ -276,7 +276,7 @@ const products = [
     category: 'Plastic Containers',
     categorySlug: 'plastic-containers',
     description: 'Durable plastic food containers for storage',
-    image: '/TKN.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
     tags: ['plastic', 'container', 'durable', 'storage', 'food packaging', 'clear', 'takeout', 'versatile', 'reusable']
   },
   
@@ -289,7 +289,7 @@ const products = [
     category: 'Soup Containers',
     categorySlug: 'soup-containers',
     description: 'Leak-proof soup containers with secure lids',
-    image: '/TKN.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
     tags: ['soup', 'container', 'leak-proof', 'hot food', 'liquid', 'broth', 'stew', 'noodles', 'takeout', 'microwavable', 'secure']
   }
 ];

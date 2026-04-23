@@ -101,7 +101,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Premium REROBOX food containers',
-    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
     imageStyle: 'scale-150'
   },
   {
@@ -111,7 +111,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Innovative Clipin container solutions',
-    image: '/MTC_TD_PP/MTC TD no bg pics/med.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
     imageStyle: 'scale-150'
   },
   {
@@ -121,7 +121,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Versatile V Series containers',
-    image: '/MTC_TD_PP/MTC TD no bg pics/deli xl.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
     imageStyle: 'scale-150'
   },
   {
@@ -130,9 +130,9 @@ const allProductCategories = [
     slug: 'meat-trays',
     brand: 'HD',
     brandSlug: 'hd',
-    description: 'Professional meat packaging trays',
-    image: '/MTC_TD_PP/MTC TD no bg pics/deli S.png',
-    imageStyle: 'scale-150'
+    description: 'Heavy-duty Polypropylene trays designed for meat packaging',
+    image: '/MTC_HD_PP/MTC HD no bg pics/blacktraylong.png',
+    imageStyle: 'scale-110'
   },
   {
     id: 14,
@@ -141,12 +141,22 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Quality deli storage containers',
-    image: '/MTC_TD_PP/MTC TD no bg pics/deli L.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
+    imageStyle: 'scale-150'
+  },
+  {
+    id: 15,
+    name: 'Soup Containers',
+    slug: 'soup-containers',
+    brand: 'HD',
+    brandSlug: 'hd',
+    description: 'Leak-resistant containers perfect for soups and liquids',
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
     imageStyle: 'scale-150'
   },
   // TD Categories
   {
-    id: 15,
+    id: 16,
     name: 'Plastic Containers',
     slug: 'plastic-containers',
     brand: 'TD',
@@ -156,7 +166,7 @@ const allProductCategories = [
     imageStyle: 'scale-150'
   },
   {
-    id: 16,
+    id: 17,
     name: 'Soup Containers',
     slug: 'soup-containers',
     brand: 'TD',
@@ -167,7 +177,7 @@ const allProductCategories = [
   },
   // Imperial Categories
   {
-    id: 17,
+    id: 18,
     name: 'Sushi Tray',
     slug: 'sushi-tray',
     brand: 'Imperial',
@@ -177,7 +187,7 @@ const allProductCategories = [
     imageStyle: 'scale-150'
   },
   {
-    id: 18,
+    id: 19,
     name: 'Bento',
     slug: 'bento',
     brand: 'Imperial',
@@ -187,7 +197,7 @@ const allProductCategories = [
     imageStyle: 'scale-150'
   },
   {
-    id: 19,
+    id: 20,
     name: 'Pokebowl',
     slug: 'pokebowl',
     brand: 'Imperial',
@@ -198,7 +208,7 @@ const allProductCategories = [
   },
   // MB Categories
   {
-    id: 20,
+    id: 21,
     name: 'Hinged Clamshells',
     slug: 'hinged-clamshells',
     brand: 'MB',

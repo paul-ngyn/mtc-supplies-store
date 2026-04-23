@@ -15,7 +15,7 @@ const sushiTraySubcategories = [
     name: 'Round Party Tray',
     slug: 'round-party-tray',
     description: 'Round party trays perfect for gatherings and events',
-    image: '/MTC_IMP_PP/MTC IMPERIAL no bg/sushi open.png'
+    image: '/MTC_IMP_PP/MTC IMPERIAL no bg/sushitrayroundhalf.png'
   }
 ];
 

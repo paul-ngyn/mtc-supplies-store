@@ -7,31 +7,37 @@ const hdCategories = [
     name: 'REROBOX Containers',
     slug: 'rerobox',
     description: 'High-quality reusable containers in round, rectangular, and compartment configurations',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png'
   },
   {
     name: 'Clipin Containers',
     slug: 'clipin',
     description: 'Premium containers with secure clip-in lids in round, rectangular, and compartment styles',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png'
   },
   {
     name: 'V-Series Containers',
     slug: 'v-series',
     description: 'Versatile microwave-safe containers with vented lids in round and rectangular styles',
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png'
   },
   {
     name: 'Meat Trays',
     slug: 'meat-trays',
-    description: 'Heavy-duty trays designed for meat and protein products',
+    description: 'Heavy-duty Polypropylene trays designed for meat packaging',
+    image: '/MTC_HD_PP/MTC HD no bg pics/blacktraylong.png'
   },
   {
     name: 'Deli Containers',
     slug: 'deli-containers',
     description: 'Versatile clear containers for deli and food storage',
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png'
   },
   {
     name: 'Soup Containers',
     slug: 'soup-containers',
     description: 'Leak-resistant containers perfect for soups and liquids',
+    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png'
   }
 ];
 
@@ -67,11 +73,22 @@ export default function HDPage() {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {hdCategories.map((category) => (
-            <div
-              key={category.slug}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="p-6">
+            <div key={category.slug} className="flex flex-col rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              {category.image && (
+                <div className="relative h-80 bg-gray-50 p-6 flex items-center justify-center">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={category.image}
+                      alt={category.name}
+                      fill
+                      className="object-contain scale-110"
+                    />
+                  </div>
+                </div>
+              )}
+
+              <div className="bg-white">
+                <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
                   {category.name}
                 </h2>
@@ -93,6 +110,7 @@ export default function HDPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
+                </div>
               </div>
             </div>
           ))}
