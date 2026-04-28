@@ -1,16 +1,16 @@
 import { redirect, notFound } from 'next/navigation';
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 // Valid brand slugs
 const validBrands = ['tkn', 'hd', 'td', 'imperial', 'mb'];
 
-export default function CategoryPage({ params }: PageProps) {
-  const { slug } = params;
+export default async function CategoryPage({ params }: PageProps) {
+  const { slug } = await params;
 
   // Check if this is a valid brand slug
   if (!validBrands.includes(slug)) {
@@ -28,6 +28,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+
   const brandNames: Record<string, string> = {
     tkn: 'TKN',
     hd: 'HD',
@@ -36,7 +38,7 @@ export async function generateMetadata({ params }: PageProps) {
     mb: 'MB',
   };
 
-  const brandName = brandNames[params.slug] || 'Products';
+  const brandName = brandNames[slug] || 'Products';
 
   return {
     title: `${brandName} Products - Maple Trade Corp`,

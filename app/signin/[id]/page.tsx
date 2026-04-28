@@ -16,27 +16,36 @@ import ForgotPassword from '@/components/ui/AuthForms/ForgotPassword';
 import UpdatePassword from '@/components/ui/AuthForms/UpdatePassword';
 import SignUp from '@/components/ui/AuthForms/Signup';
 
+type SearchParams = {
+  disable_button?: string | string[];
+  redirect_to?: string | string[];
+};
+
+function firstQueryValue(value: string | string[] | undefined) {
+  return Array.isArray(value) ? value[0] : value;
+}
+
 export default async function SignIn({
   params,
   searchParams
 }: {
-  params: { id: string };
-  searchParams: { 
-    disable_button: boolean;
-    redirect_to?: string;
-  };
+  params: Promise<{ id: string }>;
+  searchParams: Promise<SearchParams>;
 }) {
   const { allowOauth, allowEmail, allowPassword } = getAuthTypes();
   const viewTypes = getViewTypes();
   const redirectMethod = getRedirectMethod();
-  const { redirect_to } = searchParams;
+  const { id } = await params;
+  const { disable_button, redirect_to } = await searchParams;
+  const redirectTo = firstQueryValue(redirect_to);
+  const disableButton = Boolean(firstQueryValue(disable_button));
 
   // Declare 'viewProp' and initialize with the default value
   let viewProp: string;
 
   // Assign url id to 'viewProp' if it's a valid string and ViewTypes includes it
-  if (typeof params.id === 'string' && viewTypes.includes(params.id)) {
-    viewProp = params.id;
+  if (typeof id === 'string' && viewTypes.includes(id)) {
+    viewProp = id;
   } else {
     const cookieStore = await cookies();
     const preferredSignInView =
@@ -44,8 +53,8 @@ export default async function SignIn({
     viewProp = getDefaultSignInView(preferredSignInView);
     
     // Preserve redirect_to parameter when redirecting to default view
-    const redirectUrl = redirect_to 
-      ? `/signin/${viewProp}?redirect_to=${encodeURIComponent(redirect_to)}`
+    const redirectUrl = redirectTo 
+      ? `/signin/${viewProp}?redirect_to=${encodeURIComponent(redirectTo)}`
       : `/signin/${viewProp}`;
     
     return redirect(redirectUrl);
@@ -60,8 +69,8 @@ export default async function SignIn({
 
   if (user && viewProp !== 'update_password') {
     // If user is logged in and there's a redirect_to, go there
-    if (redirect_to) {
-      return redirect(redirect_to);
+    if (redirectTo) {
+      return redirect(redirectTo);
     }
     // Otherwise go to home page
     return redirect('/');
@@ -102,14 +111,14 @@ export default async function SignIn({
             <EmailSignIn
               allowPassword={allowPassword}
               redirectMethod={redirectMethod}
-              disableButton={searchParams.disable_button}
+              disableButton={disableButton}
             />
           )}
           {viewProp === 'forgot_password' && (
             <ForgotPassword
               allowEmail={allowEmail}
               redirectMethod={redirectMethod}
-              disableButton={searchParams.disable_button}
+              disableButton={disableButton}
             />
           )}
           {viewProp === 'update_password' && (
