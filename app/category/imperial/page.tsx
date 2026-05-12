@@ -175,7 +175,27 @@ export default function ImperialPage() {
 
 export async function generateMetadata() {
   return {
-    title: 'Imperial Products - Maple Trade Corp',
-    description: 'Explore Imperial premium Asian food packaging including sushi trays, bento boxes, and poke bowls with elegant black and gold designs.',
+    title: 'Imperial Asian Food Packaging - Sushi Trays, Bento Boxes & Poke Bowls',
+    description: 'Authentic Imperial Asian food packaging with premium sushi trays, bento boxes, and poke bowls featuring elegant black and gold designs. Perfect for restaurants and catering.',
+    keywords: [
+      'Imperial sushi trays',
+      'sushi packaging',
+      'bento boxes',
+      'poke bowls',
+      'Asian food packaging',
+      'Japanese food containers',
+      'sushi containers',
+      'rectangular sushi trays',
+      'round party trays',
+      'compartment bento boxes',
+      'restaurant sushi packaging',
+      'premium food packaging',
+      'black and gold packaging'
+    ],
+    openGraph: {
+      title: 'Imperial Asian Food Packaging - Sushi Trays, Bento Boxes & Poke Bowls',
+      description: 'Authentic Imperial Asian food packaging with premium sushi trays, bento boxes, and poke bowls featuring elegant black and gold designs.',
+      type: 'website',
+    },
   };
 }

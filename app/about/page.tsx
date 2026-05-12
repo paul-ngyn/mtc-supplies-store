@@ -1,5 +1,27 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Maple Trade Corp - Eco-Friendly Food Packaging Since 2006',
+  description: 'Learn about Maple Trade Corp, a San Francisco-based leader in eco-friendly food packaging since 2006. We provide biodegradable, compostable, and sustainable packaging solutions for food service professionals across America.',
+  keywords: [
+    'about Maple Trade Corp',
+    'eco-friendly packaging company',
+    'biodegradable packaging',
+    'sustainable food service',
+    'food packaging distributor',
+    'San Francisco packaging',
+    'Hayward California',
+    'compostable products',
+    'food service solutions'
+  ],
+  openGraph: {
+    title: 'About Maple Trade Corp - Eco-Friendly Food Packaging Since 2006',
+    description: 'Learn about Maple Trade Corp, a San Francisco-based leader in eco-friendly food packaging since 2006.',
+    type: 'website',
+  },
+};
 
 export default function AboutPage() {
   return (

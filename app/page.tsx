@@ -2,6 +2,24 @@ import ProductSlider from '@/components/ui/ProductSlider';
 import BrandCarousel from '@/components/ui/BrandCarousel';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Maple Trade Corp - Premium Food Packaging & Supplies',
+  description: 'Leading supplier of food packaging solutions including HD™ plastic containers, Imperial sushi trays, biodegradable boxes, and eco-friendly packaging. Quality products for restaurants, caterers, and food service businesses.',
+  keywords: [
+    'food packaging supplies',
+    'restaurant supplies',
+    'takeout containers',
+    'sushi trays',
+    'biodegradable packaging',
+    'HD containers',
+    'Imperial sushi packaging',
+    'TKN eco-friendly',
+    'wholesale food packaging',
+    'commercial food service'
+  ],
+};
 
 // Featured product categories for the homepage
 const featuredCategories = [

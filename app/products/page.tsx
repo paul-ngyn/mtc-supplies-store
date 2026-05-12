@@ -5,8 +5,27 @@ import BrandCarousel from '@/components/ui/BrandCarousel';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'All Products - Maple Trade Corp',
-  description: 'Browse all products from our premium brands',
+  title: 'All Food Packaging Products - Browse Our Complete Catalog',
+  description: 'Explore our complete catalog of food packaging solutions including HD plastic containers, Imperial sushi trays, TKN eco-friendly packaging, TD containers, and MB clamshells. Premium quality for restaurants and food service.',
+  keywords: [
+    'food packaging products',
+    'restaurant supplies',
+    'takeout containers',
+    'food service packaging',
+    'plastic containers',
+    'paper packaging',
+    'sushi trays',
+    'bento boxes',
+    'eco-friendly packaging',
+    'wholesale food packaging',
+    'bulk containers',
+    'food storage solutions'
+  ],
+  openGraph: {
+    title: 'All Food Packaging Products - Browse Our Complete Catalog',
+    description: 'Explore our complete catalog of food packaging solutions including HD plastic containers, Imperial sushi trays, and TKN eco-friendly packaging.',
+    type: 'website',
+  },
 };
 
 // All product categories from all brands

@@ -185,7 +185,29 @@ export default function TKNPage() {
 
 export async function generateMetadata() {
   return {
-    title: 'TKN Products - Maple Trade Corp',
-    description: 'Explore TKN sustainable kraft paper packaging products including bags, boat trays, bio boxes, and food pails.',
+    title: 'TKN Eco-Friendly Paper Packaging - Kraft Bags, Boxes & Containers',
+    description: 'Sustainable TKN kraft paper packaging including paper bags, bio boxes, food pails, boat trays, bagasse clamshells, and napkins. Environmentally responsible solutions for food service.',
+    keywords: [
+      'kraft paper bags',
+      'biodegradable food packaging',
+      'eco-friendly containers',
+      'paper food pails',
+      'boat trays',
+      'bio boxes',
+      'bagasse clamshells',
+      'sustainable packaging',
+      'compostable containers',
+      'takeout paper bags',
+      'kraft paper boxes',
+      'environmentally friendly packaging',
+      'green packaging solutions',
+      'paper napkins',
+      'portion cups'
+    ],
+    openGraph: {
+      title: 'TKN Eco-Friendly Paper Packaging - Kraft Bags, Boxes & Containers',
+      description: 'Sustainable TKN kraft paper packaging including paper bags, bio boxes, food pails, boat trays, bagasse clamshells, and napkins.',
+      type: 'website',
+    },
   };
 }

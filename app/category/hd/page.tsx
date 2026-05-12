@@ -147,7 +147,27 @@ export default function HDPage() {
 
 export async function generateMetadata() {
   return {
-    title: 'HD Products - Maple Trade Corp',
-    description: 'Explore HD premium plastic containers including REROBOX, Clipin, deli containers, and meat trays for food service operations.',
+    title: 'HD Premium Plastic Containers - Food Storage & Takeout',
+    description: 'Premium HD plastic containers including REROBOX reusable containers, Clipin secure-lid containers, V-Series microwave-safe containers, deli containers, meat trays, and soup containers for professional food service.',
+    keywords: [
+      'HD plastic containers',
+      'REROBOX containers',
+      'Clipin containers',
+      'V-Series containers',
+      'reusable food containers',
+      'microwave safe containers',
+      'deli containers',
+      'meat trays',
+      'soup containers',
+      'food service containers',
+      'restaurant containers',
+      'heavy duty containers',
+      'food storage containers'
+    ],
+    openGraph: {
+      title: 'HD Premium Plastic Containers - Food Storage & Takeout',
+      description: 'Premium HD plastic containers including REROBOX, Clipin, V-Series, deli containers, meat trays, and soup containers for professional food service.',
+      type: 'website',
+    },
   };
 }
