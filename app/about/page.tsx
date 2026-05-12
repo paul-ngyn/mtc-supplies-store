@@ -136,11 +136,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
-// Generate metadata for SEO
-export async function generateMetadata() {
-  return {
-    title: 'About Us - Maple Trade Corp',
-    description: 'Founded in 2006, MTC provides the highest quality eco-friendly, biodegradable, and compostable food service products with over 15+ years of experience.',
-  };
-}
