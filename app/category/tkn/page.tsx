@@ -13,6 +13,7 @@ const tknCategories = [
     name: 'Bio Boxes',
     slug: 'bio-boxes',
     description: 'Kraft paper boxes in white and kraft colors for environmentally conscious businesses',
+    image: '/MTC_TKN_PP/kraft%20bio%20boxes.webp',
   },
   {
     name: 'Food Pails',
