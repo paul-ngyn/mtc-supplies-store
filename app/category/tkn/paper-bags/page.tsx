@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import KraftRopeImageSlider from './KraftRopeImageSlider';
 
 export default function PaperBagsPage() {
   // Product sizes/options - Real data from product catalog
@@ -64,16 +64,8 @@ export default function PaperBagsPage() {
         {/* Product Section */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
-            {/* Product Image */}
-            <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
-              <Image
-                src="/TKN.png"
-                alt="100% Recycled Paper Bags"
-                fill
-                className="object-contain p-8"
-                priority
-              />
-            </div>
+            {/* Product Image Slider */}
+            <KraftRopeImageSlider />
 
             {/* Product Info */}
             <div className="flex flex-col">

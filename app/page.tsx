@@ -12,7 +12,7 @@ const featuredCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Eco-friendly paper bags for all your packaging needs',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/kraft%20rope%20side%201.png'
   },
   {
     id: 2,

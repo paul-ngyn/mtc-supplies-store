@@ -7,6 +7,7 @@ const tknCategories = [
     name: 'Paper Bags',
     slug: 'paper-bags',
     description: 'Durable kraft paper bags for takeout and retail',
+    image: '/MTC_TKN_PP/kraft%20rope%20side%201.png',
   },
   {
     name: 'Bio Boxes',
@@ -17,11 +18,13 @@ const tknCategories = [
     name: 'Food Pails',
     slug: 'food-pails',
     description: 'Paper food pails in white and kraft colors perfect for takeout',
+    image: '/MTC_TKN_PP/MTC_FOOD_PAIL_KRAFT_BG-removebg.png',
   },
   {
     name: 'Boat Trays',
     slug: 'boat-trays',
     description: 'Versatile paper boat trays for various food items',
+    image: '/MTC_TKN_PP/boat_trayss_bg-removebg-preview.png',
   },
   {
     name: 'Portion Cups & Lids',
@@ -37,6 +40,7 @@ const tknCategories = [
     name: 'Bagasse Hinged Clamshells',
     slug: 'bagasse-hinged-clamshells',
     description: 'Sustainable hinged containers made from sugarcane',
+    image: '/MTC_TKN_PP/webstaurant%20open%20placeholder%20hinged.png',
   },
   {
     name: 'Napkins & Paper Towels',
@@ -85,8 +89,20 @@ export default function TKNPage() {
           {tknCategories.map((category) => (
             <div
               key={category.slug}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="flex flex-col bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
+              {'image' in category && category.image && (
+                <div className="relative h-64 bg-gray-50 p-4 flex items-center justify-center">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={category.image as string}
+                      alt={category.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              )}
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
                   {category.name}
