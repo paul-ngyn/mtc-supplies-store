@@ -11,6 +11,10 @@ export default function TDSoupContainersPage() {
   // Product images for slider
   const productImages = [
     {
+      src: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
+      alt: 'Fruit Cup Container - Extra Large'
+    },
+    {
       src: '/MTC_TD_PP/MTC TD no bg pics/deli S.png',
       alt: 'Deli Container - Small (8oz)'
     },
@@ -27,8 +31,8 @@ export default function TDSoupContainersPage() {
       alt: 'Deli Container - Extra Large (24oz-32oz)'
     },
     {
-      src: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
-      alt: 'Fruit Cup Container - Extra Large'
+      src: '/MTC_TD_PP/MTC TD no bg pics/delicontainerbox.png',
+      alt: 'Deli Container Box'
     },
   ];
 

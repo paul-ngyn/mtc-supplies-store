@@ -21,7 +21,7 @@ const featuredCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Premium REROBOX food containers for quality storage',
-    image: '/TKN.png'
+    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const featuredCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Biodegradable food boxes for eco-friendly packaging',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/kraft%20bio%20boxes.webp'
   },
   {
     id: 4,

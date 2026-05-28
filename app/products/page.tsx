@@ -19,7 +19,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Eco-friendly paper bags for all your needs',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/kraft%20rope%20side%201.png'
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Biodegradable food boxes',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/kraft%20bio%20boxes.webp'
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Convenient food pail containers',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/MTC_FOOD_PAIL_KRAFT_BG-removebg.png'
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Versatile boat-shaped serving trays',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/boat_trayss_bg-removebg-preview.png'
   },
   {
     id: 5,
@@ -73,7 +73,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Sustainable hinged clamshell containers',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/webstaurant%20open%20placeholder%20hinged.png'
   },
   {
     id: 8,
@@ -111,8 +111,8 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Innovative Clipin container solutions',
-    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
-    imageStyle: 'scale-150'
+    image: '/MTC_HD_PP/MTC HD no bg pics/clipinrectanglebox.png',
+    imageStyle: 'scale-110'
   },
   {
     id: 12,
@@ -121,8 +121,8 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Versatile V Series containers',
-    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
-    imageStyle: 'scale-150'
+    image: '/MTC_HD_PP/MTC HD no bg pics/whitetraylong.png',
+    imageStyle: 'scale-110'
   },
   {
     id: 13,
@@ -141,8 +141,8 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Quality deli storage containers',
-    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
-    imageStyle: 'scale-150'
+    image: '/MTC_TD_PP/MTC TD no bg pics/deli%20xl.png',
+    imageStyle: 'scale-110'
   },
   {
     id: 15,
@@ -151,8 +151,8 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Leak-resistant containers perfect for soups and liquids',
-    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png',
-    imageStyle: 'scale-150'
+    image: '/MTC_TD_PP/MTC TD no bg pics/bowl%20closed.png',
+    imageStyle: 'scale-110'
   },
   // TD Categories
   {
@@ -162,8 +162,8 @@ const allProductCategories = [
     brand: 'TD',
     brandSlug: 'td',
     description: 'Durable plastic food containers',
-    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
-    imageStyle: 'scale-150'
+    image: '/MTC_TD_PP/MTC TD no bg pics/7%20stack%20closed.png',
+    imageStyle: 'scale-110'
   },
   {
     id: 17,
