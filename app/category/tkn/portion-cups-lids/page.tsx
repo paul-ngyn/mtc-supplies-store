@@ -8,14 +8,14 @@ const portionCupsSubcategories = [
     name: 'Portion Cups',
     slug: 'portion-cups',
     description: 'Durable portion cups for sauces, condiments, and samples',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/Portion_Cup-removebg.png'
   },
   {
     id: 2,
     name: 'Portion Cup Lids',
     slug: 'portion-cup-lids',
     description: 'Secure lids designed to fit our portion cups perfectly',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/Portion_Cup_Lid-removebg-preview.png'
   }
 ];
 

@@ -56,7 +56,7 @@ export default function PaperTowelsPage() {
             {/* Product Image */}
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
-                src="/TKN.png"
+                src="/MTC_TKN_PP/RT8600_M-removebg.png"
                 alt="Paper Towels"
                 fill
                 className="object-contain p-8"

@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import BioBoxImageSlider from './BioBoxImageSlider';
 
 export default function BioBoxesPage() {
   // Product sizes/options - Real data from product catalog
@@ -86,14 +86,8 @@ export default function BioBoxesPage() {
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
             {/* Product Image */}
-            <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
-              <Image
-                src="/MTC_TKN_PP/kraft%20bio%20boxes.webp"
-                alt="Bio Boxes"
-                fill
-                className="object-contain p-8"
-                priority
-              />
+            <div className="rounded-lg overflow-hidden">
+              <BioBoxImageSlider />
             </div>
 
             {/* Product Info */}

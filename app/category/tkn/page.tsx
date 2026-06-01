@@ -25,28 +25,31 @@ const tknCategories = [
     name: 'Boat Trays',
     slug: 'boat-trays',
     description: 'Versatile paper boat trays for various food items',
-    image: '/MTC_TKN_PP/boat_trayss_bg-removebg-preview.png',
+    image: '/MTC_TKN_PP/Boat_Tray-removebg.png',
   },
   {
     name: 'Portion Cups & Lids',
     slug: 'portion-cups-lids',
     description: 'Small containers for sauces and condiments with compatible lids',
+    image: '/MTC_TKN_PP/Portion_Cup-removebg.png',
   },
   {
     name: 'Chopsticks',
     slug: 'chopsticks',
     description: 'Eco-friendly disposable chopsticks',
+    image: '/MTC_TKN_PP/BC2000-removebg.png',
   },
   {
     name: 'Bagasse Hinged Clamshells',
     slug: 'bagasse-hinged-clamshells',
     description: 'Sustainable hinged containers made from sugarcane',
-    image: '/MTC_TKN_PP/webstaurant%20open%20placeholder%20hinged.png',
+    image: '/MTC_TKN_PP/TKN_0003_Bagasse-Hinged-Clamshell-Containers-removebg.png',
   },
   {
     name: 'Napkins & Paper Towels',
     slug: 'napkins-papertowels',
     description: 'Essential paper products for food service',
+    image: '/MTC_TKN_PP/RT8600_M-removebg.png',
     subcategories: [
       { name: 'Napkins', slug: 'napkins' },
       { name: 'Paper Towels', slug: 'paper-towels' },

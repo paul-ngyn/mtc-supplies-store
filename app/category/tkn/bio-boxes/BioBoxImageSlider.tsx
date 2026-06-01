@@ -5,20 +5,28 @@ import Image from 'next/image';
 
 const productImages = [
   {
-    src: '/MTC_TKN_PP/TKN_0003_Bagasse-Hinged-Clamshell-Containers-removebg.png',
-    alt: 'Bagasse Hinged Clamshell Containers - stacked',
+    src: '/MTC_TKN_PP/brown-kraft-paper-box-removebg.png',
+    alt: 'Brown Kraft Bio Box',
   },
   {
-    src: '/MTC_TKN_PP/webstaurant%20open%20placeholder%20hinged.png',
-    alt: 'Bagasse Hinged Clamshell - open view',
+    src: '/MTC_TKN_PP/brown-kraft-paper-box2-removebg.png',
+    alt: 'Brown Kraft Bio Box - view 2',
   },
   {
-    src: '/MTC_TKN_PP/webstuanrant%20closed%20placeholder%20hinged.png',
-    alt: 'Bagasse Hinged Clamshell - closed view',
+    src: '/MTC_TKN_PP/kraft%20bio%20boxes.webp',
+    alt: 'Kraft Bio Boxes - assorted sizes',
+  },
+  {
+    src: '/MTC_TKN_PP/white-kraft-paper-box-removebg.png',
+    alt: 'White Kraft Bio Box',
+  },
+  {
+    src: '/MTC_TKN_PP/white-kraft-paper-box2-removebg.png',
+    alt: 'White Kraft Bio Box - view 2',
   },
 ];
 
-export default function HingedClamshellImageSlider() {
+export default function BioBoxImageSlider() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   return (
@@ -51,37 +59,31 @@ export default function HingedClamshellImageSlider() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
-
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          {productImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentImageIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all ${
-                currentImageIndex === index ? 'bg-blue-600 w-6' : 'bg-gray-400'
-              }`}
-              aria-label={`Go to image ${index + 1}`}
-            />
-          ))}
-        </div>
       </div>
 
-      <div className="flex gap-2 mt-4 flex-wrap">
-        {productImages.map((image, index) => (
+      <div className="flex justify-center gap-2 mt-3">
+        {productImages.map((_, idx) => (
           <button
-            key={image.src}
-            onClick={() => setCurrentImageIndex(index)}
-            className={`relative w-20 h-20 rounded-lg overflow-hidden border-2 transition-all ${
-              currentImageIndex === index ? 'border-blue-600' : 'border-gray-200 hover:border-gray-300'
+            key={idx}
+            onClick={() => setCurrentImageIndex(idx)}
+            className={`w-2.5 h-2.5 rounded-full transition-all ${
+              idx === currentImageIndex ? 'bg-gray-700 scale-125' : 'bg-gray-300 hover:bg-gray-500'
             }`}
-            aria-label={`Preview image ${index + 1}`}
+            aria-label={`Go to image ${idx + 1}`}
+          />
+        ))}
+      </div>
+
+      <div className="flex gap-2 mt-3 overflow-x-auto pb-1">
+        {productImages.map((img, idx) => (
+          <button
+            key={idx}
+            onClick={() => setCurrentImageIndex(idx)}
+            className={`relative flex-shrink-0 w-16 h-16 rounded-md overflow-hidden border-2 transition-all ${
+              idx === currentImageIndex ? 'border-gray-700' : 'border-gray-200 hover:border-gray-400'
+            }`}
           >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              fill
-              className="object-contain p-2"
-            />
+            <Image src={img.src} alt={img.alt} fill className="object-contain p-1" />
           </button>
         ))}
       </div>

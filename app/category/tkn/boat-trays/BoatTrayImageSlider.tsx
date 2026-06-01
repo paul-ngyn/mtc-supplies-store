@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const productImages = [
   {
-    src: '/MTC_TKN_PP/boat_trayss_bg-removebg-preview.png',
+    src: '/MTC_TKN_PP/Boat_Tray-removebg.png',
     alt: 'Natural Kraft Boat Trays - multiple sizes',
   },
   {

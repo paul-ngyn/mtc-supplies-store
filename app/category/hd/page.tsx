@@ -28,15 +28,9 @@ const hdCategories = [
     image: '/MTC_HD_PP/MTC HD no bg pics/blacktraylong.png'
   },
   {
-    name: 'Deli Containers',
+    name: 'Deli Soup Containers',
     slug: 'deli-containers',
-    description: 'Versatile clear containers for deli and food storage',
-    image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png'
-  },
-  {
-    name: 'Soup Containers',
-    slug: 'soup-containers',
-    description: 'Leak-resistant containers perfect for soups and liquids',
+    description: 'Versatile clear containers for deli, soups, and food storage',
     image: '/MTC_TD_PP/MTC TD no bg pics/Fruit_cup_XL-removebg-preview.png'
   }
 ];
