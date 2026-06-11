@@ -23,7 +23,9 @@ const brands: Brand[] = [
     logo: "/TKN.png",
     slug: "tkn",
     description: "Premium TKN brand products for all your needs",
-    scale: 1.15
+    scale: 1.15,
+    fullBanner: "/MTC_TKN_PP/TKN%20BANNER%20PLZ%20BE%20DONE%20PLZ.png",
+    buttonPosition: "bottom-[11%] md:bottom-[11%] left-[49%] -translate-x-1/2"
   },
   {
     id: 2,
@@ -133,7 +135,7 @@ export default function ProductSlider() {
       {/* Main slider container */}
       <div 
         ref={sliderRef}
-        className="relative h-[200px] sm:h-[280px] md:h-[490px] lg:h-[540px] overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-r from-blue-50 to-blue-100 touch-pan-y"
+        className="relative h-[220px] sm:h-[308px] md:h-[539px] lg:h-[594px] overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-r from-blue-50 to-blue-100 touch-pan-y"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -152,7 +154,10 @@ export default function ProductSlider() {
                     src={brand.fullBanner}
                     alt={`${brand.name} Banner`}
                     fill
-                    className={`object-cover scale-105 ${brand.name === 'MB' ? 'object-[7%_center] md:object-center' : ''}`}
+                    className={`object-cover ${brand.name === 'TKN' ? 'scale-100' : brand.name === 'MB' ? 'scale-110' : 'scale-110'}`}
+                    style={{
+                      objectPosition: brand.name === 'TKN' ? '40% center' : brand.name === 'MB' ? '-12% center' : 'center'
+                    }}
                     priority={currentSlide === brand.id - 1}
                   />
                   {/* Shop All Button Overlay */}
