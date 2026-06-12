@@ -24,7 +24,7 @@ const brands: Brand[] = [
     slug: "tkn",
     description: "Premium TKN brand products for all your needs",
     scale: 1.15,
-    fullBanner: "/MTC_TKN_PP/TKN%20BANNER%20PLZ%20BE%20DONE%20PLZ.png",
+    fullBanner: "/MTC_TKN_PP/TKN%20BANNER%20FINALE%20UPSCALED.png",
     buttonPosition: "bottom-[11%] md:bottom-[11%] left-[49%] -translate-x-1/2"
   },
   {

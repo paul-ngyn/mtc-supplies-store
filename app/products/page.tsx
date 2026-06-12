@@ -55,7 +55,8 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Perfect portioning solutions',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/Portion_Cup-removebg.png',
+    imageStyle: 'scale-125'
   },
   {
     id: 6,
@@ -64,7 +65,8 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Compatible lids for portion cups',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/Portion_Cup_Lid-removebg-preview.png',
+    imageStyle: 'scale-125'
   },
   {
     id: 7,
