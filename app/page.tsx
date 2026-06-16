@@ -353,33 +353,42 @@ export default function HomePage() {
       </section>
 
       {/* TD Plastic Containers Panel */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section className="py-20 md:py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="relative overflow-hidden rounded-3xl border border-[#b9daf5] bg-[#d9efff] shadow-[0_12px_35px_rgba(28,81,163,0.12)]">
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center px-6 py-8 md:px-10 md:py-10 lg:px-12 lg:py-12">
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-6 items-center px-8 py-12 md:px-14 md:py-16 lg:px-16 lg:py-20">
               <div className="lg:col-span-6 xl:col-span-5">
+                <div className="mb-7">
+                  <Image
+                    src="/TD no background.png"
+                    alt="TD Logo"
+                    width={180}
+                    height={90}
+                    className="h-24 w-auto object-contain"
+                  />
+                </div>
                 <p className="inline-flex items-center rounded-full bg-white/85 px-4 py-1.5 text-xs md:text-sm font-semibold tracking-wide text-[#1c51a3] uppercase border border-[#bfdcf6]">
                   US Patented, Recyclable, Affordable
                 </p>
-                <h2 className="mt-6 text-3xl md:text-4xl lg:text-[2.7rem] font-extrabold text-gray-900 leading-[1.08]">
+                <h2 className="mt-10 text-3xl md:text-4xl lg:text-[2.7rem] font-extrabold text-gray-900 leading-[1.08]">
                   TD Plastic Containers
                 </h2>
-                <p className="mt-5 text-lg md:text-xl font-bold text-gray-900">
+                <p className="mt-7 text-lg md:text-xl font-bold text-gray-900">
                   Practical Packaging For Everyday Service
                 </p>
-                <p className="mt-6 text-base md:text-lg text-gray-700 max-w-xl leading-relaxed">
+                <p className="mt-8 text-base md:text-lg text-gray-700 max-w-xl leading-relaxed">
                   Reliable round, rectangular, and compartment plastic containers built for food prep, takeout, and delivery.
                 </p>
                 <Link
                   href="/category/td/plastic-containers"
-                  className="inline-block mt-8 bg-[#2d69d1] hover:bg-[#1c51a3] text-white px-8 py-3 rounded-lg text-base font-semibold transition-colors shadow-md"
+                  className="inline-block mt-12 bg-[#2d69d1] hover:bg-[#1c51a3] text-white px-8 py-3 rounded-lg text-base font-semibold transition-colors shadow-md"
                 >
                   View Options
                 </Link>
               </div>
 
               <div className="lg:col-span-6 xl:col-span-7">
-                <div className="relative h-[18rem] md:h-[24rem] lg:h-[28rem]">
+                <div className="relative h-[20rem] md:h-[28rem] lg:h-[34rem]">
                   <Image
                     src="/MTC_TD_PP/MTC TD no bg pics/7 stack closed.png"
                     alt="TD Plastic Containers"

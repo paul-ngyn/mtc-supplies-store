@@ -75,7 +75,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Sustainable hinged clamshell containers',
-    image: '/MTC_TKN_PP/webstaurant%20open%20placeholder%20hinged.png'
+    image: '/MTC_TKN_PP/TKN_0003_Bagasse-Hinged-Clamshell-Containers-removebg.png'
   },
   {
     id: 8,
@@ -84,7 +84,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Quality chopsticks for dining',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/BC2000-removebg.png'
   },
   {
     id: 9,
@@ -93,7 +93,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Essential napkins and paper towels',
-    image: '/TKN.png'
+    image: '/MTC_TKN_PP/RT8600_M-removebg.png'
   },
   // HD Categories
   {

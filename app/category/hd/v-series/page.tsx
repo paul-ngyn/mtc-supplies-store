@@ -8,14 +8,16 @@ const vSeriesSubcategories = [
     name: 'Rectangular',
     slug: 'rectangular',
     description: 'Rectangular V Series containers for efficient food storage',
-    image: '/TKN.png'
+    image: '/MTC_TD_PP/MTC TD no bg pics/1 comp close.png',
+    imageClassName: 'scale-[1.4] group-hover:scale-[1.48] -translate-y-[10%]'
   },
   {
     id: 2,
     name: 'Round',
     slug: 'round',
     description: 'Round V Series containers for versatile portioning',
-    image: '/TKN.png'
+    image: '/MTC_TD_PP/MTC TD no bg pics/bowl closed.png',
+    imageClassName: 'scale-[1.4] group-hover:scale-[1.48]'
   }
 ];
 
@@ -77,7 +79,7 @@ export default function VSeriesPage() {
                     src={subCategory.image}
                     alt={subCategory.name}
                     fill
-                    className="object-contain p-8 group-hover:scale-105 transition-transform duration-300"
+                    className={`object-contain p-1 transition-transform duration-300 ${subCategory.imageClassName}`}
                   />
                 </div>
                 <div className="p-6">
