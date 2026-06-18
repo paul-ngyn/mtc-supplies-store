@@ -8,8 +8,8 @@
   box-sizing: inherit;
 }
 
-*:focus:not(ol) {
-  @apply outline-none ring-2 ring-pink-500 ring-opacity-50;
+*:focus-visible:not(ol) {
+  @apply outline-none ring-2 ring-blue-500 ring-opacity-50;
 }
 
 html {

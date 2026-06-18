@@ -14,8 +14,8 @@
   @apply text-zinc-100;
 }
 
-.link:focus {
-  @apply outline-none text-zinc-100 ring-2 ring-pink-500 ring-opacity-50;
+.link:focus-visible {
+  @apply outline-none text-zinc-100 ring-2 ring-blue-500 ring-opacity-50;
 }
 
 .logo {
