@@ -13,6 +13,9 @@ interface Brand {
   scale?: number;
   fullBanner?: string; // Full-width banner image that replaces the entire slide
   buttonPosition?: string; // Custom button positioning classes for full banner
+  buttonClassName?: string;
+  bannerScaleClassName?: string;
+  bannerObjectPosition?: string;
 }
 
 // Brand logos for the slider
@@ -33,7 +36,12 @@ const brands: Brand[] = [
     logo: "/HD_logo-removebg.png",
     slug: "hd",
     description: "High-quality HD brand products",
-    scale: 1
+    scale: 1,
+    fullBanner: "/MTC_HD_PP/MTC HD no bg pics/HD FIN 2.png",
+    buttonPosition: "bottom-[10%] left-[20%] -translate-x-1/2",
+    buttonClassName: "bg-[#278f31] hover:bg-[#1f7428]",
+    bannerScaleClassName: "scale-100",
+    bannerObjectPosition: "center"
   },
   {
     id: 3,
@@ -52,7 +60,8 @@ const brands: Brand[] = [
     slug: "imperial",
     description: "For all your sushi and bento needs",
     scale: 1,
-    fullBanner: "/MTC_IMP_PP/MTC IMPERIAL no bg/ImpProductCarouselLast.png"
+    fullBanner: "/MTC_IMP_PP/MTC IMPERIAL no bg/ImpProductCarouselLast.png",
+    buttonClassName: "bg-[#EF5A98] hover:bg-[#d94d88]"
   },
   {
     id: 5,
@@ -154,16 +163,16 @@ export default function ProductSlider() {
                     src={brand.fullBanner}
                     alt={`${brand.name} Banner`}
                     fill
-                    className={`object-cover ${brand.name === 'TKN' ? 'scale-100' : brand.name === 'MB' ? 'scale-110' : 'scale-110'}`}
+                    className={`object-cover ${brand.bannerScaleClassName || (brand.name === 'TKN' ? 'scale-100' : brand.name === 'MB' ? 'scale-110' : 'scale-110')}`}
                     style={{
-                      objectPosition: brand.name === 'TKN' ? '40% center' : brand.name === 'MB' ? '-12% center' : 'center'
+                      objectPosition: brand.bannerObjectPosition || (brand.name === 'TKN' ? '40% center' : brand.name === 'MB' ? '-12% center' : 'center')
                     }}
                     priority={currentSlide === brand.id - 1}
                   />
                   {/* Shop All Button Overlay */}
                   <div className={`absolute ${brand.buttonPosition || 'bottom-[8%] md:bottom-10 left-1/2 -translate-x-1/2 md:left-16 md:translate-x-0'}`}>
                     <Link href={`/category/${brand.slug}`}>
-                      <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 md:px-7 py-1.5 md:py-3 rounded-md md:rounded-lg text-[10px] md:text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
+                      <button className={`${brand.buttonClassName || 'bg-blue-600 hover:bg-blue-700'} text-white px-3 md:px-7 py-1.5 md:py-3 rounded-md md:rounded-lg text-[10px] md:text-lg font-semibold transition-colors shadow-lg hover:shadow-xl`}>
                         Shop All
                       </button>
                     </Link>

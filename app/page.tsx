@@ -353,7 +353,7 @@ export default function HomePage() {
       </section>
 
       {/* TD Plastic Containers Panel */}
-      <section className="py-20 md:py-32 bg-gray-50">
+      <section className="py-20 md:py-32 -mt-10 md:-mt-14 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="relative overflow-hidden rounded-3xl border border-[#b9daf5] bg-[#d9efff] shadow-[0_12px_35px_rgba(28,81,163,0.12)]">
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-6 items-center px-8 py-12 md:px-14 md:py-16 lg:px-16 lg:py-20">

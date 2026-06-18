@@ -24,7 +24,7 @@ const hdCategories = [
   {
     name: 'Meat Trays',
     slug: 'meat-trays',
-    description: 'Heavy-duty Polypropylene trays designed for meat packaging',
+    description: 'Heavy-duty Polypropylene trays designed for meat packaging, available in multiple sizes and colors',
     image: '/MTC_HD_PP/MTC HD no bg pics/blacktraylong.png'
   },
   {
