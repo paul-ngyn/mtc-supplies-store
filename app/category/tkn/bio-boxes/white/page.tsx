@@ -88,7 +88,8 @@ export default function BioBoxesWhitePage() {
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
                 src="/TKN.png"
-                alt="White Bio Boxes"
+                alt="White Bio Boxes - Compostable Food Containers"
+                title="TKN White Bio Boxes - Eco-Friendly Biodegradable Packaging"
                 fill
                 className="object-contain p-8"
                 priority

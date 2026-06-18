@@ -73,7 +73,8 @@ export default function PortionCupsPage() {
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
                 src="/TKN.png"
-                alt="Portion Cups"
+                alt="Portion Cups - Premium TKN Food Storage"
+                title="TKN Portion Cups - Durable and Food-Safe"
                 fill
                 className="object-contain p-8"
                 priority

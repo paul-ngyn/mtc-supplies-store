@@ -1,5 +1,297 @@
 {
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/all-products",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/aboutus",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/our-catalogs",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/new-products",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/special-offer",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/brand/tkn",
+      "destination": "/category/tkn",
+      "permanent": true
+    },
+    {
+      "source": "/brand/td",
+      "destination": "/category/td",
+      "permanent": true
+    },
+    {
+      "source": "/brand/hd",
+      "destination": "/category/hd",
+      "permanent": true
+    },
+    {
+      "source": "/brand/renobox",
+      "destination": "/category/hd/rerobox",
+      "permanent": true
+    },
+    {
+      "source": "/brand/clipin",
+      "destination": "/category/hd/clipin",
+      "permanent": true
+    },
+    {
+      "source": "/brand/imperial",
+      "destination": "/category/imperial",
+      "permanent": true
+    },
+    {
+      "source": "/brand/mb",
+      "destination": "/category/mb",
+      "permanent": true
+    },
+    {
+      "source": "/brand/gd",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/brand/impack",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/pp-plastic-containers",
+      "destination": "/category/td/plastic-containers",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/sushi-bento-box",
+      "destination": "/category/imperial",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/paper-bamboo-products",
+      "destination": "/category/tkn",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/deli-soup-cups-portion-cups",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/hinged-clamshell-containers",
+      "destination": "/category/tkn/bagasse-hinged-clamshells",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/pp-meattrays",
+      "destination": "/category/hd/meat-trays",
+      "permanent": true
+    },
+    {
+      "source": "/product/td-plastic-round-container",
+      "destination": "/category/td/plastic-containers/round",
+      "permanent": true
+    },
+    {
+      "source": "/product/td-plastic-rectangular-container",
+      "destination": "/category/td/plastic-containers/rectangular",
+      "permanent": true
+    },
+    {
+      "source": "/product/td-plastic-2-and-3-compartment-container",
+      "destination": "/category/td/plastic-containers/compartments",
+      "permanent": true
+    },
+    {
+      "source": "/product/round-vented-lid",
+      "destination": "/category/td/plastic-containers/round",
+      "permanent": true
+    },
+    {
+      "source": "/product/rerobox-plastic-round-container",
+      "destination": "/category/hd/rerobox/round",
+      "permanent": true
+    },
+    {
+      "source": "/product/rerobox-plastic-rectangular-container",
+      "destination": "/category/hd/rerobox/rectangular",
+      "permanent": true
+    },
+    {
+      "source": "/free-catalog",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/product/5-compartment-bento-box",
+      "destination": "/category/imperial/bento/5-compartment",
+      "permanent": true
+    },
+    {
+      "source": "/product/single-compartment-bento-box",
+      "destination": "/category/imperial/bento/single-compartment",
+      "permanent": true
+    },
+    {
+      "source": "/product/rectangular-sushi-tray",
+      "destination": "/category/imperial/sushi-tray/rectangular-sushi-tray",
+      "permanent": true
+    },
+    {
+      "source": "/product/round-party-tray",
+      "destination": "/category/imperial/sushi-tray/round-party-tray",
+      "permanent": true
+    },
+    {
+      "source": "/product/poke-bowls-w-clear-lid",
+      "destination": "/category/imperial/pokebowl",
+      "permanent": true
+    },
+    {
+      "source": "/product/asian-food-pail-boxes-brown-kraft",
+      "destination": "/category/tkn/food-pails/kraft",
+      "permanent": true
+    },
+    {
+      "source": "/product/asian-food-pail-boxes-white",
+      "destination": "/category/tkn/food-pails/white",
+      "permanent": true
+    },
+    {
+      "source": "/product/bagasse-hinged-clamshell-containers",
+      "destination": "/category/tkn/bagasse-hinged-clamshells",
+      "permanent": true
+    },
+    {
+      "source": "/product/bamboo-chopstick",
+      "destination": "/category/tkn/chopsticks",
+      "permanent": true
+    },
+    {
+      "source": "/product/paper-bag",
+      "destination": "/category/tkn/paper-bags",
+      "permanent": true
+    },
+    {
+      "source": "/product/paper-boat-tray",
+      "destination": "/category/tkn/boat-trays",
+      "permanent": true
+    },
+    {
+      "source": "/product/portion-cup",
+      "destination": "/category/tkn/portion-cups",
+      "permanent": true
+    },
+    {
+      "source": "/product/portion-cup-lid",
+      "destination": "/category/tkn/portion-cup-lids",
+      "permanent": true
+    },
+    {
+      "source": "/product/brown-kraft-paper-box",
+      "destination": "/category/tkn/bio-boxes/kraft",
+      "permanent": true
+    },
+    {
+      "source": "/product/white-kraft-paper-box",
+      "destination": "/category/tkn/bio-boxes/white",
+      "permanent": true
+    },
+    {
+      "source": "/product/napkins-and-paper-towel",
+      "destination": "/category/tkn/napkins-papertowels/paper-towels",
+      "permanent": true
+    },
+    {
+      "source": "/product/polypropylene-meat-tray",
+      "destination": "/category/hd/meat-trays",
+      "permanent": true
+    },
+    {
+      "source": "/product/rerobox-plastic-rectangular-2-and-3-compartment-container",
+      "destination": "/category/hd/rerobox/compartment",
+      "permanent": true
+    },
+    {
+      "source": "/product/clipin-plastic-round-container",
+      "destination": "/category/hd/clipin/round",
+      "permanent": true
+    },
+    {
+      "source": "/product/clipin-plastic-rectangular-container",
+      "destination": "/category/hd/clipin/rectangular",
+      "permanent": true
+    },
+    {
+      "source": "/product/clipin-plastic-2-and-3-compartment-container",
+      "destination": "/category/hd/clipin/compartment",
+      "permanent": true
+    },
+    {
+      "source": "/product/rectangular-vented-lid",
+      "destination": "/category/hd/v-series/rectangular-vented",
+      "permanent": true
+    },
+    {
+      "source": "/product/mb-pp-hinged-clamshell-black-vented",
+      "destination": "/category/mb/hinged-clamshells/pp-vented-black",
+      "permanent": true
+    },
+    {
+      "source": "/product/mb-tfpp-hinged-clamshell-white",
+      "destination": "/category/mb/hinged-clamshells/tfpp-white",
+      "permanent": true
+    },
+    {
+      "source": "/product/td-deli-soup-containers",
+      "destination": "/category/td/soup-containers",
+      "permanent": true
+    },
+    {
+      "source": "/product/tkn-pp-hinged-clamshell-9-1-and-3-comp-vented",
+      "destination": "/category/mb/hinged-clamshells",
+      "permanent": true
+    },
+    {
+      "source": "/product/vented-microwaveable-soup-cup-with-dividers",
+      "destination": "/category/td/soup-containers",
+      "permanent": true
+    },
+    {
+      "source": "/brand/:slug",
+      "destination": "/brands",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/:slug",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/product/:slug",
+      "destination": "/products",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { 
       "source": "/api/webhooks", 

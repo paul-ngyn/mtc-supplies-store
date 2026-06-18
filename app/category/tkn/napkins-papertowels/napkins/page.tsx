@@ -69,7 +69,8 @@ export default function NapkinsPage() {
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
                 src="/TKN.png"
-                alt="Napkins"
+                alt="Napkins - Disposable Table & Cocktail Napkins"
+                title="TKN Napkins - Premium Quality Paper Napkins"
                 fill
                 className="object-contain p-8"
                 priority

@@ -25,7 +25,7 @@ const reroboxSubcategories = [
     slug: 'compartment',
     description: 'Multi-compartment REROBOX containers for organized meals',
     image: '/MTC_TD_PP/MTC TD no bg pics/tri comp open.png',
-     imageClassName: 'scale-[1] group-hover:scale-[1.05] -translate-y-[-5%]'
+    imageClassName: 'scale-[1] group-hover:scale-[1.05] -translate-y-[-5%]'
   }
 ];
 
@@ -86,7 +86,9 @@ export default function ReroboxPage() {
                   <Image
                     src={subCategory.image}
                     alt={subCategory.name}
+                    title={`${subCategory.name} - ${subCategory.description}`}
                     fill
+                    loading="lazy"
                     className={`object-contain p-1 transition-transform duration-300 ${subCategory.imageClassName}`}
                   />
                 </div>

@@ -44,7 +44,8 @@ export default function ToiletSeatCoversPage() {
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
                 src="/TKN.png"
-                alt="Toilet Seat Covers"
+                alt="Toilet Seat Covers - Disposable & Hygienic"
+                title="TKN Toilet Seat Covers - Premium Sanitary Protection"
                 fill
                 className="object-contain p-8"
                 priority

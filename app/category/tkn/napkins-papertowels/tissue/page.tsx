@@ -45,7 +45,8 @@ export default function TissuePage() {
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
                 src="/TKN.png"
-                alt="Tissue"
+                alt="Tissue - Soft & Strong Paper Products"
+                title="TKN Tissue - Premium Quality Bathroom & Facial Tissue"
                 fill
                 className="object-contain p-8"
                 priority

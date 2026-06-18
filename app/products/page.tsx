@@ -46,7 +46,7 @@ const allProductCategories = [
     brand: 'TKN',
     brandSlug: 'tkn',
     description: 'Versatile boat-shaped serving trays',
-    image: '/MTC_TKN_PP/boat_trayss_bg-removebg-preview.png'
+    image: '/MTC_TKN_PP/Boat_Tray-removebg.png'
   },
   {
     id: 5,
@@ -123,7 +123,7 @@ const allProductCategories = [
     brand: 'HD',
     brandSlug: 'hd',
     description: 'Versatile V Series containers',
-    image: '/MTC_HD_PP/MTC HD no bg pics/whitetraylong.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/7 stack closed.png',
     imageStyle: 'scale-110'
   },
   {
@@ -263,7 +263,9 @@ export default function AllProductsPage() {
                     <Image
                       src={category.image}
                       alt={category.name}
+                      title={`${category.name} - ${category.brand} Products`}
                       fill
+                      loading="lazy"
                       className={`object-contain p-4 group-hover:scale-105 transition-transform duration-300 ${(category as any).imageStyle || ''}`}
                     />
                   )}

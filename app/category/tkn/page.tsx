@@ -101,7 +101,9 @@ export default function TKNPage() {
                     <Image
                       src={category.image as string}
                       alt={category.name}
+                      title={`TKN ${category.name} - ${category.description}`}
                       fill
+                      loading="lazy"
                       className="object-contain"
                     />
                   </div>

@@ -28,7 +28,8 @@ export default function SushiTrayPage() {
           <div className="flex flex-col items-center justify-center space-y-4">
             <Image
               src="/imperial-removebg-.png"
-              alt="Imperial Logo"
+              alt="Imperial Logo - Premium Sushi Trays"
+              title="Imperial Brand - Professional Sushi Tray Solutions"
               width={200}
               height={100}
               className="h-24 w-auto"
@@ -76,7 +77,9 @@ export default function SushiTrayPage() {
                   <Image
                     src={subCategory.image}
                     alt={subCategory.name}
+                    title={`${subCategory.name} - Premium Imperial ${subCategory.name}`}
                     fill
+                    loading="lazy"
                     className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

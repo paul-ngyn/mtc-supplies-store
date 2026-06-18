@@ -7,6 +7,7 @@ import { PropsWithChildren, Suspense } from 'react';
 import { getURL } from '@/utils/helpers';
 import { headers } from 'next/headers';
 import { DM_Sans } from 'next/font/google';
+import GoogleAnalytics from '@/components/ui/Analytics/GoogleAnalytics';
 import 'styles/main.css';
 
 const dmSans = DM_Sans({
@@ -41,10 +42,12 @@ export default async function RootLayout({ children }: PropsWithChildren) {
   const headersList = await headers();
   const pathname = headersList.get('x-pathname') || '';
   const isAuthPage = pathname.startsWith('/signin') || pathname.startsWith('/signup');
+  const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
   return (
     <html lang="en">
       <body className={`${dmSans.variable} font-sans ${isAuthPage ? "bg-gray-50" : "bg-white"}`}>
+        {gaMeasurementId ? <GoogleAnalytics measurementId={gaMeasurementId} /> : null}
         <ListProvider>
           {/* Always show navbar - don't disable it on auth pages */}
           <Navbar />

@@ -73,8 +73,10 @@ export default function HomePage() {
                     <Image
                       src={category.image}
                       alt={category.name}
+                      title={`${category.name} - Shop premium ${category.brand} products`}
                       width={300}
                       height={300}
+                      loading="lazy"
                       className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>

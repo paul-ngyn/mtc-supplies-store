@@ -90,7 +90,9 @@ export default function NapkinsPapertowelsPage() {
                   <Image
                     src={subCategory.image}
                     alt={subCategory.name}
+                    title={`${subCategory.name} - ${subCategory.description}`}
                     fill
+                    loading="lazy"
                     className="object-contain p-8 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

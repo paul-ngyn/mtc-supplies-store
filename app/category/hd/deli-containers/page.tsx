@@ -95,7 +95,8 @@ export default function HDSoupContainersPage() {
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
                 src="/HD_logo-removebg.png"
-                alt="HD Soup Containers"
+                alt="HD Microwave Deli Soup Containers - Premium Food Service"
+                title="HD Deli Containers - Microwave Safe Food Storage"
                 fill
                 className="object-contain p-8"
                 priority

@@ -162,6 +162,7 @@ export default function ProductSlider() {
                   <Image
                     src={brand.fullBanner}
                     alt={`${brand.name} Banner`}
+                    title={`${brand.name} - ${brand.description}`}
                     fill
                     className={`object-cover ${brand.bannerScaleClassName || (brand.name === 'TKN' ? 'scale-100' : brand.name === 'MB' ? 'scale-110' : 'scale-110')}`}
                     style={{
@@ -186,6 +187,7 @@ export default function ProductSlider() {
                     <Image
                       src={brand.logo}
                       alt={`${brand.name} Logo`}
+                      title={`${brand.name}: ${brand.description}`}
                       width={256}
                       height={256}
                       className="object-contain drop-shadow-lg max-h-full w-auto"

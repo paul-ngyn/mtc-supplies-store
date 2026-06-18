@@ -51,7 +51,8 @@ export default function ChopsticksPage() {
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
                 src="/MTC_TKN_PP/BC2000-removebg.png"
-                alt="Chopsticks"
+                alt="Chopsticks - Premium Bamboo Utensils"
+                title="TKN Chopsticks - Eco-Friendly Disposable Utensils"
                 fill
                 className="object-contain p-8"
                 priority

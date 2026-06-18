@@ -76,7 +76,9 @@ export default function BentoPage() {
                   <Image
                     src={subCategory.image}
                     alt={subCategory.name}
+                    title={`${subCategory.name} - Premium Imperial ${subCategory.name}`}
                     fill
+                    loading="lazy"
                     className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

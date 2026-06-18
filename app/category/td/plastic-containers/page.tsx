@@ -89,7 +89,9 @@ export default function PlasticContainersPage() {
                   <Image
                     src={subCategory.image}
                     alt={subCategory.name}
+                    title={`${subCategory.name} - ${subCategory.description}`}
                     fill
+                    loading="lazy"
                     className={`object-contain p-1 transition-transform duration-300 ${subCategory.imageClassName} ${subCategory.imagePositionClassName}`}
                   />
                 </div>

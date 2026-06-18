@@ -57,7 +57,8 @@ export default function PaperTowelsPage() {
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
                 src="/MTC_TKN_PP/RT8600_M-removebg.png"
-                alt="Paper Towels"
+                alt="Paper Towels - Absorbent & Durable Rolls"
+                title="TKN Paper Towels - Commercial Grade Rolls"
                 fill
                 className="object-contain p-8"
                 priority

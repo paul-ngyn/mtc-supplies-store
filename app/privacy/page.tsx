@@ -82,10 +82,11 @@ export default function PrivacyPolicy() {
                 <li><strong>Next.js:</strong> Web application framework for the Website</li>
                 <li><strong>Supabase:</strong> Authentication and database services for account management</li>
                 <li><strong>Stripe:</strong> Secure payment processing (Stripe handles all payment card information directly; we do not store your payment details)</li>
+                <li><strong>Google Analytics (when enabled):</strong> Aggregated website usage analytics to help us measure performance and improve user experience</li>
                 <li><strong>Essential Cookies:</strong> Basic browser cookies necessary for website functionality, such as maintaining your session and shopping cart</li>
               </ul>
               <p className="mt-4">
-                <strong>Important:</strong> We do not use tracking pixels, analytics services, or advertising cookies to monitor your online behavior. We only collect information that you voluntarily provide to us.
+                <strong>Important:</strong> We do not use advertising pixels or sell personal information to third parties. Any analytics we use are limited to understanding website performance and usage trends.
               </p>
             </div>
           </section>
@@ -136,6 +137,7 @@ export default function PrivacyPolicy() {
               <p>We strive to provide you with choices regarding the personal information you provide to us:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Essential Cookies:</strong> You can set your browser to refuse cookies, but please note that some parts of the Website may not function properly without them</li>
+                <li><strong>Analytics Controls:</strong> You can opt out of Google Analytics by using browser privacy settings or the Google Analytics opt-out browser add-on</li>
                 <li><strong>Promotional Communications:</strong> If you do not wish to receive promotional emails from us, you can opt-out by following the unsubscribe instructions in those emails or by contacting us directly</li>
                 <li><strong>Account Information:</strong> You can review and change your personal information by logging into your account on the Website</li>
               </ul>

@@ -16,7 +16,7 @@ const products = [
     category: 'Hinged Clamshells',
     categorySlug: 'bagasse-hinged-clamshells',
     description: 'Eco-friendly bagasse hinged clamshells for hot and cold foods',
-    image: '/TKN.png',
+    image: '/MTC_TKN_PP/TKN_0003_Bagasse-Hinged-Clamshell-Containers-removebg.png',
     tags: ['clamshell', 'hinged', 'bagasse', 'eco-friendly', 'biodegradable', 'takeout', 'container', 'food packaging', 'sustainable', 'compostable', 'disposable']
   },
   
@@ -29,7 +29,7 @@ const products = [
     category: 'Clamshells',
     categorySlug: 'bagasse-clamshells',
     description: 'Sustainable bagasse clamshells for various food types',
-    image: '/TKN.png',
+    image: '/MTC_TKN_PP/TKN_0003_Bagasse-Hinged-Clamshell-Containers-removebg.png',
     tags: ['clamshell', 'bagasse', 'eco-friendly', 'biodegradable', 'takeout', 'container', 'food packaging', 'sustainable', 'compostable']
   },
   
@@ -81,7 +81,7 @@ const products = [
     category: 'Boat Trays',
     categorySlug: 'boat-trays',
     description: 'Paper boat trays for fries, snacks, and appetizers',
-    image: '/TKN.png',
+    image: '/MTC_TKN_PP/Boat_Tray-removebg.png',
     tags: ['boat', 'tray', 'paper', 'fries', 'snacks', 'appetizers', 'serving', 'food service', 'french fries', 'basket', 'kraft']
   },
   
@@ -224,7 +224,7 @@ const products = [
     category: 'V-Series',
     categorySlug: 'v-series',
     description: 'Premium V-Series food containers',
-    image: '/MTC_TD_PP/MTC TD no bg pics/three variation hd no bg.png',
+    image: '/MTC_TD_PP/MTC TD no bg pics/7 stack closed.png',
     tags: ['v-series', 'container', 'premium', 'food packaging', 'storage', 'high-quality', 'durable']
   },
   

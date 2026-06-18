@@ -88,7 +88,8 @@ export default function FoodPailsWhitePage() {
             <div className="relative h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
               <Image
                 src="/TKN.png"
-                alt="White Food Pails"
+                alt="White Food Pails - Heavy-Duty Storage Containers"
+                title="TKN White Food Pails - Bulk Food Storage Solution"
                 fill
                 className="object-contain p-8"
                 priority
