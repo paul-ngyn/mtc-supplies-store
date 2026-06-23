@@ -401,6 +401,94 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+
+          <div className="mt-16 md:mt-20 py-8 md:py-20">
+            <div className="text-center mb-12">
+              <div className="flex justify-center mb-6">
+                <Image
+                  src="/HD_logo-removebg.png"
+                  alt="HD Logo"
+                  width={320}
+                  height={160}
+                  className="h-28 w-auto"
+                />
+              </div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                HD High Quality Containers
+              </h3>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Explore our HD lineup across REROBOX, Clip-In, and V-Series, featuring our most durable, versatile containers yet.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+              <Link href="/category/hd/clipin" className="group">
+                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-[#c8def5]">
+                  <div className="relative h-64 bg-white">
+                    <Image
+                      src="/MTC_TD_PP/MTC TD no bg pics/1 comp open.png"
+                      alt="TD 1 Comp Open"
+                      fill
+                      className="hidden md:block object-contain p-4 scale-[1.2] -translate-x-[2%] -translate-y-[4%] transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0"
+                    />
+                    <Image
+                      src="/MTC_HD_PP/MTC HD no bg pics/HD_1_COMP-removebg-preview.png"
+                      alt="HD 1 Comp"
+                      fill
+                      className="object-contain p-4 scale-[0.75] transition-all duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
+                    />
+                  </div>
+                  <div className="p-6 text-center bg-white">
+                    <h3 className="font-semibold text-gray-900 text-lg">1 Comp</h3>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/category/hd/clipin" className="group">
+                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-[#c8def5]">
+                  <div className="relative h-64 bg-white">
+                    <Image
+                      src="/MTC_TD_PP/MTC TD no bg pics/bowl open.png"
+                      alt="TD Bowl Open"
+                      fill
+                      className="hidden md:block object-contain p-4 scale-[1.20] -translate-x-[2%] -translate-y-[7%] transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0"
+                    />
+                    <Image
+                      src="/MTC_HD_PP/MTC HD no bg pics/HD_BOWL-removebg-preview.png"
+                      alt="HD Bowl"
+                      fill
+                      className="object-contain p-4 scale-[0.75] transition-all duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
+                    />
+                  </div>
+                  <div className="p-6 text-center bg-white">
+                    <h3 className="font-semibold text-gray-900 text-lg">Bowl</h3>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/category/hd/clipin" className="group">
+                <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-[#c8def5]">
+                  <div className="relative h-64 bg-white">
+                    <Image
+                      src="/MTC_TD_PP/MTC TD no bg pics/tri comp open.png"
+                      alt="TD Tri Comp Open"
+                      fill
+                      className="hidden md:block object-contain p-4 transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0"
+                    />
+                    <Image
+                      src="/MTC_HD_PP/MTC HD no bg pics/HD_TRI_COMP_FOOD-removebg-preview.png"
+                      alt="HD Tri Comp"
+                      fill
+                      className="object-contain p-4 scale-[0.84] transition-all duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
+                    />
+                  </div>
+                  <div className="p-6 text-center bg-white">
+                    <h3 className="font-semibold text-gray-900 text-lg">Tri Comp</h3>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -469,7 +557,7 @@ export default function HomePage() {
       </section>
 
       {/* About Us Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="pt-8 pb-24 md:pt-10 md:pb-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-md border border-gray-200 p-10 md:p-14 text-center">
             <p className="text-xl text-gray-700 leading-relaxed">
