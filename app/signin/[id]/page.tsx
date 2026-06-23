@@ -1,4 +1,3 @@
-import { createClient } from '@/utils/supabase/server';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import {
@@ -60,21 +59,7 @@ export default async function SignIn({
     return redirect(redirectUrl);
   }
 
-  // Check if the user is already logged in and redirect appropriately
-  const supabase = await createClient();
-
-  const {
-    data: { user }
-  } = await supabase.auth.getUser();
-
-  if (user && viewProp !== 'update_password') {
-    // If user is logged in and there's a redirect_to, go there
-    if (redirectTo) {
-      return redirect(redirectTo);
-    }
-    // Otherwise go to home page
-    return redirect('/');
-  } else if (!user && viewProp === 'update_password') {
+  if (viewProp === 'update_password') {
     return redirect('/signin');
   }
 

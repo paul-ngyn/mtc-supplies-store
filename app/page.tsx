@@ -402,7 +402,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="mt-16 md:mt-20 py-8 md:py-20">
+          <div className="mt-16 md:mt-20 pt-8 pb-3 md:pt-16 md:pb-8">
             <div className="text-center mb-12">
               <div className="flex justify-center mb-6">
                 <Image

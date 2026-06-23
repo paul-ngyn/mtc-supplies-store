@@ -1,18 +1,7 @@
-import { createClient } from '@/utils/supabase/server';
-import { redirect } from 'next/navigation';
 import OrdersContent from '@/components/ui/Orders/OrdersContent';
 
 export default async function OrdersPage() {
-  const supabase = await createClient();
-  
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  // Redirect to sign-in if not authenticated
-  if (!user) {
-    redirect('/signin?redirect_to=/orders');
-  }
+  const user = { email: 'guest@mapletradecorp.com' };
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
