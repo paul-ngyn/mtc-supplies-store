@@ -8,7 +8,7 @@ import { getURL } from '@/utils/helpers';
 import { headers } from 'next/headers';
 import { DM_Sans } from 'next/font/google';
 import GoogleAnalytics from '@/components/ui/Analytics/GoogleAnalytics';
-import 'styles/main.css';
+import '@/styles/main.css';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],

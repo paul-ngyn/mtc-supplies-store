@@ -8,14 +8,6 @@ const productImages = [
     src: '/MTC_TKN_PP/TKN_0003_Bagasse-Hinged-Clamshell-Containers-removebg.png',
     alt: 'Bagasse Hinged Clamshell Containers - stacked',
   },
-  {
-    src: '/MTC_TKN_PP/webstaurant%20open%20placeholder%20hinged.png',
-    alt: 'Bagasse Hinged Clamshell - open view',
-  },
-  {
-    src: '/MTC_TKN_PP/webstuanrant%20closed%20placeholder%20hinged.png',
-    alt: 'Bagasse Hinged Clamshell - closed view',
-  },
 ];
 
 export default function HingedClamshellImageSlider() {

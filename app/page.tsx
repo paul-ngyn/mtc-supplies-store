@@ -43,6 +43,10 @@ const featuredCategories = [
   }
 ];
 
+const HERO_BORDER_IMAGE_SIZES = '20vw';
+const CATEGORY_CARD_IMAGE_SIZES = '(max-width: 768px) 100vw, 33vw';
+const PANEL_IMAGE_SIZES = '(max-width: 1024px) 100vw, 50vw';
+
 export default function HomePage() {
   return (
     <div className="bg-white min-h-screen">
@@ -118,6 +122,7 @@ export default function HomePage() {
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
               alt="Cherry Blossom Border"
               fill
+              sizes={HERO_BORDER_IMAGE_SIZES}
               className="object-contain object-bottom"
             />
           </div>
@@ -126,6 +131,7 @@ export default function HomePage() {
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
               alt="Cherry Blossom Border"
               fill
+              sizes={HERO_BORDER_IMAGE_SIZES}
               className="object-contain object-bottom"
             />
           </div>
@@ -134,6 +140,7 @@ export default function HomePage() {
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
               alt="Cherry Blossom Border"
               fill
+              sizes={HERO_BORDER_IMAGE_SIZES}
               className="object-contain object-bottom"
             />
           </div>
@@ -142,6 +149,7 @@ export default function HomePage() {
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
               alt="Cherry Blossom Border"
               fill
+              sizes={HERO_BORDER_IMAGE_SIZES}
               className="object-contain object-bottom"
             />
           </div>
@@ -150,6 +158,7 @@ export default function HomePage() {
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
               alt="Cherry Blossom Border"
               fill
+              sizes={HERO_BORDER_IMAGE_SIZES}
               className="object-contain object-bottom"
             />
           </div>
@@ -162,6 +171,7 @@ export default function HomePage() {
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
               alt="Cherry Blossom Border"
               fill
+              sizes={HERO_BORDER_IMAGE_SIZES}
               className="object-contain object-top rotate-180"
             />
           </div>
@@ -170,6 +180,7 @@ export default function HomePage() {
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
               alt="Cherry Blossom Border"
               fill
+              sizes={HERO_BORDER_IMAGE_SIZES}
               className="object-contain object-top rotate-180"
             />
           </div>
@@ -178,6 +189,7 @@ export default function HomePage() {
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
               alt="Cherry Blossom Border"
               fill
+              sizes={HERO_BORDER_IMAGE_SIZES}
               className="object-contain object-top rotate-180"
             />
           </div>
@@ -186,6 +198,7 @@ export default function HomePage() {
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
               alt="Cherry Blossom Border"
               fill
+              sizes={HERO_BORDER_IMAGE_SIZES}
               className="object-contain object-top rotate-180"
             />
           </div>
@@ -194,6 +207,7 @@ export default function HomePage() {
               src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
               alt="Cherry Blossom Border"
               fill
+              sizes={HERO_BORDER_IMAGE_SIZES}
               className="object-contain object-top rotate-180"
             />
           </div>
@@ -227,6 +241,7 @@ export default function HomePage() {
                     src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
                     alt="Cherry Blossom"
                     fill
+                    sizes={CATEGORY_CARD_IMAGE_SIZES}
                     className="object-contain object-bottom"
                   />
                 </div>
@@ -236,6 +251,7 @@ export default function HomePage() {
                     src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
                     alt="Cherry Blossom"
                     fill
+                    sizes={CATEGORY_CARD_IMAGE_SIZES}
                     className="object-contain object-top rotate-180"
                   />
                 </div>
@@ -245,12 +261,14 @@ export default function HomePage() {
                       src="/MTC_IMP_PP/MTC IMPERIAL no bg/sushi open.png"
                       alt="Sushi Trays Empty"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="hidden md:block object-contain p-4 transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0"
                     />
                     <Image
                       src="/MTC_IMP_PP/MTC IMPERIAL no bg/full tray sushi.png"
                       alt="Sushi Trays Filled"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="object-contain p-4 transition-opacity duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
                     />
                   </div>
@@ -268,6 +286,7 @@ export default function HomePage() {
                     src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
                     alt="Cherry Blossom"
                     fill
+                    sizes={CATEGORY_CARD_IMAGE_SIZES}
                     className="object-contain object-bottom"
                   />
                 </div>
@@ -277,6 +296,7 @@ export default function HomePage() {
                     src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
                     alt="Cherry Blossom"
                     fill
+                    sizes={CATEGORY_CARD_IMAGE_SIZES}
                     className="object-contain object-top rotate-180"
                   />
                 </div>
@@ -286,12 +306,14 @@ export default function HomePage() {
                       src="/MTC_IMP_PP/MTC IMPERIAL no bg/1 comp bento open.png"
                       alt="Bento Boxes Empty"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="hidden md:block object-contain p-4 transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0 -translate-x-[3%]"
                     />
                     <Image
                       src="/MTC_IMP_PP/MTC IMPERIAL no bg/1compbentochicken (2).png"
                       alt="Bento Boxes Filled"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="object-contain p-4 transition-opacity duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
                     />
                   </div>
@@ -309,6 +331,7 @@ export default function HomePage() {
                     src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
                     alt="Cherry Blossom"
                     fill
+                    sizes={CATEGORY_CARD_IMAGE_SIZES}
                     className="object-contain object-bottom"
                   />
                 </div>
@@ -318,6 +341,7 @@ export default function HomePage() {
                     src="/MTC_IMP_PP/MTC IMPERIAL no bg/cherry blossom texture.png"
                     alt="Cherry Blossom"
                     fill
+                    sizes={CATEGORY_CARD_IMAGE_SIZES}
                     className="object-contain object-top rotate-180"
                   />
                 </div>
@@ -327,12 +351,14 @@ export default function HomePage() {
                       src="/MTC_IMP_PP/MTC IMPERIAL no bg/poke open.png"
                       alt="Poke Bowls Empty"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="hidden md:block object-contain p-4 transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0 translate-x-[3%] -translate-y-[12%] scale-[1.2]"
                     />
                     <Image
                       src="/MTC_IMP_PP/MTC IMPERIAL no bg/poke_bowl_full-removebg-preview.png"
                       alt="Poke Bowls Filled"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="object-contain p-4 transition-opacity duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100 translate-x-[5%] -translate-y-[10%]"
                     />
                   </div>
@@ -381,6 +407,15 @@ export default function HomePage() {
                 <p className="mt-8 text-base md:text-lg text-gray-700 max-w-xl leading-relaxed">
                   Reliable round, rectangular, and compartment plastic containers built for food prep, takeout, and delivery.
                 </p>
+                <div className="relative h-56 sm:h-72 mt-8 lg:hidden">
+                  <Image
+                    src="/MTC_TD_PP/MTC TD no bg pics/7 stack closed.png"
+                    alt="TD Plastic Containers"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw"
+                    className="object-contain p-2 sm:p-4"
+                  />
+                </div>
                 <Link
                   href="/category/td/plastic-containers"
                   className="inline-block mt-12 bg-[#2d69d1] hover:bg-[#1c51a3] text-white px-8 py-3 rounded-lg text-base font-semibold transition-colors shadow-md"
@@ -389,12 +424,13 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <div className="lg:col-span-6 xl:col-span-7">
+              <div className="hidden lg:block lg:col-span-6 xl:col-span-7">
                 <div className="relative h-[20rem] md:h-[28rem] lg:h-[34rem]">
                   <Image
                     src="/MTC_TD_PP/MTC TD no bg pics/7 stack closed.png"
                     alt="TD Plastic Containers"
                     fill
+                    sizes={PANEL_IMAGE_SIZES}
                     className="object-contain p-2 md:p-4 lg:p-6 scale-110"
                   />
                 </div>
@@ -429,12 +465,14 @@ export default function HomePage() {
                       src="/MTC_TD_PP/MTC TD no bg pics/1 comp open.png"
                       alt="TD 1 Comp Open"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="hidden md:block object-contain p-4 scale-[1.2] -translate-x-[2%] -translate-y-[4%] transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0"
                     />
                     <Image
                       src="/MTC_HD_PP/MTC HD no bg pics/HD_1_COMP-removebg-preview.png"
                       alt="HD 1 Comp"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="object-contain p-4 scale-[0.75] transition-all duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
                     />
                   </div>
@@ -451,12 +489,14 @@ export default function HomePage() {
                       src="/MTC_TD_PP/MTC TD no bg pics/bowl open.png"
                       alt="TD Bowl Open"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="hidden md:block object-contain p-4 scale-[1.20] -translate-x-[2%] -translate-y-[7%] transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0"
                     />
                     <Image
                       src="/MTC_HD_PP/MTC HD no bg pics/HD_BOWL-removebg-preview.png"
                       alt="HD Bowl"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="object-contain p-4 scale-[0.75] transition-all duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
                     />
                   </div>
@@ -473,12 +513,14 @@ export default function HomePage() {
                       src="/MTC_TD_PP/MTC TD no bg pics/tri comp open.png"
                       alt="TD Tri Comp Open"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="hidden md:block object-contain p-4 transition-opacity duration-300 md:opacity-100 md:group-hover:opacity-0"
                     />
                     <Image
                       src="/MTC_HD_PP/MTC HD no bg pics/HD_TRI_COMP_FOOD-removebg-preview.png"
                       alt="HD Tri Comp"
                       fill
+                      sizes={CATEGORY_CARD_IMAGE_SIZES}
                       className="object-contain p-4 scale-[0.84] transition-all duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100"
                     />
                   </div>
@@ -488,12 +530,20 @@ export default function HomePage() {
                 </div>
               </Link>
             </div>
+
+            <div className="text-center mt-12">
+              <Link href="/category/hd">
+                <button className="bg-[#1c51a3] hover:bg-[#153d7f] text-white px-8 py-3 rounded-lg text-base font-semibold transition-colors shadow-md hover:shadow-lg">
+                  View All HD Products
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 md:pt-10 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Why Choose Maple Trade Corp?

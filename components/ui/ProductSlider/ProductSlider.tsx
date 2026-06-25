@@ -164,7 +164,8 @@ export default function ProductSlider() {
                     alt={`${brand.name} Banner`}
                     title={`${brand.name} - ${brand.description}`}
                     fill
-                    className={`object-cover ${brand.bannerScaleClassName || (brand.name === 'TKN' ? 'scale-100' : brand.name === 'MB' ? 'scale-110' : 'scale-110')}`}
+                    sizes="100vw"
+                    className={`object-contain md:object-cover ${brand.bannerScaleClassName || (brand.name === 'TKN' ? 'scale-100 md:scale-100' : brand.name === 'MB' ? 'scale-100 md:scale-110' : 'scale-100 md:scale-110')}`}
                     style={{
                       objectPosition: brand.bannerObjectPosition || (brand.name === 'TKN' ? '40% center' : brand.name === 'MB' ? '-12% center' : 'center')
                     }}
