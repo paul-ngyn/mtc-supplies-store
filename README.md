@@ -1,6 +1,6 @@
 # Maple Trade Corp — mapletradecorp.com
 
-Brief 1-2 sentence description of what this site/project is and does.
+Catalog and List Page for Maple Trade Corporation
 
 ## Tech Stack
 - Frontend: React / Next.js
@@ -52,4 +52,4 @@ npm run dev
 \`\`\`
 
 ## Contributing / Notes
-Anything team-specific — who to contact, known issues, etc.
+
