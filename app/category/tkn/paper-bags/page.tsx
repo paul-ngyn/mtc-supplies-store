@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Link from 'next/link';
 import KraftRopeImageSlider from './KraftRopeImageSlider';
 
@@ -109,6 +110,20 @@ export default function PaperBagsPage() {
                   </div>
                 </div>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="100% Recycled Paper Bags"
+                  brand="TKN"
+                  category="100% Recycled Paper Bags"
+                  slug="paper-bags"
+                  brandSlug="tkn"
+                  image="/TKN.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

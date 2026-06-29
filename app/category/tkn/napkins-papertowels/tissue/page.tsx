@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -79,6 +80,20 @@ export default function TissuePage() {
                   <li>Reliable quality</li>
                 </ul>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Tissue"
+                  brand="TKN"
+                  category="Tissue"
+                  slug="napkins-papertowels/tissue"
+                  brandSlug="tkn"
+                  image="/TKN.png"
+                  sizes={sizeOptions.map(opt => `${opt.name} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

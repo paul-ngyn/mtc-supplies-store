@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -143,6 +144,20 @@ export default function VSeriesRoundPage() {
                   <li>Includes 3-compartment option</li>
                 </ul>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="V-Series Round Vented Containers"
+                  brand="HD"
+                  category="V-Series Round Vented Containers"
+                  slug="v-series/round"
+                  brandSlug="hd"
+                  image="/TKN.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

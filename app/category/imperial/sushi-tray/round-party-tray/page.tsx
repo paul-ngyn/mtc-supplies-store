@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Link from 'next/link';
 import RoundPartyTrayImageSlider from './RoundPartyTrayImageSlider';
 
@@ -91,6 +92,20 @@ export default function RoundPartyTrayPage() {
                   <li>Professional appearance</li>
                 </ul>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Round Sushi Party Tray"
+                  brand="Imperial"
+                  category="Round Sushi Party Tray"
+                  slug="sushi-tray/round-party-tray"
+                  brandSlug="imperial"
+                  image="/TKN.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -129,6 +130,20 @@ export default function HDSoupContainersPage() {
                   <li>Stackable for efficient storage</li>
                 </ul>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="HD Microwave Deli Soup Containers"
+                  brand="HD"
+                  category="HD Microwave Deli Soup Containers"
+                  slug="soup-containers"
+                  brandSlug="hd"
+                  image="/HD_logo-removebg.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

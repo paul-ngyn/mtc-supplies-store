@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -93,6 +94,20 @@ export default function ToiletSeatCoversPage() {
                   </div>
                 </div>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Toilet Seat Covers"
+                  brand="TKN"
+                  category="Toilet Seat Covers"
+                  slug="napkins-papertowels/toilet-seat-covers"
+                  brandSlug="tkn"
+                  image="/TKN.png"
+                  sizes={sizeOptions.map(opt => `${opt.name} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

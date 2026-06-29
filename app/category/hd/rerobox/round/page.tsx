@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -165,6 +166,20 @@ export default function ReroboxRoundPage() {
                   <li>Stackable and space-efficient</li>
                 </ul>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="REROBOX Round Containers"
+                  brand="HD"
+                  category="REROBOX Round Containers"
+                  slug="rerobox/round"
+                  brandSlug="hd"
+                  image="/Rero_w_background-remove.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

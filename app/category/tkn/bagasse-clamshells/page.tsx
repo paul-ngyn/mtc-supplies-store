@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -157,6 +158,20 @@ export default function BagasseClamshellsPage() {
                   </div>
                 </div>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Bagasse Hinged Clamshells"
+                  brand="TKN"
+                  category="Bagasse Hinged Clamshells"
+                  slug="bagasse-clamshells"
+                  brandSlug="tkn"
+                  image="/TKN.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

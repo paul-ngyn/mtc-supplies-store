@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -110,6 +111,20 @@ export default function ReroboxCompartmentsPage() {
                   <li>Ideal for meal prep and takeout</li>
                 </ul>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="REROBOX Compartment Containers"
+                  brand="HD"
+                  category="REROBOX Compartment Containers"
+                  slug="rerobox/compartment"
+                  brandSlug="hd"
+                  image="/Rero_w_background-remove.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

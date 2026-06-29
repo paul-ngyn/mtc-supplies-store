@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Link from 'next/link';
 import FoodPailImageSlider from './FoodPailImageSlider';
 
@@ -129,6 +130,20 @@ export default function FoodPailsPage() {
                   </div>
                 </div>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Food Pails"
+                  brand="TKN"
+                  category="Food Pails"
+                  slug="food-pails"
+                  brandSlug="tkn"
+                  image="/TKN.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

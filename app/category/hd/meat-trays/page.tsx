@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Link from 'next/link';
 import MeatTrayImageSlider from './MeatTrayImageSlider';
 
@@ -126,6 +127,20 @@ export default function MeatTraysPage() {
                   <li>Professional presentation</li>
                 </ul>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Polypropylene Meat Trays"
+                  brand="HD"
+                  category="Polypropylene Meat Trays"
+                  slug="meat-trays"
+                  brandSlug="hd"
+                  image="/TKN.png"
+                  sizes={sizeOptions.map(opt => `${opt.size} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

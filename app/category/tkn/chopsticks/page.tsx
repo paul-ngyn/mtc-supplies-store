@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -101,6 +102,20 @@ export default function ChopsticksPage() {
                   </div>
                 </div>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Chopsticks"
+                  brand="TKN"
+                  category="Chopsticks"
+                  slug="chopsticks"
+                  brandSlug="tkn"
+                  image="/MTC_TKN_PP/BC2000-removebg.png"
+                  sizes={sizeOptions.map(opt => `${opt.name} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 

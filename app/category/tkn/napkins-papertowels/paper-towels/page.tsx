@@ -1,3 +1,4 @@
+import AddToListButton from '@/components/ui/AddToListButton';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -91,6 +92,20 @@ export default function PaperTowelsPage() {
                   <li>Reliable performance</li>
                 </ul>
               </div>
+              {/* Add to List Button */}
+              <div className="mt-auto pt-6 border-t border-gray-200">
+                <AddToListButton
+                  productName="Paper Towels"
+                  brand="TKN"
+                  category="Paper Towels"
+                  slug="napkins-papertowels/paper-towels"
+                  brandSlug="tkn"
+                  image="/MTC_TKN_PP/RT8600_M-removebg.png"
+                  sizes={sizeOptions.map(opt => `${opt.name} (${opt.itemNo})`)}
+                  showSizeSelector={true}
+                />
+              </div>
+
             </div>
           </div>
 
