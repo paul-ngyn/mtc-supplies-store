@@ -173,7 +173,7 @@ export default function ContactPage() {
               Send Us a Message
             </h2>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 text-gray-900">
               {/* Name */}
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -253,7 +253,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#1c51a3] focus:border-transparent transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#1c51a3] focus:border-transparent transition-colors resize-none text-gray-900"
                   placeholder="Please describe your inquiry or question..."
                 />
               </div>
