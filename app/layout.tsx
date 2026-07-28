@@ -18,8 +18,8 @@ const dmSans = DM_Sans({
   display: 'swap',
 });
 
-const title = 'Maple Trade Corp | Eco-Friendly Food Service Packaging';
-const description = 'Discover premium eco-friendly food service packaging, compostable containers, paper bags, and sustainable supplies from Maple Trade Corp.';
+const title = 'Maple Trade Corp | Restaurant Supply Distributor & Wholesaler';
+const description = 'Maple Trade Corp is a trusted restaurant supply distributor and wholesaler offering eco-friendly food service packaging, compostable containers, paper bags, and sustainable supplies.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getURL()),
