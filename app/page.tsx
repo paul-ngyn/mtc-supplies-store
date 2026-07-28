@@ -53,6 +53,14 @@ export default function HomePage() {
       {/* Hero Section with Product Slider */}
       <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto">
+          <div className="mb-8 max-w-3xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              Eco-Friendly Food Service Packaging for Every Business
+            </h1>
+            <p className="mt-4 text-lg text-gray-600">
+              Shop compostable containers, paper bags, food trays, and sustainable packaging solutions from Maple Trade Corp.
+            </p>
+          </div>
           {/* Product Slider */}
           <ProductSlider />
         </div>

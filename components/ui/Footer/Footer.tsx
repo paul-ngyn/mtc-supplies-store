@@ -86,18 +86,18 @@ export default function Footer() {
               </li>
               <li className="py-3 md:py-0 md:pb-4">
                 <Link
-                  href="/faq"
-                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
-                >
-                  FAQ
-                </Link>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link
                   href="/contact"
                   className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
                 >
                   Contact Us
+                </Link>
+              </li>
+              <li className="py-3 md:py-0 md:pb-4">
+                <Link
+                  href="/faq"
+                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                >
+                  FAQ
                 </Link>
               </li>
             </ul>
@@ -128,20 +128,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="py-3 md:py-0 md:pb-4">
-                <Link
-                  href="/shipping"
+                <a
+                  href="https://tknpaperbags.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
                 >
-                  Shipping Info
-                </Link>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link
-                  href="/delivery"
-                  className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
-                >
-                  Delivery Updates
-                </Link>
+                  Custom Bag Designer
+                </a>
               </li>
             </ul>
           </div>

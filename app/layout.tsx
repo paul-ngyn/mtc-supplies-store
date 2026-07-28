@@ -8,6 +8,7 @@ import { getURL } from '@/utils/helpers';
 import { headers } from 'next/headers';
 import { DM_Sans } from 'next/font/google';
 import GoogleAnalytics from '@/components/ui/Analytics/GoogleAnalytics';
+import OrganizationJsonLd from '@/components/ui/SEO/OrganizationJsonLd';
 import '@/styles/main.css';
 
 const dmSans = DM_Sans({
@@ -17,8 +18,8 @@ const dmSans = DM_Sans({
   display: 'swap',
 });
 
-const title = 'Maple Trade Corp Store';
-const description = 'Your one-stop shop for all supplies.';
+const title = 'Maple Trade Corp | Eco-Friendly Food Service Packaging';
+const description = 'Discover premium eco-friendly food service packaging, compostable containers, paper bags, and sustainable supplies from Maple Trade Corp.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getURL()),
@@ -32,7 +33,19 @@ export const metadata: Metadata = {
     ],
     shortcut: '/favicon.ico'
   },
+  alternates: {
+    canonical: getURL()
+  },
   openGraph: {
+    title: title,
+    description: description,
+    type: 'website',
+    url: getURL(),
+    siteName: 'Maple Trade Corp',
+    locale: 'en_US'
+  },
+  twitter: {
+    card: 'summary_large_image',
     title: title,
     description: description
   }
@@ -47,6 +60,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={`${dmSans.variable} font-sans ${isAuthPage ? "bg-gray-50" : "bg-white"}`}>
+        <OrganizationJsonLd />
         {gaMeasurementId ? <GoogleAnalytics measurementId={gaMeasurementId} /> : null}
         <ListProvider>
           {/* Always show navbar - don't disable it on auth pages */}
