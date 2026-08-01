@@ -1,4 +1,4 @@
-# [Maple Trade Corp] mapletradecorp.com
+# [Maple Trade Corp](mapletradecorp.com)
 
 Catalog and List Page for Maple Trade Corporation
 mapletradecorp.com
