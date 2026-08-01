@@ -1,7 +1,7 @@
 # [Maple Trade Corp](mapletradecorp.com)
 
 Catalog and List Page for Maple Trade Corporation
-mapletradecorp.com
+
 
 ## Tech Stack
 - Frontend: React / Next.js
